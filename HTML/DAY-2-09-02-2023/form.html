@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+    
+    <fieldset name="f">
+        <legend>The Boring Company Job Application</legend>
+
+        <form name="jobapplication">
+                
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                            <label for="first name">First Name</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="First Name" id="fname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="second name">Second Name</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Second Name" id="sname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="age">Age</label>
+                        </td>
+                        <td>
+                            <input type="number" id="age">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sex">Sex</label>
+                        </td>
+                        <td>
+                            <input type="radio" value="male" name="male"> <label for="">male</label>
+                            <input type="radio" value="female" name="female"> <label for="">female</label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="phone">Phone Number</label>
+                        </td>
+                        <td>
+                            <select name="phoneid" id="phoneid">
+                                <option value=""></option>
+                                <option value="33">33</option>
+                                <option value="21">21</option>
+                                <option value="91">91</option>
+                                <option value="77">77</option>
+
+                            </select>
+                            <input type="number" id="phonenumber">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="nationality">Nationality</label>
+                        </td>
+                        <td>
+                            <select name="nationality" id="nationality">
+                                <option value=""></option>
+                                <option value="indian">Indian</option>
+                                <option value="indian">NRI</option>
+                                <option value="indian">Others</option>
+
+                            </select>
+                            <input type="text" id="othernationality">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="SSLC">SSLC Score</label>
+                        </td>
+                        <td>
+                            <input type="number" id="sslc">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="HSE">HSE</label>
+                        </td>
+                        <td>
+                            <input type="number" id="hse">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="UG">UG</label>
+                        </td>
+                        <td>
+                            <select name="UG" id="ug">
+                                <option value=""></option>
+                                <option value="BE/BTech">BE/BTech</option>
+                                <option value="BArch">BArch</option>
+                                <option value="BSc">BSc</option>
+                                <option value="">other</option>
+                            </select>
+                            <input type="text" id="otherug">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="CGPA">CGPA</label>
+                        </td>
+                        <td>
+                            <input type="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="resume">Resume</label>
+                        </td>
+                        <td>
+                            <input type="file">
+                        </td>
+                    </tr>
+                    
+                </thead>
+                
+            </table>
+            <br><br><br><br>
+
+        </form>
+        <button onclick="getName()">getName</button>
+        <button onclick="getAge()">getAge</button>
+        <button onclick="getSex()">get sex</button>
+        <button onclick="getPhone()">get phone</button>
+        <button onclick="getNationality()">getName</button>
+        <button onclick="getUG()">getName</button>
+        <p id="p">
+
+        </p>
+    </fieldset>
+
+    <script>
+        function getName(){
+            let firstName = document.getElementById('fname').value
+            let secondName = document.getElementById('sname').value
+            document.getElementById('p').innerHTML = "Welcome "+firstName.bold() +" "+ secondName.bold()
+        }
+        function getAge(){
+            let age = document.getElementById('age').value
+
+           document.getElementById('p').innerHTML = ""+age
+        }
+        function getSex(){
+            let sex = document.getElementById('sex').value
+
+            document.getElementById('p').innerHTML = ""+sex
+        }
+        function getPhone(){
+            let phoneid = document.getElementById('phoneid').value
+            let phone = document.getElementById('phonenumber').value
+            document.getElementById('p').innerHTML = ""+phoneid + " "+phone
+        }
+
+    </script>
+</body>
+</html>

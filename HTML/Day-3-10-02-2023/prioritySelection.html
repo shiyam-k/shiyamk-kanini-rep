@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/prioritySelection.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <form>
+            <label for="">Courses</label>
+            <select name="courses" id="c" width="100px" onchange="removeCourse(event)" >
+                <option value=""></option>
+                <option value="html" id = 'c1' >HTML</option>
+                <option value="css" id="c2">CSS</option>
+                <option value="js" id="c3">JS</option>
+                <option value="react" id="c4">React JS</option>
+                <option value="angular" id="c5">Angular</option>
+                <option value="typescript" id="c6">TypeScript</option>
+                <option value="node" id="c7">Node JS</option>
+            </select>
+        </form>
+        <button id="addBtn" name="button" onclick="addCourse()">add</button>
+    </div>
+
+    <p id="added"></p>
+</body>
+</html>

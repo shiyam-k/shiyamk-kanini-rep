@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Choices</title>
+    <script src="./js/threeChoices.js"></script>
+</head>
+<body>
+    <fieldset>
+        <form >
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                            <label for="Name">Name</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mobile">Mobile</label>
+                        </td>
+                        <td>
+                            <input type="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="movie">Movies</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" value="superbad" id="superbad">
+                            <label for="">superbad</label>
+                            <input type="checkbox" value="AmericanPsycho" id="AmericanPsycho">
+                            <label for="">American Psycho</label>
+                            <input type="checkbox" value="spartacus" id="spartacus">
+                            <label for="">spartacus</label>
+                        </td>
+                    </tr>
+                    <tr rowspan="2">
+                        <td>
+                            <input type="button" onclick="threeChoices()">
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </form>
+        <p id="p"></p>
+    </fieldset>
+</body>
+</html>

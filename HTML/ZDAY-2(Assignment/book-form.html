@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/book-form.js"></script>
+    <title>Book Form</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Patron info</legend>
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                            <label for="name">Name</label>
+                        </td>
+                        <td>
+                            <input type="text" id="cusname">
+                        </td>
+                    </tr>
+                    <thead>
+                        <tr>
+                            <td>
+                                <label for="telaphone">Telephone</label>
+                            </td>
+                            <td>
+                                <select name="phone" id="phoneid">
+                                    <option value=""></option>
+                                    <option value="+91">+91</option>
+                                    <option value="+1">+1</option>
+                                    <option value="+52">52</option>
+                                    <option value="+380">+380</option>
+                                    <option value="+62">62</option>
+                                </select>
+                                <input type="number" id="phone">
+                            </td>
+                        </tr>
+                        <thead>
+                            <tr>
+                                <td>
+                                    <label for="email">E-Mail</label>
+                                </td>
+                                <td>
+                                    <input type="email" id="email">
+                                </td>
+                            </tr>
+                </thead>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Book info</legend>
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                            <input type="text" id="books">
+                            <label for="quantity">Quantity</label>
+                            <select name="qselect" id="quantity">
+                                <option value=""></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+    
+                            </select>
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </fieldset>
+    </form>
+    <button onclick="alertWindow()">Submit</button>
+
+    <br><br>
+    <p name="error"id="err"></p>
+</body>
+</html>
