@@ -1,0 +1,39 @@
+.bp{
+    width: 1000px;
+    height: 300px;
+    transform: translateX(250px);
+    border-radius: 50px;
+}
+.inputs{
+    background-color: rgb(248, 248, 248);
+    border-radius: 20px;
+    width: 200px;
+    height: 20px;
+    margin: 1rem;
+}
+.op{
+    background-color: rgb(248, 248, 248);
+    border-radius: 20px;
+    width: 100px;
+    height: 20px;
+    margin: 1rem;
+}
+.calculator{
+    transform: translate(600px,100px);
+}
+body{
+    background-color: rgb(255, 255, 255);
+    color: rgb(54, 169, 251);
+}
+.img{
+    cursor: pointer;
+}
+.banner{
+    display:flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: space-between;
+}
+.img:active{
+    transform: translateY(-2px);
+}

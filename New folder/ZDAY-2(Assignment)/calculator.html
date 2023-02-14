@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/calc.css">
+    <script src="./js/calc.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="head">
+        <img src="./img/blaise-pascal-inventions-main.jpg" alt="" height="200px" width="400px" class="bp">
+    </div>
+    <div class="calculator">
+        <div class="inp">
+            <label for="input1" class="lab">Input1 :</label>
+            <input type="number" class="inputs" id="inp1" onkeypress="noAlph(event)">
+        </div>
+        <div class="inp">
+            <label for="input2" class="lab">Input2 :</label>
+            <input type="number" class="inputs" id="inp2" onkeypress="noAlph(event)">
+        </div>
+        <div class="inp">
+            <label for="input3" class="lab">operator :</label>
+            <select name="operator" id="op" class="op">
+                <option value=""></option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        </div>
+        <div class="banner">
+            <img src="./img/equalto.png" alt="" width="50px" height="50px" class="img" onclick="equal()">
+            <img src="./img/clear.png" alt="" width="50px" height="50px" class="img" onclick="clearOut()">
+        </div>
+        <h1 id="result"></h1>
+    </div>
+</body>
+</html>
