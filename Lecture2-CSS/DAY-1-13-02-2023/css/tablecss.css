@@ -1,0 +1,26 @@
+table,td,tr{
+    padding: 1rem;
+    border: solid;
+    border-collapse: collapse;
+}
+td:nth-child(odd){
+    background-color: rgb(149, 248, 147);
+}
+td:nth-child(even){
+    background-color: rgb(235, 161, 161);
+}
+table{
+    background-color: rgb(167, 246, 246);
+}
+ul{
+    list-style: url(../img/avatar.svg) ;
+    width: 200px;
+    height: 20px;
+}
+
+ul > li:nth-child(even){
+    background-color: rgb(149, 248, 147);
+}
+ul > li:nth-child(odd){
+    background-color: rgb(235, 161, 161);
+}

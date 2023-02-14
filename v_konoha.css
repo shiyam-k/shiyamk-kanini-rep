@@ -1,0 +1,481 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+}
+.side-bar{
+    width:8rem;
+    height: 100%;
+    background: rgb(117, 131, 117);
+    position: fixed;
+    justify-content:space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.menu{
+    margin-top: 3rem;
+    cursor: pointer;
+}
+.year{
+    color: #50C878;
+    font-weight: 400;
+}
+.menu-line{
+    width: 3rem;
+    height: .5rem;
+    margin-bottom: 0.6rem;
+    background-color: rgb(26, 26, 26);
+    border-radius: 0 30% 0 0;
+    
+}
+
+.line3, .line1{
+    width: 2rem;
+    transition: all .8s;
+}
+.menu:hover .line1{
+    width:3rem;
+}
+
+.menu:hover .line3{
+    width: 3rem;
+}
+
+.social-contact{
+    color: #333;
+}
+.social-media-contacts{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    justify-content: space-between;
+}
+.social-contact:hover{
+    color: #50C878;
+}
+.navigation{
+    /*margin-left: 8rem;*/
+    position:fixed;
+    width: 40rem;
+    left: -35rem;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(30,30,30,.8), rgba(30,30,30,.6)), url(../konoha/konoha_images/konoha_bg\(2\).jpg) center no-repeat;
+    background-size: cover;
+    justify-content:space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: left .8s cubic-bezier(1,0,0,1);
+}
+.nav-list{
+    list-style: none;
+    position: relative;
+}
+.navigation-list{
+    padding:0;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list-link{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .5s;
+}
+.nav-list-link::before{
+    content: "";
+    width: 0rem;
+    height: .3rem;
+    background-color: white;
+    position: absolute;
+    border-radius: 20%;
+    top: .8rem;
+    left: -4rem;
+    transition:all .5s cubic-bezier(1,0,0,1);
+}
+.nav-list-link::after{
+    content: "";
+    width: 0rem;
+    height: .3rem;
+    background-color: white;
+    position: absolute;
+    border-radius: 20%;
+    top: .8rem;
+    right: -4rem;
+    transition:all .5s cubic-bezier(1,0,0,1);
+}
+.nav-list-link:hover::after,
+.nav-list-link:hover::before{
+    width: 4rem;
+    background-color: #50C878;
+}
+.nav-list-link:hover{
+    color:#50C878;
+}
+.search-box{
+    width: 20rem;
+    height: 3rem;
+    padding:1rem 2rem;
+    background-color: rgb(32, 32, 32);
+    font-family: "josefune sans" sans-serif;
+    font-size: 1.6rem;
+    color: gray;
+    letter-spacing: .1rem;
+    border:.1rem solid rgb(139, 245, 139);
+    border-radius: 10rem;
+}
+.search-box:focus{
+    background: rgba(32,32,32, 0.8);
+}
+.search{
+    padding-top: 3rem;
+    position:relative;
+    outline:none;
+}
+.search-button{
+    border: none;
+    background-color: transparent;
+    color: #50C878;
+    font-size: 1.7rem;
+    position:absolute;
+    top:0.3rem;
+    right:.5rem;
+    padding-top: 3.1rem;
+
+}
+.search-button:focus{
+    outline:none;
+}
+.search-button:hover{
+    cursor:pointer;
+}
+.copyrights{
+    color: white;
+    font-size: 1rem;
+}
+.checkbox:checked ~ .navigation{
+    left: 8rem;   
+}
+.checkbox:checked ~ .side-bar .line1{
+    transform: rotate(-405deg) translate(-8px,7px);
+    width: 2.5rem;
+}
+.checkbox:checked ~ .side-bar .line2{
+    opacity:0;
+}
+.checkbox:checked ~ .side-bar .line3{
+    transform: rotate(405deg) translate(-8px,-7px);
+    width: 2.5rem;
+}
+.header{
+    margin-left: 8rem;
+    height:100%;
+    align-items: center;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0,0,0,0.6)), url(../konoha/konoha_images/konoha_bg\(1\).jpg);
+}
+
+.brand{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.heading{
+    padding: 5px;
+    font-size: 4rem; 
+    font-weight: 400;
+    color: #50C878;
+    font-family:"Josefine sans", sans-serif;
+    margin: 0;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+.banner{
+    color:#ddd;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.banner-head{
+    font-size: 3rem;
+    font-weight: 400;
+    animation: transi 2s;
+}
+.banner-p{
+    font-size: 2rem;
+    font-weight: 400;
+    padding:0;
+    margin:0;
+    animation: transi 1.5s .5s backwards;
+}
+.banner-button{
+    width: 15rem;
+    margin:1.2rem 3rem;
+    height: 3rem;
+    color:#333;
+    background-color: rgb(197, 142, 38);
+    border-radius: 20rem;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s;
+    animation: transi 1s 1s backwards;
+}
+.banner-button:hover{
+    background-color:goldenrod;
+}
+.banner-button:active{
+    transform: translateY(.1rem);
+}
+@keyframes transi {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+.meaning-of-life{
+    margin-left:8rem;
+    bottom: 1rem;
+    display:flex;
+    padding-top: 10rem;
+    background:linear-gradient(rgba(31,31,31,.8),rgba(31,31,31,.9));
+}
+.meaning-of-life-content{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+.meaning-of-life-images{
+    flex:1 1 
+}
+.meaning-of-life-heading{
+    font-size: 3rem;
+    font-family: "Josefine Sans" sans-serif;
+    font-weight: 600;
+    color: #50C878;
+    padding-bottom:0;
+}
+
+.small-line{
+    height:0.3rem;
+    width:6rem;
+    background-color: #ff6600;
+    margin-left:3rem;
+    margin-bottom: .3rem;
+}
+.big-line{
+    height:0.32rem;
+    width:10rem;
+    background-color: #ff6600;
+    margin-left:.8rem;
+}
+.sub-heading{
+    font-family: "Montserrat" sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.sub-heading ~ p{
+    letter-spacing: .1rem;
+    color: #ddd;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+#meaning-of-life-btn{
+    width: 100%;
+    margin:1.2rem 3rem;
+    height: 2.5rem;
+    color: rgb(233, 66, 44);
+    background-color: rgb(255, 183,0);
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+#meaning-of-life-btn:hover{
+    background-color: rgba(255, 183, 0,.5);
+}
+.meaning-of-life-images{
+    position: relative;
+}
+.image{
+    width:35rem;
+    height: 90%;
+    margin-top:2rem;
+    margin-left:10rem;
+    position: absolute;
+    border-radius: 10%;
+    opacity: .9;
+    cursor:pointer;
+
+}
+.image:active{
+    transform: translateY(.1rem);
+}
+.previous-hokage{
+    padding: 8rem;
+    padding-top: 0;
+    background:linear-gradient(to top,rgba(31,31,31,.8),rgba(31,31,31,.9));
+
+}
+.previous-hokage-content{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    box-sizing: border-box;
+
+}
+.previous-hokage-heading{
+    font-size: 3rem;
+    font-family: "Josefine Sans" sans-serif;
+    font-weight: 600;
+    color: #50C878;
+    padding-bottom:0;
+    
+}
+
+.hokage-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+.hokage-li{
+    margin: 2.5rem;
+    padding: 2.5rem;
+    background-color: #ffecf7;
+    border: .1rem;
+    border-color: black;
+    border-radius: 5%;
+}
+.hokage-li:hover{
+    background-color:#7ddb9c;
+}
+.hokage-img{
+    width: 20rem;
+    height: 30rem;
+}
+.hokage-name{
+    font-size: 2rem;
+    font-family: "Josefine Sans" sans-serif;
+    font-weight: 600;
+    color: #2343f2;
+    text-transform: uppercase;
+}
+.hokage-clan{
+    font-size: 1.5rem;
+    font-family: "Josefine Sans" sans-serif;
+    font-weight: 600;
+    color: #2343f2;
+    text-transform: uppercase;
+}
+.hokage-style{
+    font-family: "Josefine Sans" sans-serif;
+    font-weight: 400;
+    color: #2343f2;
+}
+.anbu{
+    margin-left:8rem;
+    bottom: 1rem;
+    display:flex;
+    flex-direction: row;
+    padding-top: 0rem;
+    background:linear-gradient(to top,rgba(31,31,31,.8),rgba(31,31,31,.9));
+}
+
+.anbu-content{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 50%;
+    justify-content: center;
+    align-items: center;
+}
+.anbu-img{
+    flex: 1,1;
+    width: 30rem;
+    height: 30rem;
+    transform: translate(60rem,-20rem);
+    border-radius: 10%;
+}
+.anbu-heading{
+    font-size: 3rem;
+    font-family: "Josefine Sans" sans-serif;
+    font-weight: 600;
+    color: #50C878;
+    padding-bottom:-2rem;
+}
+.head-line ~ p{
+    letter-spacing: .1rem;
+    color: black;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.anbu{
+    padding-bottom:0;
+}
+.police-force{
+    margin-left:8rem;
+    bottom: 1rem;
+    display:flex;
+    flex-direction: row-reverse;
+    padding-top: 0rem;
+    margin-top: 0;
+    background:linear-gradient(to top,rgba(31,31,31,.8),rgba(31,31,31,.9));
+}
+.police-force-content{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 50%;
+    justify-content:right;
+    align-items: center;
+    padding: 0;
+}
+.police-force-img{
+    flex: 1,1;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 10%;
+    transform: translate(-90rem,0rem);
+}
+.police-force-heading{
+    font-size: 3rem;
+    font-family: "Josefine Sans" sans-serif;
+    font-weight: 600;
+    color: #50C878;
+    padding-bottom:-2rem;
+}
+.head-line ~ p{
+    letter-spacing: .1rem;
+    color: #ddd;
+    font-size: 1.5rem;
+    font-style: italic;
+}

@@ -1,0 +1,25 @@
+body{
+
+}
+.position{
+    height: 200px;
+    width: 200px;
+}
+.position > p{
+    text-align: center;
+}
+.def{
+    left: 50px;
+}
+.static{
+    position: static;
+    left: 50px;
+}
+.relative{
+    position: relative;
+    left: 50px;
+}
+.fixed{
+    position: fixed;
+    left: 50px;
+}
