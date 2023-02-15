@@ -1,0 +1,48 @@
+.image1{
+    width: 60%;
+    height: 30rem;
+    background-color: rgb(149, 162, 162);
+    text-align: center;
+    border-radius: 2rem;
+    color: rgb(255, 0, 225);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.image{
+    width: 25rem;
+    height: 45rem;
+    background-color: rgb(131, 136, 136);
+    text-align: center;
+    border-radius: 2rem;
+    color: rgb(255, 8, 0);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+p{
+    color: darkgreen;
+    font-size: 1.3rem;
+}
+img{
+    width: 15rem
+}
+img:nth-of-type(1){
+    float:left;
+}
+figcaption:nth-of-type(2){
+    float:right;
+}
+div:nth-of-type(1){
+    float: left;
+    text-align: justify;
+}
+div:nth-of-type(2){
+    float: right;
+    text-align: justify;
+}
+body{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin:0;
+    padding: 0;
+}
