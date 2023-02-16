@@ -1,0 +1,28 @@
+img{
+    position: absolute;
+}
+.s{
+    width: 800px;
+    height: 800px;
+    z-index: -1;
+    transition: all 5s;
+}
+.s:hover{
+    opacity: .2;
+}
+.t{
+    transform: translate(150px,500px);
+    z-index: 1;
+    border-radius: 10px;
+}
+.tr{
+    width:600px;
+    height: 400px;
+    transition: all 2s;
+
+}
+.tr:hover{
+    transform: rotate(360deg);
+    width: 50px;
+    height: 50px;
+}
