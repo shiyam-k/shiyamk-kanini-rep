@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CSS Grid - line-based placement starting point</title>
+    
+    <style>
+        body {
+            width: 90%;
+            max-width: 900px;
+            margin: 2em auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        header {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(207, 232, 220);
+            border: 2px solid rgb(79, 185, 227);
+            grid-column: 1 / 13;
+            grid-row: 1;
+        }
+
+        footer {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(207, 232, 220);
+            border: 2px solid rgb(79, 185, 227);
+            grid-column: 1 / 13;
+            grid-row: 3;
+        }
+
+        aside {
+            border-right: 1px solid #999;
+            grid-column: 1 / 4;
+            grid-row: 2;
+        }
+
+        article {
+            grid-column: 4 / 13;
+            grid-row: 2;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>This is our Kanini blog</header>
+        <article id="a1">
+            <h1>Kanini article</h1>
+            <p class="about pa">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita magni quo accusantium libero aperiam
+                rerum cum, suscipit distinctio, quod tempore cupiditate commodi repellendus natus perspiciatis odio,
+                laboriosam nostrum. Excepturi, voluptas!
+            </p>
+
+            <p class="home pa">The direction CSS property sets the direction of text, table columns, and horizontal overflow. Use rtl for languages written from right to left (like Hebrew or Arabic), and ltr for those written from left to right (like English and most other languages).</p>
+        </article>
+        <aside>
+            <h2>Other news</h2>
+            <p><a href="#" id="l1">About</a></p>
+            <p><a href="#" id="l2">Home</a></p>
+        </aside>
+        <footer>Contact magazine@kanini.com</footer>
+    </div>
+
+</body>
+
+</html>
