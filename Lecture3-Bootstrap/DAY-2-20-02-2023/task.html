@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+		integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+		crossorigin="anonymous"></script>
+	<title>I S N Reviews</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<Style>
+		
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		header {
+			background: -webkit-linear-gradient(#0c0c0c, #646464);
+            color: white;
+			padding: 20px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1;
+			text-align: center;
+			font-family: 'Courier New', Courier, monospace;
+		}
+
+		header h1 {
+            color: #ffffff;
+            text-align: center;
+			margin: 0;
+		}
+        h1{
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .nav-link{
+            color: rgb(0, 255, 242);
+            font-size: 2rem;
+        }
+
+		nav ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		nav li {
+			display: inline-block;
+		}
+        nav li:hover{
+            background-color: rgb(27, 27, 27);
+            border-radius: 10px;
+        }
+        a:hover{
+            color: rgb(0, 255, 242);
+        }
+
+		
+		main {
+			margin-top: 80px;
+		}
+
+		section {
+			padding: 100px 0;
+			text-align: center;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		section:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		h2 {
+			margin: 0;
+		}
+
+		.parallax {
+			height: 400px;
+		}
+
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			
+		}
+
+		footer p {
+			margin: 0;
+		}
+
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		.col {
+			border-radius: 5px;
+		}
+
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 30px;
+			z-index: 9;
+
+
+		}
+        footer > p{
+            text-align: center;
+            justify-content: center;
+        }
+		.grid-container {
+			margin-left: 4rem;
+			margin-right: 3rem;
+			
+
+		}
+		/* .carousel-indicators{
+			z-index: auto;
+		} */
+		
+
+		/* .card-body{
+	background-color: #555;
+} */
+    .form-control{
+        width: 500px;
+    }
+
+
+		.col {
+			background-color: #fff;
+
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			text-align: center;
+		}
+
+		@media screen and (max-width: 700px) {
+			.grid {
+				grid-template-columns: 1fr;
+			}
+		}
+		
+	</Style>
+</head>
+
+<body>
+	<header class="border border-white">
+		<h1>I S N Showcase</h1>
+		<nav>
+			<ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#home">Italiano</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#rom">Romance</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+              
+		</nav>
+	</header>
+	<main>
+		<section class="review border border-primary" data-speed="2"  id="home"
+			style="background-image: url('./img/2209_w026_n002_2513b_p1_2513.jpg');">
+			<h1 style="color: #ffffff;text-align: center;">De Hollywood Italiano Filmora</h1><br>
+
+			<div class="grid-container">
+				<div class="grid">
+					<div class="col">
+                        <div id="c1" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="card d-block w-100" style="width: 15rem;">
+                                    <img src="./img/gf1.jpg" class="card-img-top" alt="..."  height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">The GodFather I</h5>
+                                      <p class="card-text">In 1945 New York City, Corleone crime family don Vito Corleone listens to requests during his daughter Connie's wedding to Carlo. Michael, Vito's youngest son and a former Marine, introduces his girlfriend, Kay Adams, to his family at the reception.</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card d-block w-100" style="width: 15rem;">
+                                    <img src="./img/gf2.jpg" class="card-img-top" alt="..." height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">The GodFather II</h5>
+                                      <p class="card-text">The compelling sequel to "The Godfather," contrasting the life of Corleone father and son. Traces the problems of Michael Corleone (Al Pacino) in 1958 and that of a young immigrant Vito Corleone (Robert De Niro) in 1917's Hell's Kitchen. Michael survives many misfortunes and Vito is introduced to a life of crime.</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card d-block w-100" style="width: 15rem;">
+                                    <img src="./img/gf3.jpg" class="card-img-top" alt="..." height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">The GodFather III</h5>
+                                      <p class="card-text">When realisation strikes Micheal Corleone, he takes a tough call and decides to end his family's criminal empire. He chooses his nephew as his successor, however, the mob refuses to let him go.</p>
+                                   </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#c1" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#c1" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div> 
+                    <div class="col">
+                        <div id="c2" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="card d-block w-100" style="width: 18rem;">
+                                    <img src="./img/rb.jpg" class="card-img-top" alt="..." height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Raging Bull</h5>
+                                      <p class="card-text">The story of a middleweight boxer as he rises through ranks to earn his first shot at the middleweight crown. He falls in love with a gorgeous girl from the Bronx. The inability to express his feelings enters into the ring and eventually takes over his life. He eventually is sent into a downward spiral that costs him everything.</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card d-block w-100" style="width: 18rem;">
+                                    <img src="./img/gf.jpg" class="card-img-top" alt="..." height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">The GoodFellas</h5>
+                                      <p class="card-text">Goodfellas (stylized GoodFellas) is a 1990 American biographical crime film directed by Martin Scorsese, written by Nicholas Pileggi and Scorsese, and produced by Irwin Winkler. It is a film adaptation of the 1985 nonfiction book Wiseguy by Pileggi. Starring Robert De Niro, Ray Liotta, Joe Pesci, Lorraine Bracco and Paul Sorvino.</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card d-block w-100" style="width: 18rem;">
+                                    <img src="./img/irishman.jpg" class="card-img-top" alt="..." height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">The Irishman</h5>
+                                      <p class="card-text">In the 1950s, truck driver Frank Sheeran gets involved with Russell Bufalino and his Pennsylvania crime family. As Sheeran climbs the ranks to become a top hit man, he also goes to work for Jimmy Hoffa -- a powerful Teamster tied to organized crime.</p>
+                                   </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#c2" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#c2" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div id="c3" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="card d-block w-100" style="width: 15rem;">
+                                    <img src="./img/hog.jpeg" class="card-img-top" alt="..."  height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">The Hand of God</h5>
+                                      <p class="card-text">In 1980s Naples, young Fabietto pursues his love for football as family tragedy strikes, shaping his uncertain but promising future as a filmmaker.</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card d-block w-100" style="width: 15rem;">
+                                    <img src="./img/aad.jpg" class="card-img-top" alt="..." height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Angel & Demon</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card d-block w-100" style="width: 15rem;">
+                                    <img src="./img/outiw.jpg" class="card-img-top" alt="..." height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Once Upon a Time in the West</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                   </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#c3" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#c3" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div> 
+                        
+				</div>
+                
+			</div>
+                
+
+
+		</section>
+		<section class=" border border-primary" style="background-image: url('./img/2209_w026_n002_2513b_p1_2513.jpg');" id="rom">
+			<h1>Rom Section</h1><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br>
+			<h1 style="color: #fff;"></h1>
+			<br>
+			<div class="grid-container">
+				<div class="grid">
+					<div class="col">
+                        <div id="c4" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="card d-block w-100" style="width: 15rem;">
+                                    <img src="./img/her.jpg" class="card-img-top" alt="..."  height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Her</h5>
+                                      <p class="card-text">In 1945 New York City, Corleone crime family don Vito Corleone listens to requests during his daughter Connie's wedding to Carlo. Michael, Vito's youngest son and a former Marine, introduces his girlfriend, Kay Adams, to his family at the reception.</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card d-block w-100" style="width: 15rem;">
+                                    <img src="./img/pxfuel.jpg" class="card-img-top" alt="..." height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">The Tourist</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card d-block w-100" style="width: 15rem;">
+                                    <img src="./img/gf3.jpg" class="card-img-top" alt="..." height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">The GodFather III</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                   </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#c4" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#c4" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div> 
+                    <div class="col">
+                        <div id="c5" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="card d-block w-100" style="width: 18rem;">
+                                    <img src="./img/rb.jpg" class="card-img-top" alt="..." height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">The GodFather I</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card d-block w-100" style="width: 18rem;">
+                                    <img src="./img/gf.jpg" class="card-img-top" alt="..." height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">The GodFather II</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card d-block w-100" style="width: 18rem;">
+                                    <img src="./img/irishman.jpg" class="card-img-top" alt="..." height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">The GodFather III</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                   </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#c5" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#c5" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div id="c6" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="card d-block w-100" style="width: 15rem;">
+                                    <img src="./img//fsog.jpg" class="card-img-top" alt="..."  height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">The Hand of God</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card d-block w-100" style="width: 15rem;">
+                                    <img src="./img/aad.jpg" class="card-img-top" alt="..." height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">The GodFather II</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card d-block w-100" style="width: 15rem;">
+                                    <img src="./img/outiw.jpg" class="card-img-top" alt="..." height="300px">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Once Upon a Time in the West</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                   </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#c6" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#c6" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+			</div>
+		</section>
+		
+	</main>
+	<footer class="border border-white" id="contact">
+		<p>&copy; 2023 Movie Showcase Website</p>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/parallax.js/1.5.0/parallax.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
