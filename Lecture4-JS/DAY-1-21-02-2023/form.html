@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.js"></script>
+    <title>Document</title>
+    <style>
+        table, td,tr,thead, tbody{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="3" style="text-align: center;">Personal Details</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="uName">User Name</label>
+                    </td>
+                    <td colspan="2">
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="E-mail">Email Address</label>
+                    </td>
+                    <td colspan="2">
+                        <input type="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pNumber">Phone Number</label>
+                    </td>
+                    <td colspan="2">
+                        <input type="tel">
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label for="address">Detailed Address</label>
+                    </td colspan="2">
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center;">Order Details</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Name of Item</label>
+                    </td>
+                    <td>
+                        <label for="">Cost</label>
+                    </td>
+                    <td>
+                        <label for="">Item Qty</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="./img/idli.jpg" style="border-radius: 10px;" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Idli Plate(2)</h5>
+                        </div>
+                    </td>
+                    <td >
+                        <label class="i1" for="">40</label>
+                    </td>
+                    <td>
+                        <input class="p1" type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="./img/dosa.jpg" style="border-radius: 10px;" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Dosa</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <label class="i2" for="">50</label>
+                    </td>
+                    <td>
+                        <input class="p2" type="number">
+    
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="./img/uttapam.jpg" style="border-radius: 10px;" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">uttapam</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <label class="i3" for="">80</label>
+                    </td>
+                    <td>
+                        <input class="p3" type="number">
+    
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="./img/curdrice.jpg" style="border-radius: 10px;" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Curd Rice</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <label class="i4" for="">30</label>
+                    </td>
+                    <td>
+                        <input class="p4" type="number">
+    
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td class="tot"></td>
+                </tr>
+            </thead>
+        </table>
+        
+    </form>
+    <button onclick="tot()">Show total Bill</button>
+    <input type="submit">
+    <script src="./js/task-1.js"></script>
+</body>
+</html>

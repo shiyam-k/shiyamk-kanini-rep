@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form action="">
+        Name: <input type="text" name="name" class="name" onload="validate()"><br/>  
+        Password: <input type="password" name="password" onload="validate()" class="pword"><br/>  
+        <input type="submit" value="register">  
+        </form> 
+        <script>  
+            function validate(){  
+            var name=document.querySelector('.name');  
+            var password=document.querySelector('.pword');  
+              
+            if (name==null || name==""){  
+              console.log("Name can't be blank");  
+              return false;  
+            }else if(password.length<6){  
+              console.log("Password must be at least 6 characters long.");  
+              return false;  
+              }  
+            }  
+            </script>  
+</body>
+</html>

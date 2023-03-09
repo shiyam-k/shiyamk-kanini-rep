@@ -1,0 +1,337 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.card{
+    /* Rectangle 11914 */
+    box-sizing: border-box;
+    position:relative;
+    width: 20%;
+    height: 230px;
+    /* LAYOUT_COLOR/LAYOUT-01 */
+    background: #FFFFFF;
+    /* INFO_COLOR/INFO-200 */
+    border: 1px solid #84CAFF;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+.card-cont{
+    
+}
+.card > h2{
+    /* Ass04_UXUI_001 */
+    position: relative;
+    
+    top: 4%;
+    /* Subheading/Semibold/18px */
+    font-family: 'Manrope',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100%;
+    line-height: 25px;
+    /* identical to box height */
+    /* TEXT_COLOR/TEXT-900 */
+    color: #0C1116;
+}
+.card > h4{
+    /* UI Designer */
+    position: absolute;
+    width: 50%;
+    height: 19px;
+    left: 5%;
+    top: 18%;
+    /* Semibold/14px */
+    font-family: 'Manrope',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    /* TEXT_COLOR/TEXT-400 */
+    color: #A8B0B9;
+}
+.badge{
+    /* Tags */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    position: relative;
+    width: 60%;
+    height: 20%;
+    top: 20%;
+    /* Badge */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.basic{
+    /* Badge */
+    /* Auto layout */
+    padding: 5px 8px;
+    gap: 10px;
+    /* LAYOUT_COLOR/LAYOUT-01 */
+    background: #FFFFFF;
+    position: relative;
+    /* TEXT_COLOR/TEXT-200 */
+    border: 1px solid #EAECEE;
+    border-radius: 16px;
+    /* Inside auto layout */
+    /* BADGE */
+    font-family: 'Manrope',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height, or 120% */
+    text-align: center;
+    /* TEXT_COLOR/TEXT-500 */
+    color: #717D8A;
+}
+.topic{
+    /* Badge */
+    /* Auto layout */
+    padding: 5px 8px;
+    gap: 10px;
+    
+    /* LAYOUT_COLOR/LAYOUT-01 */
+    background: #FFFFFF;
+    position: relative;
+    /* TEXT_COLOR/TEXT-200 */
+    border: 1px solid #EAECEE;
+    border-radius: 16px;
+    /* Inside auto layout */
+    
+    /* BADGE */
+    font-family: 'Manrope',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height, or 120% */
+    text-align: center;
+    /* TEXT_COLOR/TEXT-500 */
+    color: #717D8A;
+
+    /* Inside auto layout */
+}
+.data{
+    /* UCD Process,IA, UX Deliverables, Competition analysis, marketing research, marketing planning */
+    position: relative;
+    width: 100%;
+    height: 20%;
+    top:20%;
+    font-family: 'Manrope',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60%;
+    /* or 150% */
+    letter-spacing: 0.5px;
+    /* TEXT_COLOR/TEXT-600 */
+    color: #4F5B67;
+}
+
+.img-sec{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 15%;
+    left: 2%;
+    width: 70%;
+}
+.img-sec > img{
+    border: none;
+}
+.img1{
+    /* Img */
+    position: relative;
+    width: 15%;
+    height:100%;
+    z-index: 1;
+    border: 1px solid #FFFFFF;
+}
+.img2{
+    position: relative;
+    width: 20%;
+    height:100%;
+    z-index: 2;
+    right: 7%;
+    border: 1px solid #FFFFFF;
+}
+.img3{
+    position: relative;
+    width: 20%;
+    height:100%;
+    z-index: 3;
+    right: 14%;
+    border: 1px solid #FFFFFF;
+}
+.img4{
+    position: relative;
+    width: 20%;
+    height:100%;
+    z-index: 4;
+    right: 21%;
+    border: 1px solid #FFFFFF;
+}
+
+.bttn{
+    /* button */
+    box-sizing: border-box;
+    /* LAYOUT_COLOR/LAYOUT-01 */
+    background: #FFFFFF;
+    /* PRIMARY_BLUE/PRI-2-400 */
+    border: 1px solid #1CAAE2;
+    border-radius: 900px;
+    /* Assign to */
+    position: absolute;
+    width: 25%;
+    height: 10%;
+    left: 60%;
+    bottom:10%;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 19px;
+    /* identical to box height, or 173% */
+    text-align: left;
+    /* PRIMARY_BLUE/PRI-2-400 */
+    color: #1CAAE2;
+}
+
+/* DROPDOWN */
+.dbn{
+    background-color: none;
+}
+
+.drpdown:focus{
+    box-shadow: none;
+    border: 1px solid #D6DADE;
+    
+}
+
+.dropdown-item:hover {
+    width: auto;
+    background-color: #DFF3FB;
+    color: #000000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+  }
+
+  .dropdown-item{
+   width: 247px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 2px;
+   
+  }
+
+  .drpdown{
+    height: 45px; 
+    width: 250px;  
+    background-color:white; 
+    color: #717D8A; 
+    border-color: rgba(150, 150, 163, 0.726); 
+    opacity: 0.7; 
+    font-family: 'Manrope-Light',sans-serif;
+    font-size: small;
+    text-align: left;
+  }
+
+  .dropdown-menu{
+    font-size: smaller; 
+    color: #242533;
+    border: 1px solid white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    
+  }
+
+.assign-to-ico{
+    /* Vector */
+    position: absolute;
+    left: 75%;
+    right: 0%;
+    top: 30%;
+    /* PRIMARY_BLUE/PRI-2-400 */
+    background: #FFFFFF;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 5;
+}
+.side-nav{    
+    background: linear-gradient( #AFE0F4 5.55%, #E1EEC8 194.36%);
+    position: fixed;
+    width: 15%; 
+    height: 100%;
+    min-width: 150px;
+    
+}
+.k-logo{
+    /* image 1 */
+    width: 25%;
+    height: 25%;
+}
+.heads{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: 7%;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Manrope',sans-serif;
+}
+.heading> h4{
+    padding: 0;
+    margin: 0;
+    /* Kanini */
+    font-family: 'Manrope',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100%;
+    /* TEXT_COLOR/TEXT-900 */
+    color: #0C1116;
+}
+.heading > h5{
+    /* Assessment */
+    font-family: 'Manrope',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90%;
+    letter-spacing: 5%;
+    padding: 0;
+    margin: 0;
+    /* TEXT_COLOR/TEXT-700 */
+    color: #373F47;
+}
+.side-nav-cont{
+    /* Dashboard */
+    position: absolute;
+    left: 2%;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    /* TEXT_COLOR/TEXT-600 */
+color: #4F5B67;
+}

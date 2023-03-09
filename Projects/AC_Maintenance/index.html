@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>AC Maintenance Service</h1>
+    <form action="" autocomplete="off">
+        <table>
+            <tr>
+                <td class="label">
+                    <label for="">Customer Name</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter your name" id="customerName">
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label for="">Gender</label>
+                </td>
+                <td>
+                    <input type="radio" id="male" value="Male"><label for="">Male</label>
+                    <input type="radio" id="female" value="Female"><label for="">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label for="">Phone Number</label>
+                </td>
+                <td>
+                    <input type="tel" placeholder="Enter your mobilenumber" id="phoneNumber">
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label for="">Email ID</label>
+                </td>
+                <td>
+                    <input type="email" placeholder="Enter your email Id" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label for="">Address</label>
+                </td>
+                <td>
+                    <textarea id="address" cols="25" rows="5" placeholder="Enter your address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label for="acType">AC Type</label>
+                    
+                </td>
+                <td>
+                    <input list="acTypes" name="acTypes" id="acType">
+                    <datalist id="acTypes">
+                        <option value="Split" id="0" >
+                        <option value="Window" >
+                        <option value="Centralized" >
+                        <option value="Portable">
+                    </datalist>
+                    <!-- <select name="acType" id="acType">
+                        <option value="Split" id="acTypes">Split</option>
+                        <option value="Window" id="acTypes">Window</option>
+                        <option value="Centralized" id="acTypes">Centralized</option>
+                        <option value="Portable" id="acTypes">Portable</option>
+                      </select> -->
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label for="serviceType">Service Type</label>
+                </td>
+                <td>
+                    <select id="serviceType">
+                        <option value="Cleaning" >Cleaning</option>
+                        <option value="Repair" >Repair</option>
+                        <option value="Gas Refill" >Gas Refill</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label for="">Date</label>
+                </td>
+                <td>
+                    <input type="date" id="dateForAppointment">
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label for="">Yearly Maintenance</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="yearlyMaintenance"> <label for="">Select if required</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label for="">Duration</label>
+                </td>
+                <td>
+                    <input type="range" id="duration" title="0 to 6 months">
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+    <table>
+        <tr>
+            <td class="label">
+                
+            </td>
+            <td>
+                <input type="submit" id="submit" value="submit" onclick="bookAppointment()">
+                <input type="reset" value="clear" id="reset">
+            </td>
+        </tr>
+    </table>
+    <div id="result"></div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

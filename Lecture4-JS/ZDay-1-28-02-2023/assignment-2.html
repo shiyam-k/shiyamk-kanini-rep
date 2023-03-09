@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+    <style>
+        body {
+            background: linear-gradient(to right, rgb(2, 2, 58), rgb(45, 45, 163), rgb(114, 114, 230), rgb(52, 52, 150),rgb(1, 1, 69));
+        }
+        .container{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .f1 {
+            margin-left: 12%;
+            width: fit-content;
+            background-color: white;
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+        }
+
+        button {
+            margin-left: 45%;
+            margin-top: 10px;
+            height: 2.2rem;
+            width: 8rem;
+            border-radius: 10px;
+            opacity: .5;
+        }
+        button:hover{
+            opacity: .8;
+        }
+        table>tr>td {
+
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            border-radius: 2rem;
+            padding: 1rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h3>One-Stop Mobile Accessories</h3>
+    <form name="f1" class="f1" action="">
+        <table border="2 " style="color:#08088A">
+            <tr>
+                <th colspan="3">Personal Detail</th>
+
+            </tr>
+            <tr>
+                <td><b><label for="name">Name</label></b></td>
+                <td colspan="2"><input type="text" name="uname" size="31"></td>
+            </tr>
+            <tr>
+                <td><b><label for="name">E-mail address</label></b></td>
+                <td colspan="2"><input type="text" name="uemail" size="31"></td>
+            </tr>
+            <tr>
+                <td><b><label for="name">Phone Number</label></b></td>
+                <td colspan="2"><input type="text" name="phn" size="31"></td>
+            </tr>
+            <tr>
+                <td><b><label for="name">Delivery Address</label></b></td>
+                <td colspan="2"><textarea name="" id="" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <th colspan="3">Combo offer(Save upto Rs 400 on each combo!!</th>
+            </tr>
+            <tr>
+                <td><b><input type="checkbox" name="" id="sandisk">SanDisk 32GB micro SDHC Memory Card + iXCC Micro-USB
+                        cable
+                    </b></td>
+                <td><b>Rs 799/ -only</b></td>
+            </tr>
+            <tr>
+                <td><b><input type="checkbox" name="" id="sandisk-cruz">Sandisk Cruzer Blade 32 GB
+                        Pen Drive + Samsung Type B
+                        15W Travel Adaptor</b> </td>
+                <td><b>Rs 899/ -only</b></td>
+            </tr>
+            <tr>
+                <td><b><input type="checkbox" name="" id="sony">Sony WF-1000XM3 Head
+                        Phone + SanDisk 16GB micro
+                        SDHC Memory Card </b></td>
+                <td><b>Rs 1199/ -only</b></td>
+            </tr>
+            <tr>
+                <td><b><input type="checkbox" name="" id="mpow">"Mpow Car Phone Mount +
+                        Zebroni 1 Amp Turbo Car Mobile
+                        Charger</b> </td>
+                <td><b>Rs 299/ -only</b></td>
+            </tr>
+            <tr>
+                <td><b><input type="checkbox" name="" id="tribit">Tribit XSound Go Bluetooth
+                        Speaker + Mpow Car Phone
+                        Mount </b></td>
+                <td><b>Rs 999/ -only</b></td>
+            </tr>
+            <tr>
+                <td colspan="3"><b>* Enjoy 20% discount on Purchasing combos worth 2000 and above!!</b></td>
+            </tr>
+
+
+
+        </table>
+    </form>
+    </div>
+    <button onclick="placeOrder()">PLACE ORDER</button>
+    <h3 id="h1"></h3>
+    <script>
+        function placeOrder() {
+            let san = document.getElementById("sandisk");
+            console.log(san.value)
+            let sanc = document.getElementById("sandisk-cruz");
+            let sony = document.getElementById("sony");
+            let mpw = document.getElementById("mpow");
+            let trib = document.getElementById("tribit");
+
+            let price = 0;
+            let newP = 0;
+            if (san.checked == true) {
+                price = parseInt(price + 799);
+            }
+            if (sanc.checked == true) {
+                price = parseInt(price + 899);
+            }
+            if (sony.checked == true) {
+                price = parseInt(price + 1199);
+            }
+            if (mpw.checked == true) {
+                price = parseInt(price + 299);
+            }
+            if (trib.checked == true) {
+                price = parseInt(price + 999);
+            }
+
+            if (price == 0) {
+                document.getElementById("h1").innerHTML = "No selection has been made.";
+
+            }
+            else {
+                if (price > 2000) {
+                    newP = price - parseInt((20 * price) / 100);
+                    document.getElementById("h1").innerHTML = "Order has been placed successfully. You are requested to pay Rs." + newP + " on delivery.";
+
+                }
+                else {
+                    document.getElementById("h1").innerHTML = "Order has been placed successfully. You are requested to pay Rs." + price + " on delivery.";
+                }
+
+            }
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

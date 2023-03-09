@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+</head>
+<body>
+    <style>
+        .container{
+            width: 20%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(255, 145, 72);
+            padding: 10%;
+            margin-top: 10%;
+            border-radius: 40px;
+            font-size: 1.5rem;
+            color: white;
+            text-align: center;
+        }
+        .text-b{
+            width: 200px;
+            height: 50px;
+            background-color: rgb(207, 255, 251);
+            border-radius: 10px;
+            font-size: 1.5rem;
+        }
+        .btn{
+            width: 100px;
+            height: 35px;
+            margin-top: 10px;
+            border-radius: 10px;
+            opacity: .5;
+            border: none;
+            transition: all 2s;
+        }
+        .btn:hover{
+            opacity: .8;
+            
+        }
+        .btn:active{
+            transform: translateY(-2px);
+        }
+        .res{
+            width: 20%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    </style>
+    <div class="container">
+        <label for="" >Enter a number</label>
+        <input type="text" class="text-b">
+        <button class="btn" onclick="printer()">click</button>
+    </div>
+    <div class="res"></div>
+
+    <script src="./assignment.js"></script>
+</body>
+</html>

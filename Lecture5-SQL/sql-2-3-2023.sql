@@ -1,0 +1,1 @@
+select upper(left('kanini', 1)) + lower(right('kanini', len('kanini')-1))

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <title>Ungrateful Critic - Film Reviews</title>
+</head>
+<body>
+    <header class="head">
+       <img src="./img/icon.png" alt="">
+       <h1>Ungrateful Critic - Film Reviews</h1>
+    </header>
+        <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
+            <div class="container-fluid d-flex ccss">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+                <input class="sfcss" type="text" placeholder="Search" aria-label="Search" >
+                <button class="btn btn-outline-danger bt" onclick="search()" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Search</button>
+          </nav>
+      <div class="collapse bg-dark p-4" id="navbarToggleExternalContent">
+        <ul class="nav nav-tabs nav-fill">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#top5">Critic's top 5</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Critic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+      </div>
+      <article class="home" id="home" style="background-image: url('./img/2209_w026_n002_2513b_p1_2513.jpg');">
+        <h3 class="quote">With success always comes criticism, 
+          Not all those who wander are lost!</h3>
+        <button class="navbar-toggler btn btn-class" type="button" data-bs-toggle="collapse" data-bs-target="#genre" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            Explore genres
+        </button>
+        <div class="collapse  p-4" id="genre">
+            <ul class="nav nav-tabs nav-fill">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./thriller.html">Thriller</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./romance.html">Romance</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./sci-fi.html">Sci-Fi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./comic-manga.html">Comics & Manga</a>
+                </li>
+              </ul>
+          </div>
+      </article>
+      
+      <article class="ing-top-5 top-5" id="top5" style="background-image: url('./img/2209_w026_n002_2513b_p1_2513.jpg');">
+        <h2>Critic's Top 5</h2>
+        <div class="grid-container">
+            <div class="grid">
+              <div class="col-1">
+                 
+                </div>
+                  <div class="col">
+                    <div id="c1" class="carousel slide car" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="card d-block w-100" style="width: 10rem;">
+                              <h1>#1</h1>
+                                <img src="./img/gf1.jpg" class="card-img-top" alt="..."  height="300px">
+                                <div class="card-body">
+                                  <h5 class="card-title">The GodFather I</h5>
+                                  <p class="card-text">In 1945 New York City, Corleone crime family don Vito Corleone listens to requests during his daughter Connie's wedding to Carlo. Michael, Vito's youngest son and a former Marine, introduces his girlfriend, Kay Adams, to his family at the reception.</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card d-block w-100" style="width: 15rem;">
+                              <h1>#2</h1>
+                                <img src="./img/gf2.jpg" class="card-img-top" alt="..." height="300px">
+                                <div class="card-body">
+                                  <h5 class="card-title">The GodFather II</h5>
+                                  <p class="card-text">The compelling sequel to "The Godfather," contrasting the life of Corleone father and son. Traces the problems of Michael Corleone (Al Pacino) in 1958 and that of a young immigrant Vito Corleone (Robert De Niro) in 1917's Hell's Kitchen. Michael survives many misfortunes and Vito is introduced to a life of crime.</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card d-block w-100" style="width: 15rem;">
+                              <h1>#3</h1>
+                                <img src="./img/justiceleague.jpg" class="card-img-top" alt="..." height="300px">
+                                <div class="card-body">
+                                  <h5 class="card-title">Justice League</h5>
+                                  <p class="card-text">Thousands of years ago Apokoliptian warlord Darkseid and his Parademon attempt to conquer the Earth using three devices called Mother Boxes, but he is foiled by an alliance of the "Old Gods", Amazons, Atlanteans, humans, and a Green Lantern.</p>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="carousel-item">
+                          <div class="card d-block w-100" style="width: 15rem;">
+                            <h1>#4</h1>
+                              <img src="./img/matrix.jpg" class="card-img-top" alt="..." height="300px">
+                              <div class="card-body">
+                                <h5 class="card-title">The Matrix</h5>
+                                <p class="card-text">At an abandoned hotel, a police squad corners Trinity, who overpowers them with superhuman abilities. She flees, pursued by the police and a group of suited Agents capable of similar superhuman feats. She answers a ringing public telephone and vanishes..</p>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="carousel-item">
+                        <div class="card d-block w-100" style="width: 15rem;">
+                          <h1>#5</h1>
+                            <img src="./img/heyram.jpg" class="card-img-top" alt="..." height="300px">
+                            <div class="card-body">
+                              <h5 class="card-title">Hey Ram</h5>
+                              <p class="card-text">The movie begins in 1999, with Saket Ram, an 89-year-old Hindu man, on his death bed in Madras. He is being taken care of by his grandson (also named Saket Ram) who is a famous novelist who writes historical fiction, and their family doctor, Munawar. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#c1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#c1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                  </div>
+            </div>
+        </div>
+      </article>
+
+      <article class="about" id="about" style="background-image: url('./img/2209_w026_n002_2513b_p1_2513.jpg');">
+        <div class="inner-about">
+          <h2 class="about-head">About Ungrateful Critic®</h2>
+          <p class="p p1">
+            Ungrateful Critic and the critic score are the world’s most trusted recommendation resources for quality entertainment. As the leading online aggregator of movie and TV show reviews from critics, we provide fans with a comprehensive guide to what’s Fresh – and what’s Ungrateful – in theaters and at home. And the critic is just the beginning. We also serve movie and TV fans with original editorial content on our site and through social channels, produce fun and informative video series, and hold live events for fans across the country, with our ‘Your Opinion Sucks’. If you’re an entertainment fan looking for a recommendation, or to share an opinion, you’ve come to the right place.
+          </p>
+          <p class="p p2">
+            Back in the days of the open theaters, when a play was particularly atrocious, the audience expressed their dissatisfaction by not only booing and hissing at the stage, but also throwing whatever was at hand – vegetables and fruits included.
+
+            The critic score represents the percentage of professional critic reviews that are positive for a given film or television show. A critic score is calculated for a movie or TV show after it receives at least five reviews.
+          </p>
+          <div class="ribbon">
+            <div id="critic-review" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner rev-area">
+                <div class="carousel-item active">
+                  <p class="rev d-block w-100">critics is a honest review website</p>
+                </div>
+                <div class="carousel-item">
+                  <p class="rev d-block w-100">Critics score gives more clarity to the users</p>
+                </div>
+                <div class="carousel-item">
+                  <p class="rev d-block w-100">Ungrateful critics allow users to write comments and give ratings to movies</p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#critic-review" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#critic-review" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="input-group user-rev">
+            <span class="input-group-text">Add Review</span>
+            <textarea class="form-control rev-text" aria-label="With textarea"></textarea>
+            <button class="sub-rev" onclick="addRev()">Submit</button>
+          </div>
+          
+        </div>
+      </article>
+
+      <footer class="border border-white" id="contact">
+        <p>&copy; 2023 Movie Showcase Website</p>
+            <fieldset class="border border-primary">
+              <legend>feedback</legend>
+              
+            </fieldset>
+      </footer>
+      
+      <!-- <div>
+        <div class="movModal modal" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <h3 class="modal-head"></h3>
+          <div class="modal-body">
+            <img src="" alt="" class="poster">
+            <div class="director"></div>
+            <div class="cast"></div>
+            <div class="c-score"></div>
+            <div class="comments">
+              <div class="row">
+                  <div class="col-sm-5 col-md-6 col-12 pb-4 cmt-area">
+                  </div>
+              </div>
+            </div>
+            <div>
+              <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+                <div class="form-outline">
+                  <textarea class="form-control" id="comment-box" rows="1"></textarea>
+                  <label class="form-label" for="comment-box">What is your view?</label>
+                </div>
+                <div class="d-flex justify-content-around mt-3">
+                  <button type="button" class="btn btn-success" onclick="addComment()">
+                    Send <i class="fas fa-long-arrow-alt-right ms-1"></i>
+                  </button>
+              </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div>
+
+        <div class="modal fade modal-lg mdl " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog md">
+              <div class="modal-content mc">
+                <div class="modal-header mh">
+                  <h3 class="mt" id="staticBackdropLabel"></h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="clearOut()"></button>
+                </div>
+                <div class="modal-body mb">
+                  <img src="" alt="" class="poster">
+                  <div class="director"></div>
+                  <div class="cast"></div>
+                  <div class="c-score"></div>
+                  <div class="comments">
+                    <div class="row">
+                        <div class="col-sm-5 col-md-6 col-12 pb-4 cmt-area">
+                        </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                      <div class="form-outline">
+                        <textarea class="form-control" id="comment-box" rows="1"></textarea>
+                        <label class="form-label" for="comment-box">What is your view?</label>
+                      </div>
+                      <div class="d-flex justify-content-around mt-3">
+                        <button type="button" class="btn btn-success" onclick="addComment()">
+                          Send <i class="fas fa-long-arrow-alt-right ms-1"></i>
+                        </button>
+                    </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
