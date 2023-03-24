@@ -1,0 +1,8 @@
+E:\KANINI\Lecture6-DotNet(c#)\project_22-03-2023-cli\bin\Debug\project_22-03-2023-cli.exe.config
+E:\KANINI\Lecture6-DotNet(c#)\project_22-03-2023-cli\bin\Debug\project_22-03-2023-cli.exe
+E:\KANINI\Lecture6-DotNet(c#)\project_22-03-2023-cli\bin\Debug\project_22-03-2023-cli.pdb
+E:\KANINI\Lecture6-DotNet(c#)\project_22-03-2023-cli\obj\Debug\project_22-03-2023-cli.csproj.AssemblyReference.cache
+E:\KANINI\Lecture6-DotNet(c#)\project_22-03-2023-cli\obj\Debug\project_22-03-2023-cli.csproj.SuggestedBindingRedirects.cache
+E:\KANINI\Lecture6-DotNet(c#)\project_22-03-2023-cli\obj\Debug\project_22-03-2023-cli.csproj.CoreCompileInputs.cache
+E:\KANINI\Lecture6-DotNet(c#)\project_22-03-2023-cli\obj\Debug\project_22-03-2023-cli.exe
+E:\KANINI\Lecture6-DotNet(c#)\project_22-03-2023-cli\obj\Debug\project_22-03-2023-cli.pdb

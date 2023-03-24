@@ -1,0 +1,55 @@
+create database assessmentDB
+use assessmentDB
+
+create table Book(Bookid int not null, Book_name varchar(25), Author varchar(20), constraint pk_bookid primary key(Bookid))
+create table Usertab(Userid int not null, Name varchar(20), Bookid int not null, AccDate date, constraint pk_userid_bookid primary key(Userid, Bookid), 
+constraint fk_bookid_user foreign key(Bookid) references Book(Bookid))
+create table PublisherDet(Bookid int, PublisherName varchar(20), YearofP varchar(4), Price decimal(10,2))
+
+insert into Book values(10,'Book10', 'Author10'),(100,'prime', 'Silberschatz'),,(2,'Book2', 'Author2'),(3,'Book3', 'Author3'),(4,'Book4', 'Author4'),(5,'Book5', 'Author5'),(6,'Book6', 'Author6'),(7,'Book7', 'Author7')
+insert into Usertab values(20,'Mahi', 2,'11-07-2019'),(11,'Name1',1,'11-07-2020'),(12,'Name2',2 ,'11-07-2020'),(13,'Name3', 2,'11-07-2019'),(20,'Mahi', 2,'11-07-2019')
+(14,'Name4',3 ,'11-07-2021'),(15,'Name5', 4,'11-07-2020'),(11,'Name1', 7,'11-07-2020'),(13,'Name3',5 ,'11-08-2022'),
+(15,'Name5',2 ,'11-07-2021')
+insert into PublisherDet values(100,'pub7','2020',1400.00),(1,'pub1','2002',750.00),(2,'pub2','2002',700.00),(3,'pub3','2002',500.00),(4,'pub1','2002',1200.00),(5,'pub5','2002',450.00),(6,'pub6','2002',700.00)
+
+/*1*/
+select * from Usertab where name like 'm%'
+
+/*2*/
+select userid, count(Bookid) as no_of_books_accs from usertab group by(userid)
+
+/*3*/
+select publishername from PublisherDet where bookid in(select bookid from book where author = 'Silberschatz')
+
+/*4*/
+create proc p1
+as begin
+	select bookid from PublisherDet where price >= 500.00 and price <= 1000.00
+end
+
+exec p1
+
+/*5*/
+create proc p2
+as begin
+	select * from book where bookid = 10
+end
+
+exec p2
+
+/*6*/
+create function fun(@id int)
+returns varchar(20)
+as begin
+	declare @name varchar(20)
+	select @name = name from Usertab where userid = @id
+	return @name
+end
+
+select dbo.fun(11) as name
+
+select * from usertab
+
+select * from book
+
+select * from publisherdet

@@ -1,0 +1,216 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.card{
+    /* Rectangle 11914 */
+    box-sizing: border-box;
+    position:absolute;
+    width: 280px;
+    height: 210px;
+    /* LAYOUT_COLOR/LAYOUT-01 */
+    background: #FFFFFF;
+    /* INFO_COLOR/INFO-200 */
+    border: 1px solid #84CAFF;
+    border-radius: 10px;
+    top: 20%;   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1%;
+    padding-bottom: 0;
+    justify-content: space-between;
+}
+.card > h2{
+    /* Ass04_UXUI_001 */
+    /* Subheading/Semibold/18px */
+    font-family: 'Manrope',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100%;
+    line-height: 25px;
+    /* identical to box height */
+    /* TEXT_COLOR/TEXT-900 */
+    color: #0C1116;
+    width:100%;
+    padding: 0;
+}
+.card > h4{
+    /* UI Designer */
+    width: 50%;
+    height: 19px;
+    position: relative;
+    bottom: 6%;
+    /* Semibold/14px */
+    font-family: 'Manrope',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80%;
+    line-height: 19px;
+    /* TEXT_COLOR/TEXT-400 */
+    color: #A8B0B9;
+}
+.badge{
+    /* Tags */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 80%;
+    position: relative;
+    bottom: 7%;
+    /* Badge */
+    /* Auto layout */
+}
+.basic{
+    /* Badge */
+    /* Auto layout */
+    
+    /* LAYOUT_COLOR/LAYOUT-01 */
+    background: #FFFFFF;
+    width: 20%;
+    height: 100%;
+    /* TEXT_COLOR/TEXT-200 */
+    border: 1px solid #EAECEE;
+    border-radius: 16px;
+    /* Inside auto layout */
+    /* BADGE */
+    font-family: 'Manrope',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70%;
+    /* identical to box height, or 120% */
+    text-align: center;
+    /* TEXT_COLOR/TEXT-500 */
+    color: #717D8A;
+}
+.topic{
+    /* Badge */
+    /* Auto layout */
+    
+    /* LAYOUT_COLOR/LAYOUT-01 */
+    background: #FFFFFF;
+    width: 40%;
+    height: 100%;
+    /* TEXT_COLOR/TEXT-200 */
+    border: 1px solid #EAECEE;
+    border-radius: 16px;
+    /* Inside auto layout */
+    
+    /* BADGE */
+    font-family: 'Manrope',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70%;
+    position: relative;
+    left: 3%;
+    /* identical to box height, or 120% */
+    text-align: center;
+    /* TEXT_COLOR/TEXT-500 */
+    color: #717D8A;
+
+    /* Inside auto layout */
+}
+.data{
+    /* UCD Process,IA, UX Deliverables, Competition analysis, marketing research, marketing planning */
+    width: 90%;
+    height: 20%;
+    font-family: 'Manrope',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60%;
+    /* or 150% */
+    letter-spacing: 0.5px;
+    /* TEXT_COLOR/TEXT-600 */
+    color: #4F5B67;
+    position: relative;
+    bottom: 7%;
+}
+
+.img-sec{
+    display: flex;
+    flex-direction: row;
+    
+    width: 70%;
+    
+}
+.img-sec > img{
+    border: none;
+}
+.img1{
+    /* Img */
+    position: relative;
+    width: 20%;
+    height:90%;
+    z-index: 1;
+    border: 1px solid #FFFFFF;
+}
+.img2{
+    position: relative;
+    width: 20%;
+    height:90%;
+    z-index: 2;
+    right: 7%;
+    border: 1px solid #FFFFFF;
+}
+.img3{
+    position: relative;
+    width: 20%;
+    height:90%;
+    z-index: 3;
+    right: 14%;
+    border: 1px solid #FFFFFF;
+}
+.img4{
+    position: relative;
+    width: 20%;
+    height:90%;
+    z-index: 4;
+    right: 21%;
+    border: 1px solid #FFFFFF;
+}
+
+.bttn{
+    /* button */
+    box-sizing: border-box;
+    /* LAYOUT_COLOR/LAYOUT-01 */
+    background: #FFFFFF;
+    /* PRIMARY_BLUE/PRI-2-400 */
+    border: 1px solid #1CAAE2;
+    border-radius: 900px;
+    /* Assign to */
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 19px;
+    /* identical to box height, or 173% */
+    text-align: center;
+    /* PRIMARY_BLUE/PRI-2-400 */
+    color: #1CAAE2;
+    width: 40%;
+    height: 90%;
+}
+
+/* DROPDOWN */
+
+
+
+.assign-to-ico{
+    /* Vector */
+    
+    /* PRIMARY_BLUE/PRI-2-400 */
+    background: #FFFFFF;
+}
+
+
+
+.card-foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    bottom: 6%;
+}

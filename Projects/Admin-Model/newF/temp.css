@@ -3,28 +3,58 @@
     padding: 0;
     margin: 0;
 }
+
 .card{
     /* Rectangle 11914 */
     box-sizing: border-box;
     position:relative;
-    width: 20%;
-    height: 230px;
+    width: 280px;
+    height: 210px;
     /* LAYOUT_COLOR/LAYOUT-01 */
     background: #FFFFFF;
     /* INFO_COLOR/INFO-200 */
     border: 1px solid #84CAFF;
     border-radius: 10px;
-    margin-left: 2%;
-    margin-top: 3%;
+    top: 20%;   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5%;
+    padding-bottom: 2%;
+    justify-content: space-between;
 }
-.card-cont{
-    
+.container-card{
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    width: 80%;
+    height: 50%;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
 }
+.grid-head{
+    /* List of Assessments */
+
+    position: absolute;
+    top: 28%;
+    left: 14%;
+/* Subheading/Semibold/18px */
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 100%;
+line-height: 25px;
+/* identical to box height */
+
+/* TEXT_COLOR/TEXT-900 */
+color: #0C1116;
+
+
+}
+
 .card > h2{
     /* Ass04_UXUI_001 */
-    position: relative;
-    
-    top: 4%;
     /* Subheading/Semibold/18px */
     font-family: 'Manrope',sans-serif;
     font-style: normal;
@@ -34,19 +64,21 @@
     /* identical to box height */
     /* TEXT_COLOR/TEXT-900 */
     color: #0C1116;
+    width:100%;
+    padding: 0;
 }
+
 .card > h4{
     /* UI Designer */
-    position: absolute;
     width: 50%;
     height: 19px;
-    left: 5%;
-    top: 18%;
+    position: relative;
+    bottom: 3%;
     /* Semibold/14px */
     font-family: 'Manrope',sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 80%;
     line-height: 19px;
     /* TEXT_COLOR/TEXT-400 */
     color: #A8B0B9;
@@ -57,28 +89,20 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
+    width: 80%;
     position: relative;
-    width: 60%;
-    height: 20%;
-    top: 20%;
+    bottom: 5%;
     /* Badge */
     /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 }
 .basic{
     /* Badge */
     /* Auto layout */
-    padding: 5px 8px;
-    gap: 10px;
+    
     /* LAYOUT_COLOR/LAYOUT-01 */
     background: #FFFFFF;
-    position: relative;
+    width: 20%;
+    height: 50%;
     /* TEXT_COLOR/TEXT-200 */
     border: 1px solid #EAECEE;
     border-radius: 16px;
@@ -87,22 +111,21 @@
     font-family: 'Manrope',sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 70%;
     /* identical to box height, or 120% */
     text-align: center;
     /* TEXT_COLOR/TEXT-500 */
     color: #717D8A;
+    padding: 3%;
 }
 .topic{
     /* Badge */
     /* Auto layout */
-    padding: 5px 8px;
-    gap: 10px;
     
     /* LAYOUT_COLOR/LAYOUT-01 */
     background: #FFFFFF;
-    position: relative;
+    width: 40%;
+    height: 50%;
     /* TEXT_COLOR/TEXT-200 */
     border: 1px solid #EAECEE;
     border-radius: 16px;
@@ -112,21 +135,20 @@
     font-family: 'Manrope',sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 70%;
+    position: relative;
+    left: 3%;
     /* identical to box height, or 120% */
     text-align: center;
     /* TEXT_COLOR/TEXT-500 */
     color: #717D8A;
-
+    padding: 3%;
     /* Inside auto layout */
 }
 .data{
     /* UCD Process,IA, UX Deliverables, Competition analysis, marketing research, marketing planning */
-    position: relative;
-    width: 100%;
+    width: 90%;
     height: 20%;
-    top:20%;
     font-family: 'Manrope',sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -135,15 +157,16 @@
     letter-spacing: 0.5px;
     /* TEXT_COLOR/TEXT-600 */
     color: #4F5B67;
+    position: relative;
+    bottom: 9%;
 }
 
 .img-sec{
-    position: relative;
     display: flex;
     flex-direction: row;
-    top: 15%;
-    left: 2%;
+    
     width: 70%;
+    
 }
 .img-sec > img{
     border: none;
@@ -151,31 +174,31 @@
 .img1{
     /* Img */
     position: relative;
-    width: 15%;
-    height:100%;
+    width: 17%;
+    height:85%;
     z-index: 1;
     border: 1px solid #FFFFFF;
 }
 .img2{
     position: relative;
-    width: 20%;
-    height:100%;
+    width: 17%;
+    height:85%;
     z-index: 2;
     right: 7%;
     border: 1px solid #FFFFFF;
 }
 .img3{
     position: relative;
-    width: 20%;
-    height:100%;
+    width: 17%;
+    height:85%;
     z-index: 3;
     right: 14%;
     border: 1px solid #FFFFFF;
 }
 .img4{
     position: relative;
-    width: 20%;
-    height:100%;
+    width: 17%;
+    height:85%;
     z-index: 4;
     right: 21%;
     border: 1px solid #FFFFFF;
@@ -190,66 +213,136 @@
     border: 1px solid #1CAAE2;
     border-radius: 900px;
     /* Assign to */
-    position: absolute;
-    width: 25%;
-    height: 10%;
-    left: 60%;
-    bottom:10%;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
     font-size: 11px;
     line-height: 19px;
     /* identical to box height, or 173% */
-    text-align: left;
+    text-align: center;
     /* PRIMARY_BLUE/PRI-2-400 */
     color: #1CAAE2;
+    width: 35%;
+    height: 80%;
 }
 
 /* DROPDOWN */
+
 .dbn{
     background-color: none;
+    display: flex;
+    justify-content: space-between;
 }
-
+.dbn > svg{
+    position: relative;
+    top: 30%;
+}
 .drpdown:focus{
     box-shadow: none;
     border: 1px solid #D6DADE;
     
 }
-
-.dropdown-item:hover {
+.department-item:hover{
+    color: #0C1116;
+}
+.department-item:active {
     width: auto;
     background-color: #DFF3FB;
     color: #000000;
     border-radius: 5px;
-    padding: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin:5%;
+    padding:2%;
     border: none;
   }
 
-  .dropdown-item{
+  .department-item{
    width: 247px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: flex-start;
-   gap: 2px;
-   
+   margin: 5%;
+   text-decoration: none;
+   /* ↳Label */
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    /* TEXT_COLOR/TEXT-900 */
+    color: #0C1116;
+    /* Inside auto layout */
   }
+.topic-item{
+    width: 247px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 5%;
+    text-decoration: none;
+    justify-content: flex-start;
+    /* ↳Label */
+ 
+     font-family: 'Manrope';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     letter-spacing: 0.2px;
+ 
+     /* TEXT_COLOR/TEXT-900 */
+     color: #0C1116;
+}
+.topic-item > label{
+    position: relative;
+    margin-left: 5%;
+    /* ↳Label */
 
+    width: 518px;
+    height: 19px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+
+/* $dark-tone-100 */
+color: #242533;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.topic-item > input{
+    position: relative;
+    transform: translateY(3.2px);
+    /* Rectangle 751 */
+
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #626D8A;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.topic-item > input:checked{
+    background-color: black;
+}
   .drpdown{
-    height: 45px; 
+    height: 75%; 
     width: 250px;  
     background-color:white; 
-    color: #717D8A; 
+    color: #717D8A;
     border-color: rgba(150, 150, 163, 0.726); 
     opacity: 0.7; 
     font-family: 'Manrope-Light',sans-serif;
     font-size: small;
     text-align: left;
   }
-
+ 
   .dropdown-menu{
     font-size: smaller; 
     color: #242533;
@@ -257,22 +350,23 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     
   }
-
-.assign-to-ico{
-    /* Vector */
-    position: absolute;
-    left: 75%;
-    right: 0%;
-    top: 30%;
-    /* PRIMARY_BLUE/PRI-2-400 */
-    background: #FFFFFF;
-}
-
-.container{
+.btn-cont{
     display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 5;
+    grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 8.5%;
 }
+.card-foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    bottom: 8%;
+}
+
+
+
 .side-nav{    
     background: linear-gradient( #AFE0F4 5.55%, #E1EEC8 194.36%);
     position: fixed;
@@ -335,3 +429,95 @@
     /* TEXT_COLOR/TEXT-600 */
 color: #4F5B67;
 }
+
+
+#rows {
+    position: absolute;
+    /* margin-top: 550px;
+    margin-left: 300px; */
+    display: flex;
+    flex-direction: row;
+     top: 98%;
+    left: 15% ;
+     
+  }
+
+  /* ending */
+
+  #rows-per-page {
+    width: 95px;
+    height: 18px;
+
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    display: flex;
+    align-items: center;
+
+    /* TEXT_COLOR/TEXT-500 */
+
+    color: #717d8a;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  #rows-gotopage{
+    position: absolute;
+    display:flex;
+    flex-direction: row;
+    top: 98%;
+    left: 88% ;
+    
+     
+
+  }
+  #rows-gotopage p{
+    font-size: 11px;
+  }
+  #row-num {
+    /* width: 15px;
+height: 18px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px; */
+    /* line-height: 18px; */
+    width: 15px;
+    height: 18px;
+    padding-left: 10px;
+
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    display: flex;
+    align-items: center;
+
+    /* TEXT_COLOR/TEXT-800 */
+
+    color: #242d35;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    color: #242d35;
+  }
+  #carret-down {
+    padding-left: 9px;
+  }
+

@@ -1,0 +1,6 @@
+E:\KANINI\Lecture6-DotNet(c#)\Calculator\bin\Debug\Calculator.dll
+E:\KANINI\Lecture6-DotNet(c#)\Calculator\bin\Debug\Calculator.pdb
+E:\KANINI\Lecture6-DotNet(c#)\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+E:\KANINI\Lecture6-DotNet(c#)\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+E:\KANINI\Lecture6-DotNet(c#)\Calculator\obj\Debug\Calculator.dll
+E:\KANINI\Lecture6-DotNet(c#)\Calculator\obj\Debug\Calculator.pdb

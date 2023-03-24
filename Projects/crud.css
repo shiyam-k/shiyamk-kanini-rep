@@ -1,0 +1,24 @@
+.inner-cont{
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+}
+.inner-cont > label{
+    width: 25%;
+}
+.inner-cont > input{
+    width: 25%;
+}
+
+.container{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.container{
+    text-align: center;
+}
+.btn-cont{
+    margin: 2rem;
+}

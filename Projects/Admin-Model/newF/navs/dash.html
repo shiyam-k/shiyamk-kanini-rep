@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+    <title>Dashboard</title>
+    <style>
+        :root {
+            --height: 100vh;
+            --width: 100vw;
+        }
+
+        #j-offcanvas,
+        #e-offcanvas {
+            width: calc(var(--width) - 60.8vw);
+        }
+
+        #side-nav {
+            height: var(--height);
+            background-image: linear-gradient(179.54deg, #AFE0F4 5.55%, #E1EEC8 194.36%);
+            ;
+        }
+
+        #top-nav {
+            height: calc(var(--height) - 89.3vh);
+            background-image: linear-gradient(138.51deg, #F8FDFF 59.84%, #F6FAEF 116.14%);
+
+        }
+
+        #offcanvas {
+            height: calc(var(--height) - 69vh);
+        }
+
+        #explore {
+            height: 58.2%;
+        }
+
+        a.link {
+            color: black;
+        }
+
+        #j-assessment,
+        #e-assessment {
+            border-radius: 10px;
+            height: calc(var(--height) - 78vh);
+            width: calc(var(--width) - 65vw);
+        }
+
+        #j-button,
+        #e-button {
+            width: calc(var(--width) - 89vw);
+        }
+
+        #j-assessment {
+            background-image: linear-gradient(270deg, #E1EEC8 -9.65%, rgba(243, 249, 233, 0) 76.44%);
+            border: 1px solid #D6DADE;
+        }
+
+        #e-assessment {
+            background-image: linear-gradient(87.4deg, rgba(223, 243, 251, 0.1) 29.02%, #DFF3FB 101.47%);
+            border: 1px solid #D6DADE;
+        }
+
+        #link1,
+        #link2,
+        #link3,
+        #link4,
+        #link5,
+        #link6 {
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid flex-no">
+        <div class="row">
+            <div class="col-sm-12 col-md-2 bg-warning d-flex justify-content-center align-items-start" id="side-nav">
+                <ul class="nav nav-pills flex-column text-dark">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark" data-bs-toggle="pill">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link text-dark" data-bs-toggle="collapse">Questions</a>
+                        <div id="questions" class="collapse">
+                            <ul class="nav nav-pills flex-column border-start border-2 border-secondary">
+                                <li class="nav-item">
+                                    <a href="#" data-bs-toggle="pill" class="nav-link text-dark">Add Questions</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" data-bs-toggle="pill" class="nav-link text-dark">Question Bank</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark" data-bs-toggle="pill">Jobseeker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#employee" class="nav-link text-dark" data-bs-toggle="collapse">Employee</a>
+                        <div id="employee" class="collapse">
+                            <ul class="nav nav-pills flex-column border-start border-2 border-secondary">
+                                <li class="nav-item">
+                                    <a href="#" data-bs-toggle="pill" class="nav-link text-dark">Assessment Data</a>
+                                </li>
+                                <li class="nav-item">
+
+                                    
+                                    <a href="#" data-bs-toggle="pill" class="nav-link text-dark">Manage Employee</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark mb-5" data-bs-toggle="pill">Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark mt-5" href="#">logout</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="container tab-pane active" id="">
+
+                    </div>
+
+                    <div class="container tab-pane active" id="">
+
+                    </div>
+
+                    <div class="container tab-pane active" id="">
+
+                    </div>
+
+                    <div class="container tab-pane active" id="">
+
+                    </div>
+
+                    <div class="container tab-pane active" id="">
+
+                    </div>
+
+                    <div class="container tab-pane active" id="">
+
+                    </div>
+
+                    <div class="container tab-pane active" id="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-10" id="main-content">
+                <div class="row" id="top-nav">
+                    <div class="col-12 bg-info p-0 m-0">
+                        <nav class="navbar navbar-expand-sm bg-light sticky-top p-0 m-0 h-100">
+                            <div class="container-fluid">
+                                <div class="d-flex flex-column">
+                                    <h3 class="navbar-text p-0 m-0" id="main-text">Welcome Admin!</h3>
+                                    <p class="navbar-text p-0 m-0" id="sub-text">View complete details of all location
+                                        and its corresponding details.</p>
+                                </div>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsible-navbar">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse justify-content-end" id="collapsible-navbar">
+                                    <form class="d-flex">
+                                        <input class="form-control me-2" type="text" placeholder="Search here..."
+                                            size="35" style="border-radius: 8px;">
+                                    </form>
+                                    <svg class="ms-3" id="svg1" width="22" height="24" viewBox="0 0 22 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_183_6897)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11 1.02344C7.20343 1.02344 4.125 4.23852 4.125 8.20363V8.6287C4.125 10.4181 3.21326 12.0787 1.73157 12.9659L1.7312 12.9661C0.805515 13.5211 0 14.3182 0 15.3838C0 16.1939 0.472142 16.8513 1.07238 17.3454C1.68036 17.8458 2.5175 18.265 3.49064 18.6037C5.44412 19.2837 8.09906 19.6919 11 19.6919C13.9009 19.6919 16.5559 19.2837 18.5094 18.6037C19.4825 18.265 20.3196 17.8458 20.9276 17.3454C21.5279 16.8513 22 16.1939 22 15.3838C22 14.3182 21.1945 13.5211 20.2688 12.9661L20.2681 12.9656C18.7869 12.0801 17.875 10.4184 17.875 8.6287V8.20363C17.875 4.23852 14.7966 1.02344 11 1.02344ZM5.5 8.20363C5.5 5.03162 7.96282 2.45948 11 2.45948C14.0372 2.45948 16.5 5.03162 16.5 8.20363V8.6287C16.5 10.9256 17.6695 13.0663 19.5842 14.2115C20.4213 14.7134 20.625 15.1397 20.625 15.3838C20.625 15.5653 20.52 15.8525 20.0765 16.2175C19.6408 16.5761 18.9677 16.9305 18.0746 17.2414C16.2956 17.8606 13.7943 18.2559 11 18.2559C8.20569 18.2559 5.70438 17.8606 3.92542 17.2414C3.03235 16.9305 2.35922 16.5761 1.92348 16.2175C1.48001 15.8525 1.375 15.5653 1.375 15.3838C1.375 15.1397 1.57874 14.7134 2.4158 14.2115C4.33014 13.0651 5.5 10.9261 5.5 8.6287V8.20363ZM14.7815 21.4156C14.9335 21.0522 14.7748 20.6289 14.4269 20.4701C14.079 20.3112 13.6737 20.477 13.5216 20.8404C13.0963 21.8565 12.1264 22.564 11 22.564C9.87399 22.564 8.90483 21.8567 8.47808 20.8409C8.32552 20.4778 7.91998 20.3126 7.57228 20.4719C7.22458 20.6312 7.06639 21.0548 7.21895 21.4179C7.85645 22.9353 9.30729 24.0001 11 24.0001C12.6924 24.0001 14.1453 22.9355 14.7815 21.4156Z"
+                                                fill="#717D8A" />
+                                        </g>
+                                        <path
+                                            d="M19.9531 3.76961C19.9531 5.59605 18.5408 7.03922 16.8438 7.03922C15.1467 7.03922 13.7344 5.59605 13.7344 3.76961C13.7344 1.94316 15.1467 0.5 16.8438 0.5C18.5408 0.5 19.9531 1.94316 19.9531 3.76961Z"
+                                            fill="#BB251A" stroke="#FAFAFA" />
+                                        <defs>
+                                            <clipPath id="clip0_183_6897">
+                                                <rect width="22" height="22.9766" fill="white"
+                                                    transform="translate(0 1.02344)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <img src="images/favicon.png" class="ms-3" height="45px">
+                                    <h5 class="ps-1 align-self-end ms-2 me-3">HR Admin</h5>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row d-flex align-content-center" id="offcanvas">
+                    <div class="col-md-6 col-sm-12 d-flex justify-content-end">
+                        <div class="w-100 d-flex justify-content-end ms-4" id="j-assessment">
+                            <div class="offcanvas offcanvas-end p-3" id="j-offcanvas">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title">Create Jobseeker Assessment</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                                </div>
+
+                                <div class="offcanvas-body">
+                                    <form action="#">
+                                        <div class="pb-4">
+                                            <input type="email" class="form-control" id="jemail"
+                                                placeholder="Enter jobseeker email id" name="jemail">
+                                        </div>
+                                        <div>
+                                            <h6 class="form-label mb-3">Assessment Detail</h6>
+                                            <input type="text" class="form-control" id="assessment-detail"
+                                                placeholder="Add Assessment ID" name="assessment-detail">
+                                            <label class="form-label text-muted ms-3" for="assessment-detail"
+                                                style="font-size: 12px;">Please enter the title of employee assessment,
+                                                that helps you to manage</label>
+                                        </div>
+                                        <select class="form-select mb-3">
+                                            <!-- <option value = ""><input type = "text" class = "form-control" id = "add-dept" placeholder = "Enter new department" name = "add-dept"></option> -->
+                                            <option value="" disabled selected>Select Department</option>
+                                            <option value="Applications Developer">Applications Developer</option>
+                                            <option value="Data Architect">Data Architect</option>
+                                            <option value="Data Science">Data Science</option>
+                                        </select>
+                                        <div>
+                                            <label class="form-label text-secondary">Select Levels</label>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input" id="basic" value="basic"
+                                                    name="levels">
+
+                                                <label class="form-check-label me-5" for="basic">Basic</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input" id="intermediate"
+                                                    name="levels" value="intermediate">
+                                                <label class="form-check-label me-5"
+                                                    for="intermediate">Intermediate</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input" name="levels" id="advanced"
+                                                    value="advanced">
+                                                <label class="form-check-label">Advanced</label>
+                                            </div>
+                                        </div>
+                                        <select class="form-select mb-4">
+                                            <option value="" disabled selected>Select Topics</option>
+                                            <option value="Design Psychology">Design Psychology</option>
+                                            <option value="Research Methods">Research Methods</option>
+                                            <option value="Information Architecture">Information Architecture</option>
+                                            <option value="Interaction Design">Interaction Design</option>
+                                        </select>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div>
+                                                <input type="number" class="form-control" placeholder="No. Of Question"
+                                                    id="no-questions">
+                                                <label class="form-label text-muted ms-3" for="no-questions"
+                                                    style="font-size: 12px;">Time alloted for a question is
+                                                    <script>document.write(document.getElementById('no-questions').value);</script>
+                                                    sec
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input type="date" class="form-control" placeholder="Date of completion"
+                                                    id="date-completion">
+                                                <label class="form-label text-muted ms-3" for="no-questions"
+                                                    style="font-size: 12px;">Valid till 11:59PM on the selected
+                                                    dates</label>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="text" class="form-control" id="description" name="description"
+                                                placeholder="Add Descriptions">
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-end pt-4">
+                                            <button class="btn me-4" data-bs-dismiss="offcanvas">Cancel</button>
+                                            <button class="btn btn-outline-primary w-25">Send Mail</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class = "display-6">Setup Job Seeker Assessment</h6>
+                                <small class = "text-muted">Create assessments for Job Seekers/Freshers</small>
+                            </div>
+                            <div>
+                                <button type="button" id="j-button" class="btn btn-outline-success"
+                                    data-bs-toggle="offcanvas" data-bs-target="#j-offcanvas">Open seseme!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="w-100 d-flex justify-content-end me-4" id="e-assessment">
+                            <div class="offcanvas offcanvas-end" id="e-offcanvas">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title">Create Employee Assessment</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                                </div>
+
+                                <div class="offcanvas-body">
+                                    <form action="#">
+                                        <div class="pb-4">
+                                            <input type="email" class="form-control" id="jemail"
+                                                placeholder="Enter Assessment ID" name="jemail">
+                                            <label class="form-label text-muted ms-3" for="assessment-detail"
+                                                style="font-size: 12px;">Please enter the title of assessment, that
+                                                helps you to manage</label>
+                                        </div>
+                                        <select class="form-select mb-3">
+                                            <!-- <option value = ""><input type = "text" class = "form-control" id = "add-dept" placeholder = "Enter new department" name = "add-dept"></option> -->
+                                            <option value="" disabled selected>Select Department</option>
+                                            <option value="Applications Developer">Applications Developer</option>
+                                            <option value="Data Architect">Data Architect</option>
+                                            <option value="Data Science">Data Science</option>
+                                        </select>
+                                        <div>
+                                            <label class="form-label text-secondary">Select Levels</label>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input" id="basic" value="basic"
+                                                    name="levels">
+
+                                                <label class="form-check-label me-5" for="basic">Basic</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input" id="intermediate"
+                                                    name="levels" value="intermediate">
+                                                <label class="form-check-label me-5"
+                                                    for="intermediate">Intermediate</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input" name="levels" id="advanced"
+                                                    value="advanced">
+                                                <label class="form-check-label me-5">Advanced</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input" name="levels" id="Upskill"
+                                                    value="Upskill">
+                                                <label class="form-check-label">Upskill</label>
+                                            </div>
+                                        </div>
+                                        <div class="multiselect">
+                                            <div class="selectbox" onclick="showCheckboxes();">
+                                                <select class="form-select mb-3 mt-3">
+                                                    <option value="" disabled selected>Select the employee profile
+                                                    </option>
+                                                </select>
+                                                <div class="overselect"></div>
+                                            </div>
+                                            <!-- <div id = "checkboxes" class = "pt-0">
+                                            <div class = "form-check">
+                                                <input type = "checkbox" class = "form-check-input" id = "n1" value = "Chaitanya" name = "Chaitanya">
+                                                <label class = "form-check-label me-5" for = "n1">Chaitanya</label>
+                                            </div>
+                    
+                                            <div class = "form-check">
+                                                <input type = "checkbox" class = "form-check-input" id = "n2" value = "Mahaprabhu" name = "Mahaprabhu">
+                                                <label class = "form-check-label me-5" for = "n2">Mahaprabhu</label>
+                                            </div>
+                    
+                                            <div class = "form-check">
+                                                <input type = "checkbox" class = "form-check-input" id = "n3" value = "Tony Stark" name = "Tony Stark">
+                                                <label class = "form-check-label me-5" for = "n3">Tony Stark</label>
+                                            </div>
+                                        </div> -->
+                                        </div>
+                                        <select class="form-select mb-4">
+                                            <option value="" disabled selected>Select Topics</option>
+                                            <option value="Design Psychology">Design Psychology</option>
+                                            <option value="Research Methods">Research Methods</option>
+                                            <option value="Information Architecture">Information Architecture</option>
+                                            <option value="Interaction Design">Interaction Design</option>
+                                        </select>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div>
+                                                <input type="number" class="form-control" placeholder="No. Of Question"
+                                                    id="no-questions">
+                                                <label class="form-label text-muted ms-3" for="no-questions"
+                                                    style="font-size: 12px;">Time alloted for a question is
+                                                    <script>document.write(document.getElementById('no-questions').value);</script>
+                                                    sec
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input type="date" class="form-control" placeholder="Date of completion"
+                                                    id="date-completion">
+                                                <label class="form-label text-muted ms-3" for="no-questions"
+                                                    style="font-size: 12px;">Valid till 11:59PM on the selected
+                                                    dates</label>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="text" class="form-control" id="description" name="description"
+                                                placeholder="Add Descriptions">
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-end pt-4">
+                                            <button class="btn me-4" data-bs-dismiss="offcanvas">Cancel</button>
+                                            <button class="btn btn-outline-primary w-25">Send Mail</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class = "display-6">Setup Employee Assessment</h6>
+                                <small class = "text-muted">Create assessments for employees to upgrade their skills</small>
+                            </div>
+                            <div>
+                                <button id="e-button" type="button" class="btn btn-outline-primary align-content-end"
+                                    data-bs-toggle="offcanvas" data-bs-target="#e-offcanvas">Open seseme!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row" id="explore">
+                    <div class="col-12">
+                        <div class="row row-cols-3 ms-3 me-3 align-items-center h-100">
+                            <div class = "col">
+                            <div class="rounded-3 h-25 d-flex justify-content-center">
+                                <a href="#" style = "text-decoration: none;">
+                                    <div class="h-100 w-100" id="link1">
+                                        <div>
+                                            <h5>Add Questions</h5>
+                                            <small class = "text-muted">Last created on 27 June 2022 08:00AM</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            </div>
+                            <div class = "col">
+                            <div col="col rounded-3 h-25">
+                                <a href="#" style = "text-decoration: none;">
+                                    <div class="h-100 w-100" id="link2">
+                                        <div>
+                                            <h5>Question Bank</h5>
+                                            <small class = "text-muted">Last created on 27 June 2022 08:00AM</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            </div>
+                            <div class = "col">
+                            <div class="rounded-3 h-25" >
+                                <a href="#" style = "text-decoration: none;">
+                                    <div class="h-100 w-100" id="link3">
+                                        <div>
+                                            <h5>Jobseeker Assessments</h5>
+                                            <small class = "text-muted">Last created on 27 June 2022 08:00AM</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            </div>
+                            <div class = "col">
+                            <div class="rounded-3 h-25" >
+                                <a href="#" style = "text-decoration: none;">
+                                    <div class="h-100 w-100" id="link4">
+                                        <div>
+                                            <h5>Employee Assessments</h5>
+                                            <small class = "text-muted">Last created on 27 June 2022 08:00AM</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            </div>
+                            <div class = "col">
+                            <div class="rounded-3 h-25" >
+                                <a href="#" style = "text-decoration: none;">
+                                    <div class="h-100 w-100" id="link5">
+                                        <div>
+                                            <h5>Employee Management</h5>
+                                            <small class = "text-muted">Last created on 27 June 2022 08:00AM</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            </div>
+                            <div class = "col">
+                            <div class="rounded-3 h-25" >
+                                <a href="#" style = "text-decoration: none;">
+                                    <div class="h-100 w-100" id="link6">
+                                        <div>
+                                            <h5>Request Received</h5>
+                                            <small class = "text-muted">Last created on 27 June 2022 08:00AM</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

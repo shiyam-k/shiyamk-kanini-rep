@@ -1,0 +1,70 @@
+.modal-container {
+    position: fixed; 
+    z-index: 1; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(255, 255, 255);
+  }
+.modal{
+    /* Rectangle 11926 */
+    background-color: #FFFFFF;
+    margin: 5% auto; /* 15% from the top and centered */
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    width: 55%;
+    height: 70%;
+
+  }
+
+
+.bt{
+    z-index: 2;
+  }
+.top{
+    /* Top container */
+
+    position: absolute;
+    width: 100%;
+    height: 45%;
+
+    /* Linear Low */
+    background: linear-gradient(179.54deg, #AFE0F4 5.55%, #E1EEC8 194.36%);
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.head{
+  /* Assessment Result */
+
+  position: absolute;
+  width: 60%;
+  height: 27px;
+  margin: 3%;
+  left: 2%;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+
+  /* TEXT_COLOR/TEXT-800 */
+  color: #242D35;
+}
+.border{
+  /* Line 276 */
+  position: relative;
+  top: 30%;
+  height: 2.8px;
+  width: 100%;
+  background-color: #48B8E6;
+  border: none;
+}
+.close-ico{
+  position: relative;
+  height: 10%;
+  margin-right: 10%;
+}
