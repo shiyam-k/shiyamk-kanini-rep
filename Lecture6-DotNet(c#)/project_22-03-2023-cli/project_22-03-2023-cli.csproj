@@ -46,12 +46,28 @@
     <Compile Include="atm.cs" />
     <Compile Include="bank-account.cs" />
     <Compile Include="calculator.cs" />
+    <Compile Include="PartialAdd.cs" />
+    <Compile Include="PartialDiv.cs" />
+    <Compile Include="PartialProd.cs" />
+    <Compile Include="PartialSubtract.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test-06-04-2023.cs" />
+    <Compile Include="test-10-04-2023.cs" />
+    <Compile Include="Training-04-04-2023.cs" />
+    <Compile Include="Training-05-04-2023.cs" />
     <Compile Include="Training-23-03-2023.cs" />
+    <Compile Include="Training-24-03-2023.cs" />
+    <Compile Include="Training-27-03-2023.cs" />
+    <Compile Include="Training-28-03-2023.cs" />
+    <Compile Include="Training-29-03-202.cs" />
+    <Compile Include="Training-30-03-2023.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XMLFile1.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

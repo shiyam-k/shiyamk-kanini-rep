@@ -9,7 +9,6 @@ namespace project_22_03_2023_cli
 {
     internal class atm
     {
-        Program p = new Program();
         public atm(bank_account person)
         {
             Console.WriteLine("=====================================");
@@ -33,7 +32,7 @@ namespace project_22_03_2023_cli
                     int p1 = Int32.Parse(Console.ReadLine());
                     Console.WriteLine("Enter Recipient's passbook number: ");
                     int p2 = Int32.Parse(Console.ReadLine());
-                    bank_account p2_data = p.get_account_name(p2);
+                    bank_account p2_data = Program.get_account_name(p2);
                     if (p2_data.get_account_number() == p2)
                     {
                         Console.WriteLine("Enter Amount to deposit");
@@ -160,13 +159,9 @@ namespace project_22_03_2023_cli
                 }
             }
             while(flag);
-
         }
 
-        void main(String[] args)
-        {
-
-        }
+        
 
         
     }

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./css/navs.css"> -->
+    <link rel="stylesheet" href="./css/temp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"/>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-all">
+        <div class="side-nav">
+            <div class="side-nav-head">
+                <img src="./img/k-logo.png" alt="">
+                <h3>Kanini</h3>
+                <h5>Assessment</h5>
+            </div>
+            <ul class="side-nav-body">
+                <li class="side-nav-body-item ni nav-item">
+                    <a href="#" onclick="act(this)">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.89853 18C1.36983 18 0.921228 17.8158 0.552737 17.4473C0.184245 17.0788 0 16.6302 0 16.1015V1.92256C0 1.39386 0.184245 0.941255 0.552737 0.564753C0.921228 0.188251 1.36983 0 1.89853 0H16.0774C16.6061 0 17.0587 0.188251 17.4352 0.564753C17.8118 0.941255 18 1.39386 18 1.92256V16.1015C18 16.6302 17.8118 17.0788 17.4352 17.4473C17.0587 17.8158 16.6061 18 16.0774 18H1.89853ZM7.30574 16.1015V9.73298H1.89853V16.1015H7.30574ZM8.74766 16.1015H16.0774V9.73298H8.74766V16.1015ZM1.89853 8.29105H16.0774V1.92256H1.89853V8.29105Z" fill="#4F5B67"/>
+                            </svg>                        
+                        <p>Dashboard</p> 
+                    </a>   
+                </li>
+                <li class="side-nav-body-item">
+                </li>
+                <li class="side-nav-body-item drop-item ni">
+                    <a  data-bs-toggle="collapse" data-bs-target="#questions" onclick="act2(this)">
+                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.83491 7.98888H14.158C14.342 7.98888 14.5012 7.92973 14.6356 7.81142C14.77 7.69312 14.8373 7.5468 14.8373 7.37246C14.8373 7.21058 14.77 7.07048 14.6356 6.95218C14.5012 6.83388 14.342 6.77473 14.158 6.77473H6.83491C6.63679 6.77473 6.47406 6.83388 6.3467 6.95218C6.21934 7.07048 6.15566 7.2168 6.15566 7.39114C6.15566 7.55303 6.21934 7.69312 6.3467 7.81142C6.47406 7.92973 6.63679 7.98888 6.83491 7.98888ZM6.83491 9.76341H10.3797C10.5778 9.76341 10.7441 9.70426 10.8785 9.58595C11.013 9.46765 11.0802 9.32133 11.0802 9.14699C11.0802 8.9851 11.013 8.84501 10.8785 8.72671C10.7441 8.60841 10.5778 8.54925 10.3797 8.54925H6.83491C6.63679 8.54925 6.47406 8.60841 6.3467 8.72671C6.21934 8.84501 6.15566 8.99133 6.15566 9.16567C6.15566 9.32756 6.21934 9.46765 6.3467 9.58595C6.47406 9.70426 6.63679 9.76341 6.83491 9.76341ZM6.83491 6.21435H14.158C14.342 6.21435 14.5012 6.1552 14.6356 6.0369C14.77 5.91859 14.8373 5.77227 14.8373 5.59793C14.8373 5.42359 14.77 5.27727 14.6356 5.15897C14.5012 5.04067 14.342 4.98152 14.158 4.98152H6.83491C6.63679 4.98152 6.47406 5.04378 6.3467 5.16831C6.21934 5.29284 6.15566 5.44227 6.15566 5.61661C6.15566 5.7785 6.21934 5.91859 6.3467 6.0369C6.47406 6.1552 6.63679 6.21435 6.83491 6.21435ZM4.64858 14.0036C4.1816 14.0036 3.78184 13.8573 3.44929 13.5646C3.11675 13.272 2.95047 12.9202 2.95047 12.5093V2.23567C2.95047 1.83718 3.11675 1.49161 3.44929 1.19897C3.78184 0.90633 4.1816 0.76001 4.64858 0.76001H16.3231C16.7759 0.76001 17.1686 0.90633 17.5012 1.19897C17.8337 1.49161 18 1.83718 18 2.23567V12.5093C18 12.9202 17.8337 13.272 17.5012 13.5646C17.1686 13.8573 16.7759 14.0036 16.3231 14.0036H4.64858ZM4.64858 12.5093H16.3231V2.23567H4.64858V12.5093ZM1.67689 16.6C1.22406 16.6 0.831368 16.4537 0.498821 16.161C0.166274 15.8684 0 15.5228 0 15.1243V4.10359C0 3.8919 0.0813679 3.71444 0.244104 3.57124C0.40684 3.42803 0.608491 3.35642 0.849057 3.35642C1.08962 3.35642 1.28774 3.42803 1.4434 3.57124C1.59906 3.71444 1.67689 3.8919 1.67689 4.10359V15.1243H14.2005C14.441 15.1243 14.6427 15.196 14.8054 15.3392C14.9682 15.4824 15.0495 15.6598 15.0495 15.8715C15.0495 16.0832 14.9682 16.2576 14.8054 16.3945C14.6427 16.5315 14.441 16.6 14.2005 16.6H1.67689ZM4.64858 2.23567V12.5093V2.23567Z" fill="#4F5B67"/>
+                            </svg>
+                        <p>Questions</p>
+                        </a>
+                            <ul id="questions" class="collapse">
+                                <li class="nav-item-1 ni collapse-nav-item">
+                                    <a href="#" onclick="act2(this)">
+                                        <p>Add Questions</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item-2 ni collapse-nav-item">
+                                    <a href="#" onclick="act2(this)">
+                                        <p>Question Bank</p>
+                                    </a>
+                                </li>
+                            </ul>
+                </li>
+                    <li class="side-nav-body-item">
+                    </li>
+                    <li class="side-nav-body-item ni nav-item">
+                        <a href="#" onclick="act(this)">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.71532 17.4137C1.25211 17.4137 0.850422 17.2437 0.510253 16.9035C0.170084 16.5633 0 16.1544 0 15.6767V5.47165C0 5.00844 0.170084 4.60675 0.510253 4.26659C0.850422 3.92642 1.25211 3.75633 1.71532 3.75633H5.23281V1.73703C5.23281 1.25935 5.40289 0.850422 5.74306 0.510253C6.08323 0.170084 6.48492 0 6.94813 0H11.0302C11.4934 0 11.8951 0.170084 12.2352 0.510253C12.5754 0.850422 12.7455 1.25935 12.7455 1.73703V3.75633H16.263C16.7407 3.75633 17.1496 3.92642 17.4897 4.26659C17.8299 4.60675 18 5.00844 18 5.47165V15.6767C18 16.1544 17.8299 16.5633 17.4897 16.9035C17.1496 17.2437 16.7407 17.4137 16.263 17.4137H1.71532ZM1.71532 15.6767H16.263V5.47165H1.71532V15.6767ZM6.94813 3.75633H11.0302V1.73703H6.94813V3.75633ZM1.71532 15.6767V5.47165V15.6767Z" fill="#4F5B67"/>
+                                </svg>                        
+                            <p>Jobseeker</p> 
+                        </a>   
+                    </li>
+                    <li class="side-nav-body-item ni">
+                    </li>
+                    <li class="side-nav-body-item drop-item ni">
+                      <a href="#employee" onclick="act2(this)"  data-bs-toggle="collapse">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.0483 10.2702C14.2075 10.2702 14.3378 10.2195 14.4391 10.1182C14.5404 10.0169 14.5911 9.88661 14.5911 9.72738C14.5911 9.56815 14.5404 9.43788 14.4391 9.33655C14.3378 9.23522 14.2075 9.18456 14.0483 9.18456H11.4427C11.2835 9.18456 11.1532 9.23522 11.0519 9.33655C10.9505 9.43788 10.8999 9.56815 10.8999 9.72738C10.8999 9.88661 10.9505 10.0169 11.0519 10.1182C11.1532 10.2195 11.2835 10.2702 11.4427 10.2702H14.0483ZM14.0483 12.7238C14.2075 12.7238 14.3378 12.6731 14.4391 12.5718C14.5404 12.4704 14.5911 12.3402 14.5911 12.1809C14.5911 12.0217 14.5404 11.8914 14.4391 11.7901C14.3378 11.6888 14.2075 11.6381 14.0483 11.6381H11.4427C11.2835 11.6381 11.1532 11.6888 11.0519 11.7901C10.9505 11.8914 10.8999 12.0217 10.8999 12.1809C10.8999 12.3402 10.9505 12.4704 11.0519 12.5718C11.1532 12.6731 11.2835 12.7238 11.4427 12.7238H14.0483ZM11.573 4.34258H16.263C16.7407 4.34258 17.1496 4.51267 17.4897 4.85283C17.8299 5.193 18 5.60193 18 6.07961V16.2847C18 16.7479 17.8299 17.1496 17.4897 17.4897C17.1496 17.8299 16.7407 18 16.263 18H1.71532C1.25211 18 0.850422 17.8299 0.510253 17.4897C0.170084 17.1496 0 16.7479 0 16.2847V6.07961C0 5.60193 0.170084 5.193 0.510253 4.85283C0.850422 4.51267 1.25211 4.34258 1.71532 4.34258H6.44873V1.62847C6.44873 1.19421 6.60796 0.814234 6.92642 0.48854C7.24487 0.162847 7.62123 0 8.05549 0H9.94451C10.3788 0 10.7587 0.162847 11.0844 0.48854C11.4101 0.814234 11.573 1.19421 11.573 1.62847V4.34258ZM8.16405 5.64536H9.83595V1.73703H8.16405V5.64536ZM6.25332 11.6381C6.58625 11.6381 6.8649 11.5259 7.08926 11.3016C7.31363 11.0772 7.42581 10.7986 7.42581 10.4656C7.42581 10.1472 7.31363 9.87214 7.08926 9.64053C6.8649 9.40893 6.58625 9.29312 6.25332 9.29312C5.93486 9.29312 5.65983 9.40893 5.42823 9.64053C5.19662 9.87214 5.08082 10.1472 5.08082 10.4656C5.08082 10.7986 5.19662 11.0772 5.42823 11.3016C5.65983 11.5259 5.93486 11.6381 6.25332 11.6381ZM3.60434 14.1785H8.79373V13.8745C8.79373 13.614 8.72859 13.3824 8.59831 13.1797C8.46803 12.9771 8.30157 12.8396 8.09892 12.7672C7.63571 12.608 7.27382 12.503 7.01327 12.4524C6.75271 12.4017 6.4994 12.3764 6.25332 12.3764C5.97829 12.3764 5.68516 12.4089 5.37394 12.4741C5.06273 12.5392 4.7117 12.6369 4.32087 12.7672C4.10374 12.8396 3.93004 12.9771 3.79976 13.1797C3.66948 13.3824 3.60434 13.614 3.60434 13.8745V14.1785ZM6.44873 6.07961H1.71532V16.2847H16.263V6.07961H11.573C11.544 6.4994 11.3884 6.82147 11.1062 7.04584C10.8239 7.27021 10.4729 7.38239 10.0531 7.38239H7.92521C7.5199 7.38239 7.17612 7.27021 6.89385 7.04584C6.61158 6.82147 6.46321 6.4994 6.44873 6.07961Z" fill="#4F5B67"/>
+                            </svg>
+                        <p>Employee</p>
+                    </a>    
+                        <ul id="employee" class="collapse">
+                            <li class="nav-item-1 ni collapse-nav-item">
+                                <a href="#" onclick="act2(this)">
+                                    <p>Assessment Data</p>
+                                </a>
+                            </li>
+                            <li class="nav-item-2 ni collapse-nav-item nav-item" >
+                                <a href="#" onclick="act2(this)">
+                                    <p>Manage Employee</p>
+                                </a>
+                            </li>
+                        </ul>
+                </li>
+                <li class="side-nav-body-item">
+                    
+                </li>
+                <li class="side-nav-body-item ni">
+                    <a href="#" onclick="act(this)">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.29692 7.18769C6.24826 7.18769 5.38894 6.8527 4.71897 6.18272C4.04899 5.51274 3.714 4.65343 3.714 3.60477C3.714 2.54154 4.04899 1.67494 4.71897 1.00497C5.38894 0.334989 6.24826 0 7.29692 0C8.34558 0 9.20854 0.334989 9.8858 1.00497C10.5631 1.67494 10.9017 2.54154 10.9017 3.60477C10.9017 4.65343 10.5631 5.51274 9.8858 6.18272C9.20854 6.8527 8.34558 7.18769 7.29692 7.18769ZM0.852036 14.8123C0.619 14.8123 0.418736 14.7322 0.251241 14.572C0.0837471 14.4118 0 14.2079 0 13.9603V12.431C0 11.8338 0.156571 11.3095 0.469712 10.858C0.782853 10.4065 1.17974 10.0715 1.66038 9.85303C2.70904 9.38696 3.70308 9.04833 4.6425 8.83714C5.58193 8.62595 6.46673 8.52036 7.29692 8.52036H7.99603C7.89408 8.72426 7.79576 8.98643 7.70109 9.30685C7.60642 9.62728 7.54452 9.94042 7.51539 10.2463H7.31877C6.53227 10.2463 5.73486 10.33 4.92651 10.4975C4.11817 10.665 3.28434 10.9599 2.42502 11.3823C2.19199 11.4988 2.01721 11.6554 1.9007 11.852C1.78418 12.0487 1.72592 12.2562 1.72592 12.4747V13.0864H7.4717C7.54452 13.4214 7.66468 13.7418 7.83218 14.0477C7.99967 14.3535 8.17809 14.6084 8.36743 14.8123H0.852036ZM7.29692 5.43992C7.83582 5.43992 8.28004 5.26514 8.62959 4.91559C8.97915 4.56604 9.15392 4.1291 9.15392 3.60477C9.15392 3.05131 8.97915 2.60344 8.62959 2.26117C8.28004 1.9189 7.83582 1.74777 7.29692 1.74777C6.75803 1.74777 6.3138 1.9189 5.96425 2.26117C5.6147 2.60344 5.43992 3.04403 5.43992 3.58292C5.43992 4.12181 5.6147 4.56604 5.96425 4.91559C6.3138 5.26514 6.75803 5.43992 7.29692 5.43992ZM13.9821 12.7805C14.4482 12.7805 14.8414 12.613 15.1619 12.2781C15.4823 11.9431 15.6425 11.5425 15.6425 11.0765C15.6425 10.625 15.4786 10.2354 15.1509 9.90765C14.8232 9.57994 14.4336 9.41609 13.9821 9.41609C13.5161 9.41609 13.1192 9.57994 12.7915 9.90765C12.4638 10.2354 12.2999 10.6322 12.2999 11.0983C12.2999 11.5498 12.4638 11.9431 12.7915 12.2781C13.1192 12.613 13.5161 12.7805 13.9821 12.7805ZM13.0427 14.1351C12.8097 14.0768 12.5766 13.9821 12.3436 13.851C12.1106 13.72 11.9139 13.5743 11.7537 13.4141L10.8143 13.6107C10.7269 13.6544 10.6322 13.6544 10.5303 13.6107C10.4283 13.567 10.3555 13.5015 10.3118 13.4141L10.0278 12.8898C9.96955 12.8024 9.9477 12.7077 9.96227 12.6058C9.97683 12.5038 10.0205 12.4091 10.0933 12.3217L10.9017 11.5789C10.8726 11.477 10.858 11.3131 10.858 11.0874C10.858 10.8616 10.8726 10.7051 10.9017 10.6177L10.0933 9.85303C10.0205 9.7802 9.97683 9.69282 9.96227 9.59086C9.9477 9.48891 9.96955 9.39424 10.0278 9.30685L10.3118 8.76068C10.3555 8.67329 10.4283 8.61139 10.5303 8.57498C10.6322 8.53856 10.7269 8.53492 10.8143 8.56405L11.7537 8.78252C11.9139 8.62231 12.1106 8.47302 12.3436 8.33466C12.5766 8.19629 12.8097 8.09798 13.0427 8.03972L13.2175 6.94737C13.232 6.81629 13.2757 6.71797 13.3486 6.65243C13.4214 6.58689 13.5233 6.55412 13.6544 6.55412H14.3098C14.4263 6.55412 14.521 6.58689 14.5938 6.65243C14.6667 6.71797 14.7176 6.81629 14.7468 6.94737L14.9215 8.03972C15.14 8.09798 15.3694 8.19629 15.6097 8.33466C15.8501 8.47302 16.0503 8.62231 16.2105 8.78252L17.1281 8.5859C17.2301 8.5422 17.3284 8.53856 17.423 8.57498C17.5177 8.61139 17.5942 8.68057 17.6524 8.78252L17.9364 9.30685C17.9947 9.39424 18.0129 9.48527 17.9911 9.57994C17.9692 9.67461 17.9146 9.76564 17.8272 9.85303L17.0407 10.6177C17.0844 10.7196 17.1063 10.8798 17.1063 11.0983C17.1063 11.3168 17.0844 11.477 17.0407 11.5789L17.8491 12.3217C17.9219 12.4091 17.9692 12.5038 17.9911 12.6058C18.0129 12.7077 17.9947 12.8024 17.9364 12.8898L17.6306 13.4141C17.5869 13.5015 17.5177 13.567 17.423 13.6107C17.3284 13.6544 17.2301 13.6544 17.1281 13.6107L16.2105 13.4141C16.0503 13.5743 15.8501 13.72 15.6097 13.851C15.3694 13.9821 15.14 14.0768 14.9215 14.1351L14.7468 15.2493C14.7322 15.3658 14.6849 15.4568 14.6048 15.5223C14.5247 15.5879 14.4263 15.6207 14.3098 15.6207H13.6544C13.5233 15.6207 13.4214 15.5879 13.3486 15.5223C13.2757 15.4568 13.232 15.3658 13.2175 15.2493L13.0427 14.1351Z" fill="#4F5B67"/>
+                            </svg>
+                        <p>Settings</p>
+                    </a>    
+                </li>
+            </ul>
+            <div class="bg-logo">
+                <img src="./img/k-logo.png" alt="">
+            </div>
+            <div class="side-nav-footer">
+                <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.35714 17C8.25967 17 7.17294 16.7931 6.159 16.391C5.14507 15.989 4.22378 15.3997 3.44775 14.6569C2.67172 13.914 2.05614 13.0321 1.63615 12.0615C1.21616 11.0909 1 10.0506 1 9C1 7.94943 1.21616 6.90914 1.63615 5.93853C2.05614 4.96793 2.67172 4.08601 3.44775 3.34315C4.22378 2.60028 5.14507 2.011 6.159 1.60896C7.17294 1.20693 8.25967 1 9.35714 1M14 9L10.2857 5.44444L14 9ZM14 9L10.2857 12.5556L14 9ZM14 9H4.71429H14Z" stroke="#4F5B67" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p>Logout</p>
+            </div>
+        </div>
+        <div class="top-nav">
+            <h1>Welcome, Admin!</h1> 
+            <span>View complete details of all location and its corresponding details.</span>
+            <input type="search" placeholder="&#xF002;  Search here...." style="font-family:Arial, FontAwesome"
+            > 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+              </svg>
+            <img src="./img/profile-icon.png" alt="" class="profile-img">
+            <p class="profile-name">HR Admin</p>
+        </div>
+        <div class="container-com">
+            <div class="btn-cont">
+              <div class="dropdown ms-auto dropdown-1">
+                  <button type="button" class="btn drpdown dbn" data-bs-toggle="dropdown" >
+                      <p>Select Department </p>
+                      <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.908057 1.03501C1.05808 0.885034 1.26153 0.800781 1.47366 0.800781C1.68579 0.800781 1.88924 0.885034 2.03926 1.03501L5.99926 4.99501L9.95926 1.03501C10.1101 0.889284 10.3122 0.808648 10.522 0.810471C10.7317 0.812294 10.9324 0.896429 11.0807 1.04476C11.229 1.19308 11.3132 1.39373 11.315 1.60349C11.3168 1.81325 11.2362 2.01533 11.0905 2.16621L6.56486 6.69181C6.41483 6.84179 6.21139 6.92604 5.99926 6.92604C5.78713 6.92604 5.58368 6.84179 5.43366 6.69181L0.908057 2.16621C0.75808 2.01619 0.673828 1.81274 0.673828 1.60061C0.673828 1.38848 0.75808 1.18503 0.908057 1.03501Z" fill="#242D35"/>
+                          </svg>
+                                              
+                  </button>
+                  <ul class="dropdown-menu" >
+                    <li class="dropdown-item-top">
+        
+                    </li>
+                    <li><a class="department-item" href="#">Application Architect Azure</a></li>
+                    <li><a class="department-item" href="#">Application Developer</a></li>
+                    <li><a class="department-item" href="#">Data Architect</a></li>
+                    <li><a class="department-item" href="#">Data Visualization Developer</a></li>
+                    <li><a class="department-item" href="#">Data Science</a></li>
+                    <li><a class="department-item" href="#">DevOps Engineer</a></li>
+                    <li><a class="department-item" href="#">Dotnet Developer</a></li>
+                    <li><a class="department-item" href="#">ETL Developer</a></li>
+                    <li><a class="department-item" href="#">Frontend Developer</a></li>
+                    <li><a class="department-item" href="#">Human Resources</a></li>
+                    <li><a class="department-item" href="#">IT Technical Recruiter</a></li>
+                    <li><a class="department-item" href="#">Project Manager</a></li>
+                    <li><a class="department-item" href="#">QA Engineer</a></li>
+                    <li><a class="department-item" href="#">Software Developer</a></li>
+                    <li><a class="department-item" href="#">Application Architect .Net</a></li>
+                  </ul>
+                  <div class="col">
+                      <div class="dropdown ms-auto">     
+                          
+                      </div>
+                  </div>
+                </div>
+                  
+                <div class="dropdown ms-auto dropdown-3">
+                      <button type="button" class="btn drpdown dbn" data-bs-toggle="dropdown" >
+                          <p>Select Topics </p>
+                          <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.908057 1.03501C1.05808 0.885034 1.26153 0.800781 1.47366 0.800781C1.68579 0.800781 1.88924 0.885034 2.03926 1.03501L5.99926 4.99501L9.95926 1.03501C10.1101 0.889284 10.3122 0.808648 10.522 0.810471C10.7317 0.812294 10.9324 0.896429 11.0807 1.04476C11.229 1.19308 11.3132 1.39373 11.315 1.60349C11.3168 1.81325 11.2362 2.01533 11.0905 2.16621L6.56486 6.69181C6.41483 6.84179 6.21139 6.92604 5.99926 6.92604C5.78713 6.92604 5.58368 6.84179 5.43366 6.69181L0.908057 2.16621C0.75808 2.01619 0.673828 1.81274 0.673828 1.60061C0.673828 1.38848 0.75808 1.18503 0.908057 1.03501Z" fill="#242D35"/>
+                              </svg>
+                          </button>
+                      <ul class="dropdown-menu" >
+                        <li class="topic-item">
+                          <input type="checkbox">
+                          <label for="">Design Psychology</label>
+                        </li>
+                        <li class="topic-item">
+                          <input type="checkbox">
+                          <label for="">REsearch Methods</label>
+                        </li>
+                        <li class="topic-item">
+                          <input type="checkbox">
+                          <label for="">Information Architecture</label>
+                        </li>
+                        <li class="topic-item">
+                          <input type="checkbox">
+                          <label for="">Wireframing/Prototyping</label>
+                        </li>
+                        <li class="topic-item">
+                          <input type="checkbox">
+                          <label for="">Interaction Design</label>
+                        </li>
+                        <li class="topic-item">
+                          <input type="checkbox">
+                          <label for="">Basic UI  Development</label>
+                        </li>
+                        <li class="topic-item">
+                          <input type="checkbox">
+                          <label for="">A/B Testing</label>
+                        </li>
+                        <li class="topic-item">
+                          <input type="checkbox">
+                          <label for="">Accountability Buddies</label>
+                        </li>
+                        <li class="topic-item">
+                          <input type="checkbox">
+                          <label for="">Agile Development</label>
+                        </li>
+                        
+                      </ul>
+                      <div class="col">
+                          <div class="dropdown ms-auto">     
+                              
+                        </div>
+                  </div>
+                      
+                      </div><div class="dropdown ms-auto dropdown-3">
+                          <button type="button" class="btn drpdown dbn" data-bs-toggle="dropdown" >
+                              <p>Select Level</p>
+                              <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0.908057 1.03501C1.05808 0.885034 1.26153 0.800781 1.47366 0.800781C1.68579 0.800781 1.88924 0.885034 2.03926 1.03501L5.99926 4.99501L9.95926 1.03501C10.1101 0.889284 10.3122 0.808648 10.522 0.810471C10.7317 0.812294 10.9324 0.896429 11.0807 1.04476C11.229 1.19308 11.3132 1.39373 11.315 1.60349C11.3168 1.81325 11.2362 2.01533 11.0905 2.16621L6.56486 6.69181C6.41483 6.84179 6.21139 6.92604 5.99926 6.92604C5.78713 6.92604 5.58368 6.84179 5.43366 6.69181L0.908057 2.16621C0.75808 2.01619 0.673828 1.81274 0.673828 1.60061C0.673828 1.38848 0.75808 1.18503 0.908057 1.03501Z" fill="#242D35"/>
+                                  </svg>
+                             </button>
+                          <ul class="dropdown-menu" >
+                            <li><a class="dropdown-item" href="#">Application Architect Azure</a></li>
+                            <li><a class="dropdown-item" href="#">Application Developer</a></li>
+                            <li><a class="dropdown-item" href="#">Data Architect</a></li>
+                            <li><a class="dropdown-item" href="#">Data Visualization Developer</a></li>
+                            <li><a class="dropdown-item" href="#">Data Science</a></li>
+                            <li><a class="dropdown-item" href="#">DevOps Engineer</a></li>
+                            <li><a class="dropdown-item" href="#">Dotnet Developer</a></li>
+                            <li><a class="dropdown-item" href="#">ETL Developer</a></li>
+                            <li><a class="dropdown-item" href="#">Frontend Developer</a></li>
+                            <li><a class="dropdown-item" href="#">Human Resources</a></li>
+                            <li><a class="dropdown-item" href="#">IT Technical Recruiter</a></li>
+                            <li><a class="dropdown-item" href="#">Project Manager</a></li>
+                            <li><a class="dropdown-item" href="#">QA Engineer</a></li>
+                            <li><a class="dropdown-item" href="#">Software Developer</a></li>
+                            <li><a class="dropdown-item" href="#">Application Architect .Net</a></li>
+                          </ul>
+                          <div class="col">
+                              <div class="dropdown ms-auto">     
+                                  
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+              <h3 class="grid-head">List of Assessments</h3>
+              <div class="container-card">
+                  <div class="card card-flex">
+                      <h2>Ass04_UXUI_002</h2>
+                      <h4>UI Designer</h4>
+                      <div class="badge">
+                          <p class="basic">Basic</p>
+                          <p class="topic">Topic 02 & 03</p>
+                      </div>
+                      <p class="data">UCD Process,IA, UX Deliverables, Competition analysis, marketing research, marketing planning</p>
+                      <div class="card-foot">
+                          <div class="img-sec">
+                              <img src="./img-1.png" alt="" class="img1">
+                              <img src="./img-2.png" alt="" class="img2">
+                              <img src="./img-3.png" alt="" class="img3">
+                              <img src="./img-4.png" alt="" class="img4">
+                          </div>
+                          <button class="bttn">Assign To 
+                              <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="assign-to-ico">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.50063C0 4.36802 0.0526784 4.24085 0.146447 4.14708C0.240215 4.05331 0.367392 4.00063 0.5 4.00063H12.293L9.146 0.854632C9.05211 0.760745 8.99937 0.633407 8.99937 0.500632C8.99937 0.367856 9.05211 0.240518 9.146 0.146631C9.23989 0.0527448 9.36722 3.1283e-09 9.5 0C9.63278 -3.1283e-09 9.76011 0.0527449 9.854 0.146631L13.854 4.14663C13.9006 4.19308 13.9375 4.24825 13.9627 4.309C13.9879 4.36974 14.0009 4.43486 14.0009 4.50063C14.0009 4.5664 13.9879 4.63152 13.9627 4.69226C13.9375 4.75301 13.9006 4.80819 13.854 4.85463L9.854 8.85463C9.76011 8.94852 9.63278 9.00126 9.5 9.00126C9.36722 9.00126 9.23989 8.94852 9.146 8.85463C9.05211 8.76075 8.99937 8.63341 8.99937 8.50063C8.99937 8.36786 9.05211 8.24052 9.146 8.14663L12.293 5.00063H0.5C0.367392 5.00063 0.240215 4.94795 0.146447 4.85419C0.0526784 4.76042 0 4.63324 0 4.50063Z" fill="#1CAAE2"/>
+                              </svg>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="card card-flex">
+                      <h2>Ass04_UXUI_002</h2>
+                      <h4>UI Designer</h4>
+                      <div class="badge">
+                          <p class="basic">Basic</p>
+                          <p class="topic">Topic 02 & 03</p>
+                      </div>
+                      <p class="data">UCD Process,IA, UX Deliverables, Competition analysis, marketing research, marketing planning</p>
+                      <div class="card-foot">
+                          <div class="img-sec">
+                              <img src="./img-1.png" alt="" class="img1">
+                              <img src="./img-2.png" alt="" class="img2">
+                              <img src="./img-3.png" alt="" class="img3">
+                              <img src="./img-4.png" alt="" class="img4">
+                          </div>
+                          <button class="bttn">Assign To 
+                              <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="assign-to-ico">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.50063C0 4.36802 0.0526784 4.24085 0.146447 4.14708C0.240215 4.05331 0.367392 4.00063 0.5 4.00063H12.293L9.146 0.854632C9.05211 0.760745 8.99937 0.633407 8.99937 0.500632C8.99937 0.367856 9.05211 0.240518 9.146 0.146631C9.23989 0.0527448 9.36722 3.1283e-09 9.5 0C9.63278 -3.1283e-09 9.76011 0.0527449 9.854 0.146631L13.854 4.14663C13.9006 4.19308 13.9375 4.24825 13.9627 4.309C13.9879 4.36974 14.0009 4.43486 14.0009 4.50063C14.0009 4.5664 13.9879 4.63152 13.9627 4.69226C13.9375 4.75301 13.9006 4.80819 13.854 4.85463L9.854 8.85463C9.76011 8.94852 9.63278 9.00126 9.5 9.00126C9.36722 9.00126 9.23989 8.94852 9.146 8.85463C9.05211 8.76075 8.99937 8.63341 8.99937 8.50063C8.99937 8.36786 9.05211 8.24052 9.146 8.14663L12.293 5.00063H0.5C0.367392 5.00063 0.240215 4.94795 0.146447 4.85419C0.0526784 4.76042 0 4.63324 0 4.50063Z" fill="#1CAAE2"/>
+                              </svg>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="card card-flex">
+                      <h2>Ass04_UXUI_002</h2>
+                      <h4>UI Designer</h4>
+                      <div class="badge">
+                          <p class="basic">Basic</p>
+                          <p class="topic">Topic 02 & 03</p>
+                      </div>
+                      <p class="data">UCD Process,IA, UX Deliverables, Competition analysis, marketing research, marketing planning</p>
+                      <div class="card-foot">
+                          <div class="img-sec">
+                              <img src="./img-1.png" alt="" class="img1">
+                              <img src="./img-2.png" alt="" class="img2">
+                              <img src="./img-3.png" alt="" class="img3">
+                              <img src="./img-4.png" alt="" class="img4">
+                          </div>
+                          <button class="bttn">Assign To 
+                              <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="assign-to-ico">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.50063C0 4.36802 0.0526784 4.24085 0.146447 4.14708C0.240215 4.05331 0.367392 4.00063 0.5 4.00063H12.293L9.146 0.854632C9.05211 0.760745 8.99937 0.633407 8.99937 0.500632C8.99937 0.367856 9.05211 0.240518 9.146 0.146631C9.23989 0.0527448 9.36722 3.1283e-09 9.5 0C9.63278 -3.1283e-09 9.76011 0.0527449 9.854 0.146631L13.854 4.14663C13.9006 4.19308 13.9375 4.24825 13.9627 4.309C13.9879 4.36974 14.0009 4.43486 14.0009 4.50063C14.0009 4.5664 13.9879 4.63152 13.9627 4.69226C13.9375 4.75301 13.9006 4.80819 13.854 4.85463L9.854 8.85463C9.76011 8.94852 9.63278 9.00126 9.5 9.00126C9.36722 9.00126 9.23989 8.94852 9.146 8.85463C9.05211 8.76075 8.99937 8.63341 8.99937 8.50063C8.99937 8.36786 9.05211 8.24052 9.146 8.14663L12.293 5.00063H0.5C0.367392 5.00063 0.240215 4.94795 0.146447 4.85419C0.0526784 4.76042 0 4.63324 0 4.50063Z" fill="#1CAAE2"/>
+                              </svg>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="card card-flex">
+                      <h2>Ass04_UXUI_002</h2>
+                      <h4>UI Designer</h4>
+                      <div class="badge">
+                          <p class="basic">Basic</p>
+                          <p class="topic">Topic 02 & 03</p>
+                      </div>
+                      <p class="data">UCD Process,IA, UX Deliverables, Competition analysis, marketing research, marketing planning</p>
+                      <div class="card-foot">
+                          <div class="img-sec">
+                              <img src="./img-1.png" alt="" class="img1">
+                              <img src="./img-2.png" alt="" class="img2">
+                              <img src="./img-3.png" alt="" class="img3">
+                              <img src="./img-4.png" alt="" class="img4">
+                          </div>
+                          <button class="bttn">Assign To 
+                              <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="assign-to-ico">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.50063C0 4.36802 0.0526784 4.24085 0.146447 4.14708C0.240215 4.05331 0.367392 4.00063 0.5 4.00063H12.293L9.146 0.854632C9.05211 0.760745 8.99937 0.633407 8.99937 0.500632C8.99937 0.367856 9.05211 0.240518 9.146 0.146631C9.23989 0.0527448 9.36722 3.1283e-09 9.5 0C9.63278 -3.1283e-09 9.76011 0.0527449 9.854 0.146631L13.854 4.14663C13.9006 4.19308 13.9375 4.24825 13.9627 4.309C13.9879 4.36974 14.0009 4.43486 14.0009 4.50063C14.0009 4.5664 13.9879 4.63152 13.9627 4.69226C13.9375 4.75301 13.9006 4.80819 13.854 4.85463L9.854 8.85463C9.76011 8.94852 9.63278 9.00126 9.5 9.00126C9.36722 9.00126 9.23989 8.94852 9.146 8.85463C9.05211 8.76075 8.99937 8.63341 8.99937 8.50063C8.99937 8.36786 9.05211 8.24052 9.146 8.14663L12.293 5.00063H0.5C0.367392 5.00063 0.240215 4.94795 0.146447 4.85419C0.0526784 4.76042 0 4.63324 0 4.50063Z" fill="#1CAAE2"/>
+                              </svg>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="card card-flex">
+                      <h2>Ass04_UXUI_002</h2>
+                      <h4>UI Designer</h4>
+                      <div class="badge">
+                          <p class="basic">Basic</p>
+                          <p class="topic">Topic 02 & 03</p>
+                      </div>
+                      <p class="data">UCD Process,IA, UX Deliverables, Competition analysis, marketing research, marketing planning</p>
+                      <div class="card-foot">
+                          <div class="img-sec">
+                              <img src="./img-1.png" alt="" class="img1">
+                              <img src="./img-2.png" alt="" class="img2">
+                              <img src="./img-3.png" alt="" class="img3">
+                              <img src="./img-4.png" alt="" class="img4">
+                          </div>
+                          <button class="bttn">Assign To 
+                              <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="assign-to-ico">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.50063C0 4.36802 0.0526784 4.24085 0.146447 4.14708C0.240215 4.05331 0.367392 4.00063 0.5 4.00063H12.293L9.146 0.854632C9.05211 0.760745 8.99937 0.633407 8.99937 0.500632C8.99937 0.367856 9.05211 0.240518 9.146 0.146631C9.23989 0.0527448 9.36722 3.1283e-09 9.5 0C9.63278 -3.1283e-09 9.76011 0.0527449 9.854 0.146631L13.854 4.14663C13.9006 4.19308 13.9375 4.24825 13.9627 4.309C13.9879 4.36974 14.0009 4.43486 14.0009 4.50063C14.0009 4.5664 13.9879 4.63152 13.9627 4.69226C13.9375 4.75301 13.9006 4.80819 13.854 4.85463L9.854 8.85463C9.76011 8.94852 9.63278 9.00126 9.5 9.00126C9.36722 9.00126 9.23989 8.94852 9.146 8.85463C9.05211 8.76075 8.99937 8.63341 8.99937 8.50063C8.99937 8.36786 9.05211 8.24052 9.146 8.14663L12.293 5.00063H0.5C0.367392 5.00063 0.240215 4.94795 0.146447 4.85419C0.0526784 4.76042 0 4.63324 0 4.50063Z" fill="#1CAAE2"/>
+                              </svg>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="card card-flex">
+                      <h2>Ass04_UXUI_002</h2>
+                      <h4>UI Designer</h4>
+                      <div class="badge">
+                          <p class="basic">Basic</p>
+                          <p class="topic">Topic 02 & 03</p>
+                      </div>
+                      <p class="data">UCD Process,IA, UX Deliverables, Competition analysis, marketing research, marketing planning</p>
+                      <div class="card-foot">
+                          <div class="img-sec">
+                              <img src="./img-1.png" alt="" class="img1">
+                              <img src="./img-2.png" alt="" class="img2">
+                              <img src="./img-3.png" alt="" class="img3">
+                              <img src="./img-4.png" alt="" class="img4">
+                          </div>
+                          <button class="bttn">Assign To 
+                              <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="assign-to-ico">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.50063C0 4.36802 0.0526784 4.24085 0.146447 4.14708C0.240215 4.05331 0.367392 4.00063 0.5 4.00063H12.293L9.146 0.854632C9.05211 0.760745 8.99937 0.633407 8.99937 0.500632C8.99937 0.367856 9.05211 0.240518 9.146 0.146631C9.23989 0.0527448 9.36722 3.1283e-09 9.5 0C9.63278 -3.1283e-09 9.76011 0.0527449 9.854 0.146631L13.854 4.14663C13.9006 4.19308 13.9375 4.24825 13.9627 4.309C13.9879 4.36974 14.0009 4.43486 14.0009 4.50063C14.0009 4.5664 13.9879 4.63152 13.9627 4.69226C13.9375 4.75301 13.9006 4.80819 13.854 4.85463L9.854 8.85463C9.76011 8.94852 9.63278 9.00126 9.5 9.00126C9.36722 9.00126 9.23989 8.94852 9.146 8.85463C9.05211 8.76075 8.99937 8.63341 8.99937 8.50063C8.99937 8.36786 9.05211 8.24052 9.146 8.14663L12.293 5.00063H0.5C0.367392 5.00063 0.240215 4.94795 0.146447 4.85419C0.0526784 4.76042 0 4.63324 0 4.50063Z" fill="#1CAAE2"/>
+                              </svg>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="card card-flex">
+                      <h2>Ass04_UXUI_002</h2>
+                      <h4>UI Designer</h4>
+                      <div class="badge">
+                          <p class="basic">Basic</p>
+                          <p class="topic">Topic 02 & 03</p>
+                      </div>
+                      <p class="data">UCD Process,IA, UX Deliverables, Competition analysis, marketing research, marketing planning</p>
+                      <div class="card-foot">
+                          <div class="img-sec">
+                              <img src="./img-1.png" alt="" class="img1">
+                              <img src="./img-2.png" alt="" class="img2">
+                              <img src="./img-3.png" alt="" class="img3">
+                              <img src="./img-4.png" alt="" class="img4">
+                          </div>
+                          <button class="bttn">Assign To 
+                              <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="assign-to-ico">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.50063C0 4.36802 0.0526784 4.24085 0.146447 4.14708C0.240215 4.05331 0.367392 4.00063 0.5 4.00063H12.293L9.146 0.854632C9.05211 0.760745 8.99937 0.633407 8.99937 0.500632C8.99937 0.367856 9.05211 0.240518 9.146 0.146631C9.23989 0.0527448 9.36722 3.1283e-09 9.5 0C9.63278 -3.1283e-09 9.76011 0.0527449 9.854 0.146631L13.854 4.14663C13.9006 4.19308 13.9375 4.24825 13.9627 4.309C13.9879 4.36974 14.0009 4.43486 14.0009 4.50063C14.0009 4.5664 13.9879 4.63152 13.9627 4.69226C13.9375 4.75301 13.9006 4.80819 13.854 4.85463L9.854 8.85463C9.76011 8.94852 9.63278 9.00126 9.5 9.00126C9.36722 9.00126 9.23989 8.94852 9.146 8.85463C9.05211 8.76075 8.99937 8.63341 8.99937 8.50063C8.99937 8.36786 9.05211 8.24052 9.146 8.14663L12.293 5.00063H0.5C0.367392 5.00063 0.240215 4.94795 0.146447 4.85419C0.0526784 4.76042 0 4.63324 0 4.50063Z" fill="#1CAAE2"/>
+                              </svg>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="card card-flex">
+                      <h2>Ass04_UXUI_002</h2>
+                      <h4>UI Designer</h4>
+                      <div class="badge">
+                          <p class="basic">Basic</p>
+                          <p class="topic">Topic 02 & 03</p>
+                      </div>
+                      <p class="data">UCD Process,IA, UX Deliverables, Competition analysis, marketing research, marketing planning</p>
+                      <div class="card-foot">
+                          <div class="img-sec">
+                              <img src="./img-1.png" alt="" class="img1">
+                              <img src="./img-2.png" alt="" class="img2">
+                              <img src="./img-3.png" alt="" class="img3">
+                              <img src="./img-4.png" alt="" class="img4">
+                          </div>
+                          <button class="bttn">Assign To 
+                              <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="assign-to-ico">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.50063C0 4.36802 0.0526784 4.24085 0.146447 4.14708C0.240215 4.05331 0.367392 4.00063 0.5 4.00063H12.293L9.146 0.854632C9.05211 0.760745 8.99937 0.633407 8.99937 0.500632C8.99937 0.367856 9.05211 0.240518 9.146 0.146631C9.23989 0.0527448 9.36722 3.1283e-09 9.5 0C9.63278 -3.1283e-09 9.76011 0.0527449 9.854 0.146631L13.854 4.14663C13.9006 4.19308 13.9375 4.24825 13.9627 4.309C13.9879 4.36974 14.0009 4.43486 14.0009 4.50063C14.0009 4.5664 13.9879 4.63152 13.9627 4.69226C13.9375 4.75301 13.9006 4.80819 13.854 4.85463L9.854 8.85463C9.76011 8.94852 9.63278 9.00126 9.5 9.00126C9.36722 9.00126 9.23989 8.94852 9.146 8.85463C9.05211 8.76075 8.99937 8.63341 8.99937 8.50063C8.99937 8.36786 9.05211 8.24052 9.146 8.14663L12.293 5.00063H0.5C0.367392 5.00063 0.240215 4.94795 0.146447 4.85419C0.0526784 4.76042 0 4.63324 0 4.50063Z" fill="#1CAAE2"/>
+                              </svg>
+                          </button>
+                      </div>
+                  </div>            
+          </div>
+      
+      
+      
+        </div>
+        
+    </div>
+    
+</body>
+<script src="./js/navs.js"></script>
+</html>

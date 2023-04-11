@@ -57,7 +57,7 @@ namespace project_22_03_2023_cli
                 String act;
                 Console.WriteLine("Continue Y/N");
                 act = Console.ReadLine().ToLower();
-                if (act == "y")
+                if (act == "y" & cardless_transfer == true)
                 {
                     person.cardless_transfer = s;
                     Console.WriteLine("Cardless Transaction Availed");
@@ -65,6 +65,10 @@ namespace project_22_03_2023_cli
                 else if (act == "n")
                 {
                     Console.WriteLine("Transaction Failed");
+                }
+                else
+                {
+                    Console.WriteLine("Cardless Transfer already available");
                 }
                 
 

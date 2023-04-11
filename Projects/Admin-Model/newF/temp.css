@@ -24,31 +24,37 @@
     justify-content: space-between;
 }
 .container-card{
-    position: absolute;
-    left: 15%;
-    top: 30%;
+    position: relative;
+    /* left: 15%;
+    top: 30%; */
     width: 80%;
-    height: 50%;
-    display: grid;
+    /* height: 60%; */
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 4;
+    display: grid;
+
+    /* grid-template-columns: repeat(auto-fill, minmax(270px,1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(270px,1fr)); 
+    left: 7%;
+
 }
+
 .grid-head{
     /* List of Assessments */
 
-    position: absolute;
-    top: 28%;
-    left: 14%;
-/* Subheading/Semibold/18px */
-font-family: 'Manrope';
-font-style: normal;
-font-weight: 600;
-font-size: 100%;
-line-height: 25px;
-/* identical to box height */
-
-/* TEXT_COLOR/TEXT-900 */
-color: #0C1116;
+    position: relative;
+    left: 20%;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100%;
+    line-height: 25px;
+    /* identical to box height */
+    grid-row:3;
+    /* TEXT_COLOR/TEXT-900 */
+    color: #0C1116;
 
 
 }
@@ -351,12 +357,24 @@ flex-grow: 0;
     
   }
 .btn-cont{
+    position: relative;
+    /*top: 15%;*/
+    grid-column-start: 1;
+    grid-column-end: 3;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
-    width: 60%;
-    margin-left: 10%;
-    margin-top: 8.5%;
+    grid-template-columns: repeat(auto-fill, minmax(6,1fr));
+    /* grid-template-columns: repeat(6,1fr); */
+    grid-template-rows: repeat(1,.5fr);
+    grid-row: 1;
+    /* margin-left: 10%;
+    margin-top: 8.5%; */
 }
+.dropdown{
+    position: relative;
+    grid-row-start: 1;
+
+}
+
 .card-foot{
     display: flex;
     flex-direction: row;
@@ -367,14 +385,7 @@ flex-grow: 0;
 
 
 
-.side-nav{    
-    background: linear-gradient( #AFE0F4 5.55%, #E1EEC8 194.36%);
-    position: fixed;
-    width: 15%; 
-    height: 100%;
-    min-width: 150px;
-    
-}
+
 .k-logo{
     /* image 1 */
     width: 25%;
@@ -415,8 +426,7 @@ flex-grow: 0;
     /* TEXT_COLOR/TEXT-700 */
     color: #373F47;
 }
-.side-nav-cont{
-    /* Dashboard */
+/* .side-nav-cont{
     position: absolute;
     left: 2%;
     font-family: 'Manrope';
@@ -424,27 +434,29 @@ flex-grow: 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    /* identical to box height */
-
-    /* TEXT_COLOR/TEXT-600 */
+    
 color: #4F5B67;
+} */
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
 }
 
-
 #rows {
-    position: absolute;
+    position: relative;
     /* margin-top: 550px;
     margin-left: 300px; */
     display: flex;
     flex-direction: row;
-     top: 98%;
-    left: 15% ;
+    
      
   }
 
   /* ending */
 
-  #rows-per-page {
+#rows-per-page {
     width: 95px;
     height: 18px;
 
@@ -453,31 +465,15 @@ color: #4F5B67;
     font-weight: 400;
     font-size: 11px;
     line-height: 18px;
-    /* identical to box height, or 129% */
-
-    display: flex;
-    align-items: center;
-
-    /* TEXT_COLOR/TEXT-500 */
-
     color: #717d8a;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
+    display: flex;
+    flex-direction: row;
+}
 
   #rows-gotopage{
-    position: absolute;
+    position: relative;
     display:flex;
     flex-direction: row;
-    top: 98%;
-    left: 88% ;
-    
-     
-
   }
   #rows-gotopage p{
     font-size: 11px;
@@ -493,31 +489,23 @@ font-size: 14px; */
     /* line-height: 18px; */
     width: 15px;
     height: 18px;
-    padding-left: 10px;
 
     font-family: "Manrope";
     font-style: normal;
     font-weight: 500;
     font-size: 10px;
     line-height: 18px;
-    /* identical to box height, or 129% */
-
-    display: flex;
-    align-items: center;
-
-    /* TEXT_COLOR/TEXT-800 */
-
-    color: #242d35;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
     color: #242d35;
   }
-  #carret-down {
-    padding-left: 9px;
+  #rows > i{
+    padding-left: .3%;
   }
 
+/* CONTAINER COMMON */
+.container-com{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+    width: 100%;
+    height: 100vh;
+}
