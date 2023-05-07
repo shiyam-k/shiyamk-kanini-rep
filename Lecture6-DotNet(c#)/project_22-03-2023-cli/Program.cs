@@ -1431,8 +1431,21 @@ namespace project_22_03_2023_cli
 
             //AdvancedMath am = new AdvancedMath();
 
+            displayA arr1 = new displayA();
+            displayB arr2 = new displayB();
+            arr1.x = 0;
+            arr2.x = 0;
+            arr1.cal(2);
+            arr2.cal(2);
+            Console.WriteLine(arr1.x + " " + arr2.x);
+            Console.ReadLine();
+
+
+
+
         }
 
+        
         public static HouseDet GetHouseDetails(string name)
         {
             HouseDet per = null;
@@ -1446,11 +1459,7 @@ namespace project_22_03_2023_cli
             }
             return per;
         }
-        public static int f(ref int a)
-        {
-            a = 1;
-            return 0;
-        }
+        
 
         public static bank_account get_account_name(int accnt_no)
         {
@@ -1467,7 +1476,26 @@ namespace project_22_03_2023_cli
             return bank_data[b];
         }
     }
-    
+    interface calc
+    {
+        void cal(int i);
+    }
+    class displayA : calc
+    {
+        public int x;
+        public void cal(int i)
+        {
+            x = i * i;
+        }
+    }
+    class displayB : calc
+    {
+        public int x;
+        public void cal(int i)
+        {
+            x = i / i;
+        }
+    }
 
 }
     
