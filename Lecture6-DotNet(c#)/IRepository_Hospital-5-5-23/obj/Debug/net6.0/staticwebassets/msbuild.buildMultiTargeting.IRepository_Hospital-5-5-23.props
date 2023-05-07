@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\IRepository_Hospital-5-5-23.props" />
+</Project>

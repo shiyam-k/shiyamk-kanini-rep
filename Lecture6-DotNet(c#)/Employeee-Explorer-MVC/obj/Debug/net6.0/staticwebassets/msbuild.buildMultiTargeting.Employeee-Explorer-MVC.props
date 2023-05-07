@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Employeee-Explorer-MVC.props" />
+</Project>

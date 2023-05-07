@@ -1,0 +1,6 @@
+E:\KANINI\Lecture6-DotNet(c#)\SupportClassLibrary\bin\Debug\SupportClassLibrary.dll
+E:\KANINI\Lecture6-DotNet(c#)\SupportClassLibrary\bin\Debug\SupportClassLibrary.pdb
+E:\KANINI\Lecture6-DotNet(c#)\SupportClassLibrary\obj\Debug\SupportClassLibrary.csproj.AssemblyReference.cache
+E:\KANINI\Lecture6-DotNet(c#)\SupportClassLibrary\obj\Debug\SupportClassLibrary.csproj.CoreCompileInputs.cache
+E:\KANINI\Lecture6-DotNet(c#)\SupportClassLibrary\obj\Debug\SupportClassLibrary.dll
+E:\KANINI\Lecture6-DotNet(c#)\SupportClassLibrary\obj\Debug\SupportClassLibrary.pdb

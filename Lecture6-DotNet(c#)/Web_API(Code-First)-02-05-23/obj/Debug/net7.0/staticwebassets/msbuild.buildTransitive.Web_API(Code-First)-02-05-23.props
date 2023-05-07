@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Web_API(Code-First)-02-05-23.props" />
+</Project>

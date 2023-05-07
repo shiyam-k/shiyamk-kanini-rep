@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "NwpAtPauXomEe0PLiWj6ZH5baLYqY5geRCkcTcuHGYA=",
+  "Source": "API-OnetoManyMovies",
+  "BasePath": "_content/API-OnetoManyMovies",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,8 @@
+E:\KANINI\Lecture6-DotNet(c#)\bingersbible(adodotnet)\obj\Debug\bingersbible(adodotnet).csproj.AssemblyReference.cache
+E:\KANINI\Lecture6-DotNet(c#)\bingersbible(adodotnet)\obj\Debug\bingersbible(adodotnet).csproj.SuggestedBindingRedirects.cache
+E:\KANINI\Lecture6-DotNet(c#)\bingersbible(adodotnet)\obj\Debug\bingersbible(adodotnet).csproj.CoreCompileInputs.cache
+E:\KANINI\Lecture6-DotNet(c#)\bingersbible(adodotnet)\bin\Debug\bingersbible(adodotnet).exe.config
+E:\KANINI\Lecture6-DotNet(c#)\bingersbible(adodotnet)\bin\Debug\bingersbible(adodotnet).exe
+E:\KANINI\Lecture6-DotNet(c#)\bingersbible(adodotnet)\bin\Debug\bingersbible(adodotnet).pdb
+E:\KANINI\Lecture6-DotNet(c#)\bingersbible(adodotnet)\obj\Debug\bingersbible(adodotnet).exe
+E:\KANINI\Lecture6-DotNet(c#)\bingersbible(adodotnet)\obj\Debug\bingersbible(adodotnet).pdb
