@@ -1,0 +1,18 @@
+<div class="contact-container">
+    <div class="contact-block" *ngFor = "let c of contacts">
+        <h2>{{c.contactType}}</h2>
+        <p>{{c.contact}}</p>
+        <img src="{{ c.contactIcon }}" alt="" width="50px" height="50px">
+    </div>    
+</div>
+<div class="contact">
+    <h1>{{ownerName}}</h1>
+    <h3>{{company}}</h3>
+    <form action="" class="feedback">
+        <label for="">EMail</label>
+        <input type="email">
+        <label for="">Feedback</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="submit" class="sub">
+    </form>
+</div>

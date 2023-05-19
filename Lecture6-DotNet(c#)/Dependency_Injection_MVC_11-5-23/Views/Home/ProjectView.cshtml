@@ -1,0 +1,26 @@
+﻿@model Projects
+
+@inject IRepoDI iRepo
+
+
+@{
+    ViewData["Title"] = "AddProject";
+}
+@{
+    ViewData["Title"] = "ProjectView";
+}
+
+<form>
+    <label asp-for="ProjectId" class="control-label"></label>
+    <input asp-for="ProjectId" class="form-control" />
+    <label asp-for="ProjectName" class="control-label"></label>
+    <input asp-for="ProjectName" class="form-control" />
+    <div class="form-group">
+        <input asp-action="Index" value="Go Back" class="btn btn-danger" type="button" />
+        <input type="submit" value="AddProject" class="btn btn-success" />
+    </div>
+    <div>
+</form>
+Total count:=@iRepo.GetProjects().Count().ToString();
+</div>
+

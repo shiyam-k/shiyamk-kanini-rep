@@ -1,0 +1,12 @@
+﻿@model Design_Pattern_10_5_23.Models.Roles
+@{
+    ViewData["Title"] = "RoleView";
+
+}
+<form method="post" asp-action="AddRole">
+    <label>Enter Role:</label>
+    <input type="text" asp-for="Role"/>
+    <input type="submit" value="Add" />
+    
+</form>
+

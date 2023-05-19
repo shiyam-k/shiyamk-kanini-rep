@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+      "module": "CommonJS",
+      "target": "ES6",
+      "outDir": "mout"
+  },
+  "include": ["*ts"]
+}

@@ -1,0 +1,21 @@
+<div class="input-g">
+    <label for="">Number 1:</label>
+    <input type="number" [(ngModel)]="n1">
+</div>
+<br>
+<br>
+<div class="input-g">
+    <label for="">Number 2:</label>
+    <input type="number" [(ngModel)]="n2">
+</div>
+
+<br><br>
+
+<div class="btn-g">
+    <input type="button" value="Add" (click) = "Add()">
+    <input type="button" value="Sub" (click) = "Sub()">
+    <input type="button" value="Mul" (click) = "Mul()">
+    <input type="button" value="Div" (click) = "Div()">
+</div>
+<br><br>
+<div class="res">{{res}}</div>

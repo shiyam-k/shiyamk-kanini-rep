@@ -1,0 +1,12 @@
+<form action="">
+    <div class="input-g">
+        <label for="">User Name</label>
+        <input type="text" [(ngModel)]="loginUserName" />
+    </div>
+    <div class="input-g">
+        <label for="">Password</label>
+        <input type="password" [(ngModel)]="loginPassword">
+    </div>
+    <div class="res" ([ngModel])="res">{{res}}</div>
+    <input type="button" (click)="goToPage()" class="submit" value="Submit" >
+</form>

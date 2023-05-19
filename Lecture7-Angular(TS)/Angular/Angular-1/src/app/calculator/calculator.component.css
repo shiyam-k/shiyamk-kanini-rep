@@ -1,0 +1,30 @@
+.input-g{
+    display: flex;
+    flex-direction: column;
+    
+}
+.input-g > input{
+    height: 40px;
+    border-radius: 10px;
+    font-size: large;
+    background-color: rgb(203, 255, 255);
+}
+.btn-g{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.btn-g > input{
+    width: 150px;
+    height: 35px;
+    border-radius: 10px ;
+    background-color: rgb(198, 72, 95);
+    cursor: pointer;
+}
+.res{
+    border: 2px solid;
+    margin: auto;
+    width: 10%;
+    padding: 10px;
+
+}

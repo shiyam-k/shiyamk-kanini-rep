@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var mod_1 = require("./mod");
+var mod_2 = require("./mod");
+var mod_3 = require("./mod");
+var mod_4 = require("./mod");
+var userBought = [];
+userBought.push((0, mod_2.BuyProduct)("product1"));
+userBought.push((0, mod_2.BuyProduct)("product1"));
+userBought.push((0, mod_2.BuyProduct)("product2"));
+userBought.push((0, mod_2.BuyProduct)("pro"));
+userBought.push((0, mod_2.BuyProduct)("product3"));
+userBought.filter(function (price) { return price == (0, mod_3.RemoveProduct)("product1"); });
+console.log("================");
+console.log("Customer Name : ".concat((0, mod_1.default)(["K", "Shiyam"])));
+(0, mod_4.CalculatePrice)(userBought, 1000);
+console.log("================");

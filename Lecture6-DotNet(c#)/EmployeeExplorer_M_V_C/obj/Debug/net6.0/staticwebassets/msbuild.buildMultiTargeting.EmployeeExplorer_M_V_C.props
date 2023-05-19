@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\EmployeeExplorer_M_V_C.props" />
+</Project>

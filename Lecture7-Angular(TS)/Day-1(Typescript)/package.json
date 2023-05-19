@@ -1,0 +1,15 @@
+{
+  "name": "nodemon",
+  "version": "1.0.0",
+  "description": "for tutorial",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {}
+}

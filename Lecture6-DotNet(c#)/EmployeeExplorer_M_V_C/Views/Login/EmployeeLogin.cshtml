@@ -1,0 +1,17 @@
+﻿@model EmployeeExplorer_M_V_C.ModelDummy.LoginDummy
+@{
+    ViewData["Title"] = "Employee Login";
+}
+
+<form class="card border-primary " method="post" asp-action="Login" >
+  <div class="card-header text-success" style="font-size:28px">@ViewData["Title"]</div>
+  <div class="card-body text-xxl-start">
+    <label class="form-label">Employee Id</label>
+    <input class="form-control text-uppercase" type="text" asp-for="LoginEmployeeId"/>
+     <label class="form-label">Password</label>
+    <input class="form-control" type="password" asp-for="Password"/>
+  </div>
+  <div class="card-footer text-success text-xxl-center">
+    <input type="submit" value="Login" class="btn btn-outline-success" />
+  </div>
+</form>

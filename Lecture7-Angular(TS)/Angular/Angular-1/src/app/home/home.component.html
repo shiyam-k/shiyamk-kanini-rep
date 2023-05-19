@@ -1,0 +1,18 @@
+<table >
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Clan Name</th>
+        <th>Leader Name</th>
+        <th>Leader</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let clan of clans">
+        <td>{{ clan.id }}</td>
+        <td>{{ clan.clanName }}</td>
+        <td>{{ clan.leaderName }}</td>
+        <td class="img"><img src="{{ clan.imageURL }}" ></td>
+      </tr>
+    </tbody>
+</table>
