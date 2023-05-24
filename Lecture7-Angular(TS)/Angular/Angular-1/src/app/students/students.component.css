@@ -2,9 +2,8 @@ td{
     height: 20px;
     width: 300px;
     align-items:end;
-    border: 1px solid  #96D4D4;;
-    border-radius: 10px;
     text-align: center;
+    border: 1px solid #96D4D4;
 }
 th{
     height: 50px;
@@ -12,14 +11,8 @@ th{
     align-items:end;
     border: 1px solid #96D4D4;
 }
-.img > img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50% ;
-    border: 3px solid rgb(94, 255, 0);
-}
+
 table{
     color: rgb(255, 255, 255);
     width: 100%;
-    background-color: rgb(92, 92, 92);
 }

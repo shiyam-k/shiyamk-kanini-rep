@@ -1,58 +1,30 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Template } from './students';
+
 
 @Injectable({
   providedIn: 'root'
 })
-export class StudentService {
-  Grades : string[] = ['A', 'B', 'C', 'D', 'E', 'F']
-  Departments :string[] = ['CSE', 'IT']
-   
+export class StudentService  {
+  private studentsURL = '/assets/data/students.json'
+  private departmentsURL = '/assets/data/department.json'
+  private gradeURL = '/assets/data/grade.json'
 
-students:any[] = [
-    {
-      Name : "Student1",
-      Department: "CSE",
-      Grade : "A",
-    },
-    {
-      Name : "Student2",
-      Department: "CSE",
-      Grade : "B"
-    },
-    {
-      Name : "Student3",
-      Department: "IT",
-      Grade : "C"
-    },
-    {
-      Name : "Student44",
-      Department: "IT",
-      Grade : "A"
-    },
-    {
-      Name : "Student5",
-      Department: "CSE",
-      Grade : "A"
-    },
-    {
-      Name : "Student6",
-      Department: "IT",
-      Grade : "C"
-    },
-    {
-      Name : "Student7",
-      Department: "IT",
-      Grade : "F"
-    }
-  ] 
+  
+  constructor(private http : HttpClient) { }
   GetStudent(){
-    return this.students
+    return this.http.get<Template[]>(this.studentsURL)
   }
   GetGrades(){
-    return this.Grades
+    return this.http.get<Template[]>(this.gradeURL)
+
   }
   GetDepartment(){
-    return this.Departments
+    return this.http.get<Template[]>(this.departmentsURL)
+
   }
-  constructor() { }
+
+
 }

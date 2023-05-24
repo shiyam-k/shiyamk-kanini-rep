@@ -17,6 +17,9 @@ import { StudentsComponent } from './students/students.component';
 import { StudentsAComponent } from './students-a/students-a.component';
 
 import { StudentService } from './student.service';
+import { HttprequestComponent } from './httprequest/httprequest.component';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,11 +34,13 @@ import { StudentService } from './student.service';
     ClickRenderComponent,
     StudentsComponent,
     StudentsAComponent,
+    HttprequestComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [StudentService],
   bootstrap: [AppComponent]
