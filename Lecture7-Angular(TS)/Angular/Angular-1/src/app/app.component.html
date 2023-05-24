@@ -8,14 +8,15 @@
 
 
 
-<table border="1">
+<!-- <table border="1">
     <thead>
         <tr>
             <th>Student ID</th>
             <th>Name</th>
             <th>DOB</th>
             <th>Gender</th>
-            <th>CourseFee</th>            
+            <th>CourseFee</th>  
+            <th>Courses</th>          
         </tr>
     </thead>
     <tbody>
@@ -25,6 +26,7 @@
             <td>{{student.DOB | date:'dd/MM/yyyy'}}</td>
             <td>{{student.Gender | lowercase}}</td>
             <td>{{student.CourseFee | currency:'USD':true}}</td>
+            <td >{{student.courses}}</td>
         </tr>
     </tbody>
 
@@ -33,11 +35,15 @@
 <input type="text" [(ngModel)]="studentId">
 
 <button (click)="searchStudents()">Search</button>
-
+<select *ngFor="let student in students">
+    <option value="[({{student.studentId}})]">{{student.studentId}}</option>
+</select>
 <div *ngFor="let student of students | SelectS:studentId">
   <p>{{ student.ID }}</p>
   <p>{{ student.Name }}</p>
   <p>{{ student.DOB }}</p>
   <p>{{ student.Gender }}</p>
   <p>{{ student.CourseFee }}</p>
-</div>
+  <p *ngFor="let course of student.courses">{{course}}</p>
+<br><br>
+</div> -->

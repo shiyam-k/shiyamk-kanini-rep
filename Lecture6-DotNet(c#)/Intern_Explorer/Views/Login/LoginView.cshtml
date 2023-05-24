@@ -1,0 +1,97 @@
+﻿@model Intern_Explorer.Models.LoginModelDummy;
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="header-container">
+    <nav class="navbar justify-content-md-evenly login-nav " >
+      <div class="flex-row">
+          <img src="./img/intern-icon.png"  width="30px" height="30px"/>
+          <a class="navbar-brand text-info heading" href="/">InternConnect</a>
+      </div>
+    </nav>
+    <div class="card">
+    <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" id="ilogin-tab" data-toggle="tab" href="#ilogin">Intern Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="elogin-tab" data-toggle="tab" href="#elogin">Employee Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="connect-tab" data-toggle="tab" href="#connect">Connect</a>
+            </li>
+        </ul>
+    </div>
+    <div class="card-body">
+        <div class="tab-content">
+            <form asp-action="ILogin" method="post" class="card ilogin-section bg-dark text-white border-primary tab-pane fade active show" id="ilogin">
+                <div class="card-body text-xxl-start">
+                    <label class="form-label">Intern Id</label>
+                    <input class="form-control" placeholder="Intern Id" type="text" asp-for="InternId" required/>
+                    <label class="form-label">Password</label>
+                    <input class="form-control" placeholder="Password" type="password" asp-for="Password" required/>
+                </div>
+                <div class="card-footer text-xxl-center">
+                    <input type="submit" value="Login" class="btn btn-success" />
+                </div>
+            </form>
+            <form asp-action="Login" method="post" class="card elogin-section bg-dark text-white border-primary tab-pane fade active" id="elogin">
+                <div class="card-body text-xxl-start">
+                    <label class="form-label">Employee Id</label>
+                    <input class="form-control" placeholder="Employee Id" type="text" asp-for="EmployeeId"  required/>
+                    <label class="form-label">Password</label>
+                    <input class="form-control" placeholder="Password" type="password" asp-for="Password" required/>
+                </div>
+                <div class="card-footer text-xxl-center">
+                    <input type="submit" value="Login" class="btn btn-success" />
+                </div>
+            </form>
+            <form asp-action="ConnectIntern" method="post" class="card border-primary bg-dark text-white tab-pane fade active connect-form " id="connect">
+                <div class="card-body text-xxl-start">
+                    <label class="form-label">Intern Id</label>
+                    <input class="form-control" type="text" placeholder="Intern Id" asp-for="InternId" required/>
+                    <label class="form-label">First Name</label>
+                    <input class="form-control" type="text" placeholder="First Name" asp-for="FirstName" required/>
+                    <label class="form-label">Last Name</label>
+                    <input class="form-control" type="text" placeholder="Last Name" asp-for="LastName" required/>
+                    <label class="form-label">DOB</label>
+                    <input class="form-control" type="date" asp-for="DateOfBirth" required/>
+                    <label class="form-label">DOJ</label>
+                    <input class="form-control" type="date" asp-for=DateOfJoin required/>
+                    <div class="flex-column ">
+                        <label class="form-label">Course Stream</label>
+                        <select id="course" name="course" asp-for="CourseStream" class="form-control" required>
+                            <option value="B.Engineering">B.Engineering</option>
+                            <option value="B.Tech">B.Tech</option>
+                            <option value="M.Engineering">M.Engineering</option>
+                            <option value="M.Tech">M.Tech</option>
+                        </select>
+                        <label class="form-label">Departments</label>
+                        <select id="department" name="department" asp-for="Department" class="form-control" required>
+                            <option value="CSE">CSE</option>
+                            <option value="IT">IT</option>
+                        </select>
+                    </div>
+                    <label class="form-label">Email</label>
+                    <input class="form-control" type="email" placeholder="Email Id" asp-for="Email" required/>
+                    <label class="form-label">Password</label>
+                    <input class="form-control" type="password" placeholder="Password" asp-for="Password" required/>
+                    @*<div class="card-footer flex-row">
+                        <input type="button" class="nav-link btn btn-outline-danger text-white" id="go-back-tab" data-toggle="tab" value="Go Back"/>
+                        <input type="submit" value="Login" class="btn btn-success" />
+                    </div>*@
+                    <div class="card-footer text-xxl-center">
+                        <input type="button" value="Go Top" class="btn btn-outline-danger ">
+                        <input type="submit" value="Connect" class="btn btn-success" />
+                    </div>
+                 </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+

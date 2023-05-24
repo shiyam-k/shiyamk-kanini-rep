@@ -1,0 +1,25 @@
+<table >
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>
+          <select name="depatments" id="depatments" [(ngModel)]="sDepartment" >
+            <option *ngFor="let department of Departments" (value)="department" >{{department}}</option>                
+        </select>
+        </th>
+        <th>
+            <select name="grades" id="grades" [(ngModel)]="sGrade" >
+                <option *ngFor="let grade of Grades" (value)="grade" >{{grade}}</option>                
+            </select>
+
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of Students">
+        <td *ngIf="student.Grade === sGrade && student.Department === sDepartment">{{ student.Name }}</td>
+        <td *ngIf="student.Grade === sGrade && student.Department === sDepartment">{{ student.Department }}</td>
+        <td *ngIf="student.Grade === sGrade && student.Department === sDepartment">{{ student.Grade }}</td>
+      </tr>
+    </tbody>
+</table>

@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form asp-action="Register" method="post" class="card border-primary bg-dark text-white hidden" id="connect" >
+            <h2 class="card-header text-center" >@ViewData["Title"]</h2>
+            <div class="card-body text-xxl-start">
+                <label class="form-label">First Name</label>
+                <input class="form-control" type="text" placeholder="First Name"/>
+                <label class="form-label">Last Name</label>
+                <input class="form-control" type="text" placeholder="Last Name"/>
+                <label class="form-label">DOB</label>
+                <input class="form-control" type="date" />
+                <label class="form-label">Course Stream</label>
+                <select id="cars" name="cars">
+                  <option value="B.Engineering">B.Engineering</option>
+                  <option value="B.Tech">B.Tech</option>
+                  <option value="M.Engineering">M.Engineering</option>
+                  <option value="M.Tech">M.Tech</option>
+                </select>
+            </div>
+            <div class="card-footer text-xxl-center">
+                <input type="button" value="Connect" class="btn btn-outline-primary">
+                <input type="submit" value="Login" class="btn btn-success" />
+            </div>
+</form>

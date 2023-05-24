@@ -30,7 +30,7 @@ namespace bingersbible_adodotnet_
         public BingersBible()
         {
             sessionId = $"SID{random.Next(100, 999)}";
-            bool y_n = true ;
+            //bool y_n = true ;
             Console.WriteLine("Welcome to BingersBible!");
             action = new List<string>() { "l", "r" };
             switch (support.GetStringInput("Login / Register (L/R)", action))
@@ -117,7 +117,7 @@ namespace bingersbible_adodotnet_
                 }
                 catch (Exception e) 
                 {
-                    Console.WriteLine(e.Message);
+                    Console.WriteLine(e.StackTrace);
                 }
                 finally {
                     
@@ -134,11 +134,11 @@ namespace bingersbible_adodotnet_
                     {
                         Console.WriteLine("User Type doesnot exists");
                     }
-                    else if (userType.Equals("Admin"))
+                    else if (userType.ToLower().Equals("admin"))
                     {
                         Admin admin = new Admin(email, sessionId, 0);
                     }
-                    else if (userType.Equals("User"))
+                    else if (userType.ToLower().Equals("user"))
                     {
                         User user = new User(email, sessionId);
                     }
@@ -192,11 +192,11 @@ namespace bingersbible_adodotnet_
                 {
                     Console.WriteLine("User Type doesnot exists");
                 }
-                else if (userType.Equals("Admin"))
+                else if (userType.ToLower().Equals("admin"))
                 {
                     Admin admin = new Admin(email, sessionId, 0);
                 }
-                else if (userType.Equals("User"))
+                else if (userType.ToLower().Equals("user"))
                 {
                     User user = new User(email, sessionId);
                 }
@@ -466,7 +466,7 @@ namespace bingersbible_adodotnet_
             connection.Close();
             foreach (DataRow row in localLoginTable.Rows)
             {
-                int index = -1;
+                //int index = -1;
                 foreach (DataColumn col in localLoginTable.Columns)
                 {
                     if (col.ColumnName.ToString().Equals("user_name"))
@@ -650,11 +650,12 @@ namespace bingersbible_adodotnet_
             List<string> column = new List<string>();
             string tName = (support.GetStringInput("Enter Table Name"));
             column = GetColumn(tName);
-            GetTableColumn(tName);
+            //GetTableColumn(tName);
+            List<string> dataType = GetColumnDataType(tName);
             List<string> record = new List<string>();
-            foreach(string s in column)
+            for(int i = 0; i<column.Count; i++)
             {
-                record.Add(support.GetStringInput($"Enter {s}"));
+                record.Add(support.GetStringInput($"Enter {column[i]} ({dataType[i]})"));
             }
             string insertQuery = support.InsertQueryGenerator(tName, record,column);
             try
@@ -828,7 +829,7 @@ namespace bingersbible_adodotnet_
             Console.WriteLine();
             string col = support.GetStringInput("Enter Column to update");
             string query = $"update {tName} set  {col} = '{support.GetStringInput("Enter Update Value")}' where {GetPrimaryKey(tName)} = '{support.GetStringInput("Key to Update")}'";
-            Console.WriteLine(query);
+            //Console.WriteLine(query);
             return query;
         }
         public string GetPrimaryKey(string tableName)
@@ -877,8 +878,31 @@ namespace bingersbible_adodotnet_
             {
                 connection.Close();
             }
-            
+        }
+        public List<string> GetColumnDataType(string tableName)
+        {
+            List<string> dType = new List<string>();
+            try
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand($@"SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{tableName}'", connection);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    dType.Add(reader["DATA_TYPE"].ToString());
+                }
+                reader.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.StackTrace);
+            }
+            finally
+            {
+                connection.Close();
 
+            }
+            return dType;
         }
 
     }

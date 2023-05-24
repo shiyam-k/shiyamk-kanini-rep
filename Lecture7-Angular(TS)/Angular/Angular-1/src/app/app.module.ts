@@ -12,7 +12,11 @@ import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 
 import { SelectSPipe } from './pipes/product.pipe';
+import { ClickRenderComponent } from './click-render/click-render.component';
+import { StudentsComponent } from './students/students.component';
+import { StudentsAComponent } from './students-a/students-a.component';
 
+import { StudentService } from './student.service';
 
 @NgModule({
   declarations: [
@@ -23,14 +27,17 @@ import { SelectSPipe } from './pipes/product.pipe';
     CalculatorComponent,
     ProfileComponent,
     LoginComponent,
-    SelectSPipe
+    SelectSPipe,
+    ClickRenderComponent,
+    StudentsComponent,
+    StudentsAComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [StudentService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

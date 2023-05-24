@@ -1,0 +1,18 @@
+<table >
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of Students">
+        <td>{{ student.Name }}</td>
+        <td>{{ student.Department }}</td>
+        <td>{{ student.Grade }}</td>
+      </tr>
+    </tbody>
+</table>
+
+<button class="btn btn-success">btn</button>

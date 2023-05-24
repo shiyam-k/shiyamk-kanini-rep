@@ -17,20 +17,23 @@ public class RegisterController : ControllerBase
 {
     private readonly UserManager<IdentityUser> _userManager;
     private readonly RoleManager<IdentityRole> _roleManager;
+    private readonly SignInManager<IdentityUser> _signInManager;
     private readonly IConfiguration _configuration;
+    private List<Claim> _authClaims;
 
     public RegisterController(
         UserManager<IdentityUser> userManager,
         RoleManager<IdentityRole> roleManager,
-        IConfiguration configuration)
+        SignInManager<IdentityUser> signInManager,
+        IConfiguration configuration, TempDbContext t)
     {
         _userManager = userManager;
         _roleManager = roleManager;
+        _signInManager = signInManager;
         _configuration = configuration;
     }
 
     [HttpPost]
-    [Authorize(Roles ="TL")]
     [Route("login")]
     public async Task<IActionResult> Login([FromBody] Login model)
     {
@@ -39,7 +42,7 @@ public class RegisterController : ControllerBase
         {
             var userRoles = await _userManager.GetRolesAsync(user);
 
-            var authClaims = new List<Claim>
+            _authClaims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, user.UserName),
                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
@@ -47,11 +50,11 @@ public class RegisterController : ControllerBase
 
             foreach (var userRole in userRoles)
             {
-                authClaims.Add(new Claim(ClaimTypes.Role, userRole));
+                _authClaims.Add(new Claim(ClaimTypes.Role, userRole));
             }
 
-            var token = GetToken(authClaims);
 
+            var token = GetToken(_authClaims);
             return Ok(new
             {
                 token = new JwtSecurityTokenHandler().WriteToken(token),
@@ -79,6 +82,8 @@ public class RegisterController : ControllerBase
         if (!result.Succeeded)
             return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "User creation failed! Please check user details and try again." });
 
+
+
         return Ok(new Response { Status = "Success", Message = "User created successfully!" });
     }
 
@@ -102,20 +107,22 @@ public class RegisterController : ControllerBase
 
         if (!await _roleManager.RoleExistsAsync(TeamRoles.Leader))
             await _roleManager.CreateAsync(new IdentityRole(TeamRoles.Leader));
-        if (!await _roleManager.RoleExistsAsync(TeamRoles.Engineer))
-            await _roleManager.CreateAsync(new IdentityRole(TeamRoles.Engineer));
-
+        
         if (await _roleManager.RoleExistsAsync(TeamRoles.Leader))
         {
             await _userManager.AddToRoleAsync(user, TeamRoles.Leader);
         }
-        if (await _roleManager.RoleExistsAsync(TeamRoles.Leader))
-        {
-            await _userManager.AddToRoleAsync(user, TeamRoles.Engineer);
-        }
+        
         return Ok(new Response { Status = "Success", Message = "User created successfully!" });
     }
+    [HttpGet]
+    [Route("Authorized")]
+    [Authorize]
+    public ActionResult GetToken()
+    {
+        return Ok("authorized personnel");
 
+    }
     private JwtSecurityToken GetToken(List<Claim> authClaims)
     {
         var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Secret"]));
@@ -127,7 +134,6 @@ public class RegisterController : ControllerBase
             claims: authClaims,
             signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)
             );
-
         return token;
     }
 

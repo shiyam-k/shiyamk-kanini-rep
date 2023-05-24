@@ -50,7 +50,23 @@ internal class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
+
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("MyPolicy",
+                builder =>
+                {
+                    builder.AllowAnyOrigin()
+                           .AllowAnyMethod()
+                           .AllowAnyHeader();
+                });
+        });
+
+
         var app = builder.Build();
+
+        app.UseCors("MyPolicy");
+
 
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())

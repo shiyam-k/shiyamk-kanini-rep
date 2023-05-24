@@ -78,21 +78,6 @@ namespace EmployeeExplorer_M_V_C.Repositories
                 return result;
             }
         }
-        public string GetEmployeeType(string EmployeeID)
-        {
-            var eRId = context.EmployeeRoles
-            .Where(er => er.Employee.EmployeeId == "EID1001")
-            .Select(er => er.ERId)
-            .ToString();
-
-            if (eRId == null)
-            {
-                return "None found";
-            }
-            else
-            {
-                return eRId.ToString();
-            }
-        }
+       
     }
 }

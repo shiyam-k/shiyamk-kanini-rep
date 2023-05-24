@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\InternConnect_API.props" />
+</Project>

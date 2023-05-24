@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Net.Mail;
 using System.Text;
@@ -10,6 +11,8 @@ namespace bingersbible_adodotnet_
 {
     internal class SupporterClass
     {
+        static string connectionSource = "Data Source=LAPTOP-OJCNGD2Q\\SQLEXPRESS;Initial Catalog=bingersbible;Integrated Security=True";
+        public static SqlConnection connection = new SqlConnection(connectionSource);
         public bool Yes_No()
         {
             bool res = false;
@@ -95,6 +98,7 @@ namespace bingersbible_adodotnet_
                 }
                 catch(Exception e) 
                 {
+
                     Console.WriteLine("**Incorrect email Format**");
                     valid = false;
                 }
@@ -269,6 +273,7 @@ namespace bingersbible_adodotnet_
         }
         public string InsertQueryGenerator(string tablename, List<string> records, List<string> columns)
         {
+            
             string insertColumns = "(";
             string insertValues = "(";
             foreach (string value in columns)
@@ -280,18 +285,58 @@ namespace bingersbible_adodotnet_
                 }
                 insertColumns += $"{value},";
             }
-            foreach (string value in records)
+            List<string> dataType = GetColumnDataType(tablename);
+
+            for(int i = 0; i<records.Count; i++)
             {
-                if (value.Equals(records[records.Count - 1]))
+                
+                if (dataType[i].Equals("varchar"))
                 {
-                    insertValues += $"'{value}')";
-                    break;
+                    if (i == records.Count-1)
+                    {
+                        insertValues += $"'{records[i]}')";
+                        break;
+                    }
+                    insertValues += $"'{records[i]}',";
                 }
-                insertValues += $"'{value}',";
+                else if (dataType[i].Equals("int"))
+                {
+                    if (i == records.Count-1)
+                    {
+                        insertValues += $"'{Int32.Parse(records[i])}')";
+                        break;
+                    }
+                    insertValues += $"'{Int32.Parse(records[i])}',";
+                }
             }
             string query = $"insert into {tablename}{insertColumns} values {insertValues}";
             //Console.WriteLine(query);
             return query;
+        }
+        public List<string> GetColumnDataType(string tableName)
+        {
+            List<string> dType = new List<string>();
+            try
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand($@"SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{tableName}'", connection);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    dType.Add(reader["DATA_TYPE"].ToString());
+                }
+                reader.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.StackTrace);
+            }
+            finally
+            {
+                connection.Close();
+
+            }
+            return dType;
         }
     }
 }
