@@ -115,10 +115,9 @@ public class RegisterController : ControllerBase
         
         return Ok(new Response { Status = "Success", Message = "User created successfully!" });
     }
-    [HttpGet]
+    [HttpGet, Authorize(Roles = "TL")]
     [Route("Authorized")]
-    [Authorize]
-    public ActionResult GetToken()
+    public ActionResult AuthCheck()
     {
         return Ok("authorized personnel");
 

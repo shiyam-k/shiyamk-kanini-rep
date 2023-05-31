@@ -16,7 +16,6 @@ namespace bingersbible_adodotnet_
         public bool Yes_No()
         {
             bool res = false;
-
             do
             {
                 string s = GetStringInput("Want to continue? Y/N");

@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <form [formGroup]="validationForm">
+        <div class="form-group">
+            <h4>Required validation(User Name)</h4>
+            <input [class.is-invalid]="validationForm.get('singleValidation')?.invalid && validationForm.get('singleValidation')?.touched" type="text" class="form-control" formControlName="singleValidation">
+            <small [class.d-none]="validationForm.get('singleValidation')?.valid || validationForm.get('singleValidation')?.untouched" class="text-danger">username is required</small>
+        </div>
+        <!-- <div class="form-group">
+            <h4>Multiple validation(User Name)</h4>
+            <input [class.is-invalid]="validationForm.get('multipleValidation')?.invalid && validationForm.get('multipleValidation')?.touched" type="text" class="form-control" formControlName="multipleValidation">
+            <small [class.d-none]="!validationForm.get('multipleValidation')?.valid || !validationForm.get('multipleValidation')?.errors?.['multipleValidator']" 
+            class="text-danger">{{validationForm.get('multipleValidation')?.errors?.['multipleValidator']}}
+                <span *ngIf="validationForm.get('multipleValidation')?.errors?.['required']">This field is required.</span>
+                <span *ngIf="validationForm.get('multipleValidation')?.errors?.['minlength']">Minimum length is 5 characters.</span>
+            </small>
+        </div>
+        <div class="form-group">
+            <h4>Custom validation (User Name)</h4>
+            <input [class.is-invalid]="validationForm.get('customValidation')?.invalid && validationForm.get('customValidation')?.touched" type="text" class="form-control" formControlName="customValidation">
+            <small *ngIf="validationForm.get('customValidation')?.errors?.['BannedUser']" class="text-danger">banned player</small>
+        </div> -->
+        
+          
+        <div class="btn-grp">
+            <!-- <input type="button" class="form-control btn btn-primary p-2" value="login"> -->
+        </div>
+    </form>
+</div>
+<h3 class="hidden" id="json" >{{validationForm.value | json}}</h3>

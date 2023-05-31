@@ -1,0 +1,25 @@
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>Director Id</th>
+            <th>Director Name</th>
+            <!-- <th>movies</th> -->
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let director of Director">
+            <td>{{director.dId}}</td>
+            <td>{{director.dName}}</td>
+            <!-- <td>{{(director.movies | json)}}</td> -->
+
+        </tr>
+    </tbody>
+</table>
+
+<div >
+    <label for="">DirectorName</label>
+    <input type="text" class="form-control for" [(ngModel)]="PostDirector.directorName">
+    <input type="submit" class="btn btn-outline-primary" (click)="AddDirector()">
+</div>
+<!-- <p>{{Director}}</p> -->
