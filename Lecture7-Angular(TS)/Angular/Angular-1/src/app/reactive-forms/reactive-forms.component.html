@@ -1,0 +1,44 @@
+<div class="container-fluid">
+    <form [formGroup]="registerForm" >
+        <div formGroupName="credentials">
+            <h3>Credentials</h3>
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="text" class="form-control" formControlName="userName">
+            </div>
+            <div class="form-group">
+                <label for="">Password</label>
+                <input type="password" class="form-control" formControlName="password">
+            </div>
+            <div class="form-group">
+                <label for="">Re-enter Password</label>
+                <input type="password" class="form-control" formControlName="confirmPassword">
+            </div>
+        </div>
+        <div>
+            <label for="">New Input</label>
+            <input type="password" class="form-control" formControlName="newInput">
+        </div>
+        <div formGroupName="address">
+            <h3>Address</h3>
+            <div class="form-group">
+                <label for="">Door.No</label>
+                <input type="number" class="form-control" formControlName="doorNo">
+            </div>
+            <div class="form-group">
+                <label for="">Street name</label>
+                <input type="text" class="form-control" formControlName="streetName">
+            </div>
+            <div class="form-group">
+                <label for="">City</label>
+                <input type="text" class="form-control" formControlName="city">
+            </div>
+        </div>
+        <p class="text-danger warnings"></p>
+        <div class="btn-grp">
+            <input type="button" class="form-control btn btn-outline-success p-2" value="getJSON" (click)="GetJSON()">
+            <input type="submit" class="form-control btn btn-primary p-2" value="Register">
+        </div>
+    </form>
+</div>
+<h3 class="hidden" id="json" >{{registerForm.value | json}}</h3>

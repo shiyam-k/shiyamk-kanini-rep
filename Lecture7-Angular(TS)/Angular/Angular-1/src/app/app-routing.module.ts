@@ -10,6 +10,9 @@ import { LoginComponent } from './login/login.component'
 import { ClickRenderComponent } from './click-render/click-render.component';
 import { StudentsComponent } from './students/students.component';
 import { StudentsAComponent } from './students-a/students-a.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { ReactiveformsvalidationsComponent } from './reactiveformsvalidations/reactiveformsvalidations.component';
+import { MovielibraryComponent } from './movielibrary/movielibrary.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
@@ -18,6 +21,11 @@ const routes: Routes = [
   { path: 'click-render', component: ClickRenderComponent },
   { path: 'students', component: StudentsComponent },
   { path: 'students-a', component: StudentsAComponent },
+  { path: 'reactive-forms', component: ReactiveFormsComponent },
+  { path: 'reactiveformsvalidations', component: ReactiveformsvalidationsComponent },
+  { path: 'movielibrary', component: MovielibraryComponent },
+
+
 
 
 ];

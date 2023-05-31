@@ -85,3 +85,7 @@ E:\KANINI\Lecture6-DotNet(c#)\API_OnetoMany\obj\Debug\net6.0\refint\API_OnetoMan
 E:\KANINI\Lecture6-DotNet(c#)\API_OnetoMany\obj\Debug\net6.0\API_OnetoMany.pdb
 E:\KANINI\Lecture6-DotNet(c#)\API_OnetoMany\obj\Debug\net6.0\API_OnetoMany.genruntimeconfig.cache
 E:\KANINI\Lecture6-DotNet(c#)\API_OnetoMany\obj\Debug\net6.0\ref\API_OnetoMany.dll
+E:\KANINI\Lecture6-DotNet(c#)\API_OnetoMany\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\KANINI\Lecture6-DotNet(c#)\API_OnetoMany\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\KANINI\Lecture6-DotNet(c#)\API_OnetoMany\bin\Debug\net6.0\Newtonsoft.Json.dll
+E:\KANINI\Lecture6-DotNet(c#)\API_OnetoMany\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

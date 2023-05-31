@@ -17,8 +17,8 @@ namespace API_OnetoManyMovies.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Movies>>> GetMovies()
         {
-            var movies = movieContext.Movies.Include(x => x.Director).ToList();
-            return Ok(movies);
+            //var movies = movieContext.Movies.Include(x => x.Director).ToList();
+            return movieContext.Movies.ToList();
         }
         [HttpPost]
         public async Task<ActionResult<string>> PostMovies(MovieDummy movie)
