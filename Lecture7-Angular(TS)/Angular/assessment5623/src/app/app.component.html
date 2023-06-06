@@ -1,0 +1,35 @@
+<div class="main-content">
+  <div class="card border-success bg-dark" >
+    <div class="card-header border-success text-success text-center">Currency Converter</div>
+    <div class="card-body text-white">
+      <div>
+        <label for="baseCurrency">Purchase Currency:</label>
+        <select [(ngModel)]="baseCurrency" id="baseCurrency" class="form-control">
+          <option *ngFor="let c of currenciesAndValues" [value]="c.currency">{{ c.currency }}</option>
+        </select>
+      </div>
+      <div>
+        <label for="targetCurrency">Counter Currency:</label>
+        <select [(ngModel)]="targetCurrency" id="targetCurrency" class="form-control">
+          <option *ngFor="let c of currenciesAndValues" [value]="c.currency">{{ c.currency }}</option>
+        </select>
+      </div>
+      <div>
+        <label for="amount">Amount:</label>
+        <input type="number" [(ngModel)]="amount" id="amount" placeholder="Amount" class="form-control"/>
+      </div>
+    </div>
+    <div class="card-footer bg-transparent border-success">
+      <div>
+        <button (click)="convertCurrency()" class="btn btn-outline-primary form-control">Convert</button>
+      </div>
+      <!-- <div *ngIf="convertedAmount">
+        <p>Converted Amount: {{ convertedAmount | currency: targetCurrency }}</p>
+      </div> -->
+      <div *ngIf="convertedAmount >= 0" class="text-white">
+        <p>Converted Amount: {{ convertedAmount | currency: targetCurrency }}</p>
+      </div>
+      <p class="res" [(ngModel)] = "res">{{res}}</p>
+    </div>
+  </div>
+</div>
