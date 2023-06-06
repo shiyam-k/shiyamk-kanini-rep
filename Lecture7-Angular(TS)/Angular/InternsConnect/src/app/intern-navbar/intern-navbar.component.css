@@ -1,0 +1,38 @@
+.navbar{
+    height: 100px;
+    
+}
+.nav-flex{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.profile{
+    position: relative;
+    top: 20%;
+}
+.profile-ico{
+    color: #004271;
+}
+.navbar-toggler{
+    height: 80%;
+    color: rgb(126, 137, 255);
+    position: relative;
+    top: 10%;
+}
+.collapse{
+    background-color: #6aadff;
+}
+.nav-link{
+    color: rgb(255, 255, 255);
+    font-size: large;
+}
+.head-link{
+    position: relative;
+    top: 25%;
+}
+.nav-tabs :hover{
+    background-color: rgb(73, 73, 73);
+}

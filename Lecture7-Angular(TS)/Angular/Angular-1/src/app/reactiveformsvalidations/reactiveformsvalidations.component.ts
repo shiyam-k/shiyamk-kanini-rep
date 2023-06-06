@@ -23,9 +23,5 @@ export class ReactiveformsvalidationsComponent {
   //   })
   // })
 
-validationForm = this.formBuilder.group({
-  singleValidation : ['', [Validators.required]],
-  multipleValidation : ['', [multipleValidator]],
-  customValidation : ['', [userNameValidator]]
-})  
 }
+  
