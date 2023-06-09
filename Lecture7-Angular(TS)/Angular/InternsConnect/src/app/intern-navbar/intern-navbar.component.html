@@ -1,9 +1,9 @@
-<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-light" style="background-color: #0095ff;">
     <div class="nav-flex">
       <button class="navbar-toggler" type="button" (click)="toggleNavbar()" aria-controls="navbarToggleExternalContent" [attr.aria-expanded]="isNavbarOpen ? 'true' : 'false'" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <h3 class="text-dark head-link">Interns Connect</h3>
+      <h3 class="text-dark head-link">Employees Connect</h3>
       <div class="profile">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16" class="profile-ico">
           <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
@@ -16,16 +16,13 @@
   <div class="collapse p-4" [ngbCollapse]="!isNavbarOpen" id="navbarToggleExternalContent" >
     <ul class="nav nav-tabs nav-fill">
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#home">Home</a>
+        <a class="nav-link" href="employee-data-view" ariaCurrentWhenActive="page">Employee</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#top5">Critic's top 5</a>
+        <a class="nav-link" href="#top5">Role</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#about">About Critic</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="#about">Employee Role</a>
       </li>
     </ul>
   </div>

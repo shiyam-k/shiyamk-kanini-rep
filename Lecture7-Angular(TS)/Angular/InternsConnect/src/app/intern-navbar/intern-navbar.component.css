@@ -17,10 +17,11 @@
     color: #004271;
 }
 .navbar-toggler{
-    height: 80%;
-    color: rgb(126, 137, 255);
+    height: 50%;
+    color: rgb(212, 198, 0);
+    border: 1px solid;
     position: relative;
-    top: 10%;
+    top: 25%;
 }
 .collapse{
     background-color: #6aadff;
@@ -33,6 +34,10 @@
     position: relative;
     top: 25%;
 }
+.nav-tabs{
+    border-radius: 15px;
+}
 .nav-tabs :hover{
-    background-color: rgb(73, 73, 73);
+    background-color: #ffb9b3;
+    border-radius: 15px;
 }
