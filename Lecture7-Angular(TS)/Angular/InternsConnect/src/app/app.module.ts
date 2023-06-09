@@ -7,15 +7,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { InternNavbarComponent } from './intern-navbar/intern-navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { InternNavbarLoginComponent } from './intern-navbar-login/intern-navbar-login.component';
-import { RegisterComponent } from './register/register.component';
+import { EmployeeDataViewComponent } from './employee-data-view/employee-data-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InternNavbarComponent,
-    InternNavbarLoginComponent,
-    RegisterComponent
+    EmployeeDataViewComponent
   ],
   imports: [
     BrowserModule,
