@@ -17,8 +17,7 @@ export class EmployeedataService {
         'Pragma': 'no-cache'
       }),
       observe: 'response' as 'body'
-    };
-  
+    };  
     return this.http.get<any>(this.GetURL, httpOptions).pipe(
       map((response: HttpResponse<any>) => response.body.employeeRequest),
       catchError(this.handleError)

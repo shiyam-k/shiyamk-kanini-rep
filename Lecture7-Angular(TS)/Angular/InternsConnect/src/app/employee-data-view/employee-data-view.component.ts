@@ -8,7 +8,7 @@ import * as $ from 'jquery';
 })
 export class EmployeeDataViewComponent implements OnInit {
 
-  employees: any[] = [];
+  employees: any = {};
   constructor(private employeedataService: EmployeedataService) { }
   empId : string = ""
   ngOnInit(): void {
@@ -27,7 +27,7 @@ export class EmployeeDataViewComponent implements OnInit {
   }
 
   newEmployee: any = {};
-  updateEmployee : any = [];
+  updateEmployee : any = {};
   GetEmployeeById(eId: string): void {
     this.empId = eId;
     this.employeedataService.getEmployeeById(eId).subscribe(
@@ -56,7 +56,7 @@ export class EmployeeDataViewComponent implements OnInit {
   }
 
   putEmployee(eId : string): void {
-    this.employeedataService.updateEmployee(this.updateEmployee[0],eId).subscribe(
+    this.employeedataService.updateEmployee(this.updateEmployee,eId).subscribe(
       (data: any) => {
         console.log('Employee updated successfully:', data);
       },
@@ -67,7 +67,7 @@ export class EmployeeDataViewComponent implements OnInit {
   }
   //deleteEmployee : any = {}
   removeEmployee(eId : string): void {
-    this.employeedataService.deleteEmployee(this.updateEmployee[0],eId).subscribe(
+    this.employeedataService.deleteEmployee(this.updateEmployee,eId).subscribe(
       (data: any) => {
         console.log('Employee Deleted successfully:', data);
       },
