@@ -5,7 +5,7 @@ import axios from 'axios';
 import update from '../img/edit.svg';
 import del from '../img/delete.svg';
 import add from '../img/add.svg'
-import { Dialog, DialogTitle, DialogContent, DialogContentText, Input, DialogActions, Button, FormLabel} from '@mui/material';
+import { Dialog, DialogTitle, DialogContent, Input, DialogActions, Button, FormLabel} from '@mui/material';
 const bootstrapTable = `table table-dark table-hover table-bordered border-success table-striped text-center`;
 
 const button = {
@@ -25,7 +25,6 @@ function Get() {
   useEffect(() => {
     fetchEmployees();
   },[]);
-  let res = {}
   const[response, setResponse] = useState([false, []])
   
   const [open, setOpen] = React.useState(false);
@@ -33,15 +32,14 @@ function Get() {
 
   const [d, setDeleteModal] = useState(false);
   
-  const handleDeleteModal = (employee) =>{
-    setE(employee)
-    //console.log(employee)
-    //removeEmployees(employee.employeeId)
-    setDeleteModal(true)
-  }
+  const handleDeleteModal = (employee) => {
+    setE(employee);
+    setDeleteModal(true);
+  };
+  
 
-  const handleClickOpen = (e) => {
-    setE(e)
+  const handleClickOpen = (employee) => {
+    setE(employee);
     setOpen(true);
   };
   const updateE = (ue) =>{
@@ -200,14 +198,10 @@ const cancelUpdate = () => {
               <ul>                  
                   <li><Link to={'/pagenotfound'} className='btn btn-outline-success navTab'>Reload</Link></li>
               </ul>
-          </nav>
-          
+          </nav>          
       <Routes>        
         <Route path="/pagenotfound" element={<Pagenotfound></Pagenotfound>}></Route>  
       </Routes>
-
-
-
       </div>
       )}
 
@@ -266,7 +260,7 @@ const cancelUpdate = () => {
         </DialogActions>
       </Dialog>
 
-      <Dialog open={response[0]} onClose={() => setResponse(false)}>
+      <Dialog open={response[0]} onClose={() => setResponse(false,[])}>
         <DialogTitle className='bg-dark text-success'>{(response[1] == null ? '' : response[1].message)}</DialogTitle>
         <DialogContent className='bg-dark text-white '>
           {/* <FormLabel className='bg-dark text-success'>{(response[1] == null ? '' : response[1].employee[0].employeeId)} updated</FormLabel> */}
