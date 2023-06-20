@@ -3,9 +3,12 @@ import { Routes,Route, Link } from 'react-router-dom'
 import EmployeesView from './employeeView'
 import EmployeeCard from './employeeCard'
 import EmployeeList from './list'
-import Get from './get'
 import Pagenotfound from './pagenotfound'
 import '../components/employee.css'
+
+const LazyGet = React.lazy(() => import('./get'));
+
+
 const navStyle = {
     height:"100px",
     width:"100%",
@@ -40,7 +43,9 @@ function Navbar(props) {
       <Route path="/employeeView" element={<EmployeesView e={props}/>}></Route>
       <Route path="/employeeCard" element={<EmployeeCard e={props}/>}></Route>
       <Route path="/list" element={<EmployeeList e={props}/>}></Route>
-      <Route path="/get" element={<Get />}></Route>
+      <Route path="/get" element={<React.Suspense>
+        <LazyGet/>
+      </React.Suspense>}></Route>
       <Route path="*" element={<Pagenotfound></Pagenotfound>}></Route>
 
 
