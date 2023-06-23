@@ -1,0 +1,18 @@
+      				Authenication (Protected Routes) using Context API (or) useContext Hook  
+
+
+Scenarios :
+(1). If you want to consume the application without logging in - It is possible in many applications but you will be restricted by some policies i.e, the user cannot comment, subscribe, post, like, dislike but when the user has logged in he can perform the above actions.
+
+(2). If you are a normal user logged in on an application you can have a consume normal user's components but you will be restricted to perform / consume premium user's components.
+
+(3). If you are an employee logging in on your organizations 
+
+
+
+step - 1 : 	
+	
+	
+
+	
+
