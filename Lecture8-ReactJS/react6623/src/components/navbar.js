@@ -4,6 +4,7 @@ import EmployeesView from './employeeView'
 import EmployeeCard from './employeeCard'
 import EmployeeList from './list'
 import Pagenotfound from './pagenotfound'
+import MyForm from './fetchPost'
 import '../components/employee.css'
 
 const LazyGet = React.lazy(() => import('./get'));
@@ -36,6 +37,7 @@ function Navbar(props) {
                 <li><Link to={'/employeeCard'} className='btn btn-outline-danger navTab'>Card</Link></li>
                 <li><Link to={'/list'} className='btn btn-outline-danger navTab'>List</Link></li>
                 <li><Link to={'/get'} className='btn btn-outline-danger navTab'>Get</Link></li>
+                <li><Link to={'/fetchPost'} className='btn btn-outline-danger navTab'>Fetch</Link></li>
             </ul>
         </nav>
         
@@ -46,6 +48,8 @@ function Navbar(props) {
       <Route path="/get" element={<React.Suspense>
         <LazyGet/>
       </React.Suspense>}></Route>
+      <Route path="/fetchPost" element={<MyForm></MyForm>}></Route>
+
       <Route path="*" element={<Pagenotfound></Pagenotfound>}></Route>
 
 
