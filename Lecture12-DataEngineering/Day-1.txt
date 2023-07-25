@@ -1,0 +1,102 @@
+Big Data - Big data not necessarily means the data is always voluminous it also refers to the capability of the device that consumes/processes the data
+
+1000000000GB data to process -> store & process are the difficulties
+
+ETL - Extract, Transform, Load
+
+
+Phase - 1 : 
+	use data capture/extraction tools to extract data and form a single digital entity which would be used or analysis/preprocess
+													_
+Phase - 2 :												 |
+	store the extracted data (Distributed File System) (Source1, Source2,...) 			 |
+													 |Hadoop(HDFS, mapreduce)
+Phase - 3 :												 |
+	process the stored data using tools, programming languages, transform using business logics	_|
+			
+Phase - 4 : 
+	visualization using reporting tools -> powerBI, Qlik, tableau...
+
+ Mapreduce:
+------------
+
+The Map function takes input from the disk as <key,value> pairs, processes them, and produces another set of intermediate <key,value> pairs as output.
+The Reduce function also takes inputs as <key,value> pairs, and produces <key,value> pairs as output.
+
+Processing tools - Hive, impala
+
+Data - real-time data, batch data
+
+In memory computation engine -> spark
+
+RDBMS -> HDFS (SQOOP can be used to import /export the data)
+FLUME -> To capture live data
+KAFKA -> producer - publish, counsumer - subscribe (Kafka is used to build real-time streaming data pipelines and real-time streaming applications.)
+
+
+HDFS -> sequential data access
+RDBMS -> Random access (index based)
+
+No-SQL -> MongoDB, HBase
+ 
+Workflow Scedulers - Airflow, OOZIE, Azkaban
+
+SPARK:
+~~~~~~
+	To implement SQL in spark - SparkSQL
+	In python - pyspark
+	TO implement ML algorithms - Spark ML package MLLIB
+	spark structured streaming
+
+
+Data Engineer's Role :
+----------------------
+	=> Stream cant pickup the data, how we can handle it
+	=> Know your tools and processes
+	=> capture the data(FLUME, SQOOP)
+	=> wrangle the data(spark, hive, impala)
+	=> Analyze the data (hive, pig)
+	=> Apply ML algorithms (
+	=> Build the Model
+	=> Test the Model
+	=> Deployment 
+
+Machine Learning :
+------------------
+	=> Instructions (model/algo) -> Machine[data + instructions] -> result
+
+
+data formats :
+--------------
+	=> .txt -> (no structure, not organized, serialization/deserialization when data transfer)
+	=> .parquet -> (Apache Parquet is an open source, column-oriented data file format designed for efficient data storage and retrieval)
+	=> .orc -> (high performance, cannot share this cross-platorm)
+	=> .avro -> (Avro uses a compact binary format and performs schema-based data encoding, cross-platform)
+	=> .sequence -> ()
+
+SQOOP :
+-------
+	=> import / export the data
+	=> runs MapReduce Job helps to connect RDBMS to HDFS
+	=> refer -> (https://dbmstutorials.com/sqoop/sqoop-export-part-one.html)
+
+Hadoop : 
+--------
+	=> HDFS -> NameNode(master), DataNode(slaves), SecondaryNN
+	=> MapReduce -> Resource manager(master), Node manager(slaves)
+
+Hive : 
+------
+	=> High level data processing tool for structured data in hadoop
+
+
+spof - single point of failure, eg - Resource manager,
+
+
+
+
+
+
+
+
+

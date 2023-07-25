@@ -1,0 +1,11 @@
+
+
+Mongo DB:
+---------
+	=> MongoDB is an open-source document database and leading NoSQL database. MongoDB is written in C++.
+	=> create and deploy a highly scalable and performance-oriented database.
+
+features of mongodb:
+--------------------
+	-> Document oriented
+	-> 

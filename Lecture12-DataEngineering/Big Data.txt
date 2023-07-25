@@ -1,0 +1,15 @@
+Big Data:
+---------
+	-> big data is the amout of da5ta that is beyond the storing | processing capabilities.
+ 
+problems:
+---------
+	-> Volume
+	-> variety
+	-> velocity
+
+Hadoop:
+-------
+	-> Hadoop software library is a framework thatv allows for the distributed processing of large data sets across clusters of computers using a simple programming models
+
+	-> ..., multiple computers working together to achieve the goal of analyzing large sets of data

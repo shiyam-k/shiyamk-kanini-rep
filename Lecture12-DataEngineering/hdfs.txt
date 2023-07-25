@@ -1,0 +1,25 @@
+HDFS : 
+------
+	-> hdfs is a file system(fs) fs - enables the sys software to interact with the system hardware
+	-> hdfs is a primary file system / storage in hadoop
+	-> It is designed to store vast amounts of data across multiple nodes in a Hadoop cluster
+
+Advantages of hdfs : 
+--------------------
+	-> scalability
+	-> fault tolerance
+	-> flexibility
+	-> parallel processing
+	-> open source
+
+Disadvantages of hdfs:
+----------------------
+	-> complex to setup
+	-> high latency
+	-> Data security
+
+Tools and Frameworks in Hadoop:
+-------------------------------
+	Mapreduce, YARN, Hive, Pig, HBase, Spark, Mahout, Sqoop
+
+ 

@@ -1431,14 +1431,16 @@ namespace project_22_03_2023_cli
 
             //AdvancedMath am = new AdvancedMath();
 
-            displayA arr1 = new displayA();
+            /*displayA arr1 = new displayA();
             displayB arr2 = new displayB();
             arr1.x = 0;
             arr2.x = 0;
             arr1.cal(2);
             arr2.cal(2);
             Console.WriteLine(arr1.x + " " + arr2.x);
-            Console.ReadLine();
+            Console.ReadLine();*/
+            Training_04_03_2023 tr = new Training_04_03_2023();
+            Console.WriteLine(tr.GCD(100, 200));
 
 
 

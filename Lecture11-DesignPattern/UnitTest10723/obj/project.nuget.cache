@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "gQ6SX8LFvhgeLPxqO9ZKMxQZFV7U3XtAzehYoNMFn6CgOCrB/0VSkFSB4PVF/j+vUgK8Y9rt4dhkVLgM/cllxQ==",
+  "success": true,
+  "projectFilePath": "E:\\KANINI\\Lecture11-DesignPattern\\UnitTest10723\\UnitTest10723.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MayihS\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\MayihS\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\MayihS\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512"
+  ],
+  "logs": []
+}

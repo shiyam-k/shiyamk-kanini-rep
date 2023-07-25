@@ -1,0 +1,133 @@
+public async Task<string> InsertEmployee()
+        {
+            try
+            {
+                string employeeId = "EID1";
+                string[] firstNames = new string[]
+                {
+                "Arjun",
+                "Aishwarya",
+                "Akash",
+                "Ananya",
+                "Bhavana",
+                "Chaitanya",
+                "Deepika",
+                "Dinesh",
+                "Divya",
+                "Ganesh",
+                "Gayathri",
+                "Harish",
+                "Ishita",
+                "Jayanth",
+                "Kavya",
+                "Karthik",
+                "Lavanya",
+                "Madhavan",
+                "Meera",
+                "Naveen",
+                "Neha",
+                "Prakash",
+                "Priya",
+                "Rajesh",
+                "Rashmi",
+                "Ravi",
+                "Roopa",
+                "Sagar",
+                "Sahana",
+                "Sanjay",
+                "Shilpa",
+                "Suresh",
+                "Swathi",
+                "Tarun",
+                "Trisha",
+                "Uday",
+                "Uma",
+                "Vignesh",
+                "Varsha",
+                "Venkat",
+                "Vidya",
+                "Vikram",
+                "Vinaya",
+                "Yash",
+                "Yamini",
+                "Zara",
+                "Zoya",
+                "Ashwin",
+                "Aswathi",
+                "Aruna"
+                };
+                string[] lastName = new string[]
+                {
+                "Raghavan","Rajan", "Iyappan", "Murugan", "Kumar", "Sivan", "Perumal"
+                };
+                string[] employeeQualifications = new string[]
+                {
+                "BE in Computer Science",
+                "B.Tech in Computer Science",
+                "BS in Computer Science",
+                "Bachelor of Computer Science",
+                "BEng in Computer Science",
+                "BCA (Bachelor of Computer Applications)",
+                "B.Sc. in Computer Science",
+                "BA in Computer Science",
+                "BTech in Information Technology",
+                "B.E. in Information Technology",
+                "B.Sc. in Information Technology",
+                "B.Sc. in Software Engineering",
+                "Bachelor of Computer Engineering",
+                "B.Computer Science",
+                "BCS (Bachelor of Computer Science)",
+                "BSE (Bachelor of Software Engineering)",
+                "BMath in Computer Science",
+                "BIS (Bachelor of Information Science)",
+                "BIT (Bachelor of Information Technology)",
+                "B.CompSc (Bachelor of Computer Science)",
+                "BComp (Bachelor of Computing)",
+                "BCoSc (Bachelor of Computer Science)"
+                };
+
+                for (int i = 40; i < 41; i++)
+                {
+                    byte[] passwordHash;
+                    byte[] passwordSalt;
+                    CreatePasswordHash("Qwe!@#123", out passwordHash, out passwordSalt);
+                    isEmployeeExists = new EmployeeData()
+                    {
+                        EmployeeId = $"EID050",
+                        EmployeeFirstName = firstNames[i],
+                        EmployeLastName = lastName[random.Next(0, lastName.Length - 1)],
+                        EmployeeDOB = GetDate(new DateTime(1980, 1, 1), new DateTime(2002, 1, 1)),
+                        EmployeeDOJ = GetDate(new DateTime(2015, 1, 1), new DateTime(2020, 1, 1)),
+                        EmployeePasswordHash = passwordHash,
+                        EmployeePasswordSalt = passwordSalt,
+                        EmployeeQualifications = employeeQualifications[random.Next(0, employeeQualifications.Length - 1)],
+                        Specialization = await _dbContext.Domains.FindAsync("domainid010"),
+                    };
+                    await _dbContext.EmployeeData.AddAsync(isEmployeeExists);
+                    await _dbContext.SaveChangesAsync();
+                }
+                return "updated";
+
+            }
+            catch(Exception ex)
+            {
+                return ex.Message;
+            }
+
+
+            return "";
+        }
+
+        public string GetDate(DateTime d1, DateTime d2)
+        {
+
+
+            Random random = new Random();
+            TimeSpan timeSpan = d2 - d1;
+            int totalDays = timeSpan.Days;
+
+            DateTime randomDate = d1.AddDays(random.Next(totalDays));
+
+            string d = randomDate.ToString("yyyy-MM-dd");
+            return d;
+        }

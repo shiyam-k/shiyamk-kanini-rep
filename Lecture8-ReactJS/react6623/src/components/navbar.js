@@ -24,9 +24,9 @@ const Nav = {
 }
 const mainContent = {
     margin: "auto",
-  width: "50%",
-  position: "relative",
-  top: "100px"
+    width: "50%",
+    position: "relative",
+    top: "100px"
 }
 function Navbar(props) {
   return (

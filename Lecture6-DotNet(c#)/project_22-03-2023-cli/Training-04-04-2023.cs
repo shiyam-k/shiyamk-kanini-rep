@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace project_22_03_2023_cli
 {
-    internal class Training_04_03_2023
+    public class Training_04_03_2023
     {
         public int GCD(int a, int b)
         {

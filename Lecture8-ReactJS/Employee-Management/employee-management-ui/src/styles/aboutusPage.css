@@ -1,0 +1,24 @@
+/* AboutUsPage.css */
+
+.container {
+    margin-top: 50px;
+  }
+  
+  .about-us {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-us h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    margin-bottom: 10px;
+  }
+  

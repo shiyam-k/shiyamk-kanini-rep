@@ -1,0 +1,68 @@
+
+						  |
+Job1 ---|					  |
+	|					  |
+Job2 ---|-----> Resource manager(scheduler, ----->|------> Node managers(NM1, NM2, NM3, NM4, NM5, NM6[Application Master], NM7, NM8)
+	|		Application Manager)	  |
+Job3 ---|					  |
+						  |
+
+
+Application Manager - Manages lifecycle of Application Master
+
+Application Master - manages the lifecycle of each job
+
+Distributed File System - A piece of software, spans across multiple file servers or multiple locations
+
+
+Hive(create, load, select data) ---> [Driver --> (compile, optimize(Hadoop--> FS service), execute), [mapreduce] 
+				       |  |
+				       |  |----> (metastore service) ---> [DerbyDB]
+				       |
+				       |---->[Hadoop(HDFS, Mapreduce), (FS service)]
+
+storing the select statement outputs in HDFS
+
+
+DDL:
+====
+	=> Databases			
+					
+
+
+					|--->schema --> Hive metastore
+	=> Tables ----> Managed Table --|
+		  |			|--->data --> Hive Warehouse
+		  |
+		  |---> External Table --|---> schema --> Hive metastore
+				       	 |
+				         |---> 
+
+	=> Partitions
+
+	=> Bucketing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
