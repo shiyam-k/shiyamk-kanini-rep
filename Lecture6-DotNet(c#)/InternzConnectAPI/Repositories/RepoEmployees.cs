@@ -62,7 +62,7 @@ namespace InternzConnectAPI.Repositories
             }
             catch (Exception ex)
             {
-                AddResponse(false, ex.StackTrace, employees);
+                AddResponse(false, ex.Message, employees);
                 return employeeResponse;
             }
         }

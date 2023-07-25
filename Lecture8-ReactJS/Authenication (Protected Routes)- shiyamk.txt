@@ -1,4 +1,4 @@
-      				Authenication (Protected Routes) using Context API (or) useContext Hook  
+      			Authenication (Protected Routes) using Context API (or) useContext Hook  
 
 
 Scenarios :
@@ -6,7 +6,7 @@ Scenarios :
 
 (2). If you are a normal user logged in on an application you can have a consume normal user's components but you will be restricted to perform / consume premium user's components.
 
-(3). If you are an employee logging in on your organizations 
+(3). If you are an employee logging in on your organizations website on an employees login you will be restricted to perform admin or manager level operations
 
 
 

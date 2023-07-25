@@ -1,0 +1,55 @@
+Mongo DB Tasks:
+---------------
+
+1. create and load table
+2. CRUD - (with sql use case)
+3. Upsert - check for the key -> if no key found it will create a new record.
+
+
+Solutions :
+-----------
+
+Create (insert) : 
+
+	Mongo DB :	@(db.crimecollection.insert({"Area_Name" : "Telangaana","Year" : 2001,"Group_Name" : "Burglary Property","Cases_Property_Stolen" : 13549,});
+
+	Output : WriteResult({ "nInserted" : 1 })
+	
+	Equivalent mssql query : insert into crimecollection values("Telengana", "2001", "Burglary Property", 13549);
+
+(insert many) :
+
+	Mongo DB : db.crimecollection.insertMany([{"Area_Name" : "chennai","Year" : 2001,"Group_Name" : "Burglary - Property","Cases_Property_Stolen" : 13549},{"Area_Name" : "Goa","Year" : 2001,"Group_Name" : "Burglary - Property","Cases_Property_Stolen" : 13549}]);
+
+
+	Output : {
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("64bf9d37a82d58633b5112c1"),
+                ObjectId("64bf9d37a82d58633b5112c2")
+        	]
+	}
+
+	Equivalent sql query : insert into crimecollection values("Telengana", "2001", "Burglary Property", 13549)("Telengana", "2001", "Burglary Property", 13549);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

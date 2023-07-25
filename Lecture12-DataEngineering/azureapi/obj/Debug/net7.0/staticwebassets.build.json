@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Zd1yL7258u9Dg7QJimPSFjyon+y8Vd6SLnRDXJu8bNs=",
+  "Source": "azureapi",
+  "BasePath": "_content/azureapi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

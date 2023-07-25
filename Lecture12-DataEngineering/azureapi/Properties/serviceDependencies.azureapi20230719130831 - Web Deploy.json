@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "apis1": {
+      "apiEndpoint": "https://azureapiapi20723.azure-api.net/running20723",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/azureapiapi20723/apis/azureapi20723",
+      "type": "apis.azure"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "dependencies": {
+    "apis1": {
+      "restored": true,
+      "restoreTime": "2023-07-20T05:05:19.3771883Z"
+    }
+  },
+  "parameters": {
+    "azureapi20230719130831.resourceName": {
+      "Name": "azureapi20230719130831.resourceName",
+      "Type": null,
+      "Value": "azureapi20230719130831"
+    },
+    "subscriptionId": {
+      "Name": "subscriptionId",
+      "Type": "subscription",
+      "Value": "debfad63-b362-4355-bcb3-6da42cf64465"
+    },
+    "apis1.resourceGroupLocation": {
+      "Name": "apis1.resourceGroupLocation",
+      "Type": "location",
+      "Value": "centralindia"
+    },
+    "azureapi20230719130831.resourceGroupName": {
+      "Name": "azureapi20230719130831.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "NetworkWatcherRG"
+    },
+    "azureapi20230719130831.resourceGroupLocation": {
+      "Name": "azureapi20230719130831.resourceGroupLocation",
+      "Type": null,
+      "Value": "centralindia"
+    },
+    "apis1.resourceGroupName": {
+      "Name": "apis1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "NetworkWatcherRG"
+    },
+    "apis1.subscriptionId": {
+      "Name": "apis1.subscriptionId",
+      "Type": "subscription",
+      "Value": "debfad63-b362-4355-bcb3-6da42cf64465"
+    },
+    "azureapi20230719130831.subscriptionId": {
+      "Name": "azureapi20230719130831.subscriptionId",
+      "Type": "subscription",
+      "Value": "debfad63-b362-4355-bcb3-6da42cf64465"
+    }
+  }
+}

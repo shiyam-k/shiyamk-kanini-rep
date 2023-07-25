@@ -1,0 +1,17 @@
+E:\KANINI\Lecture11-DesignPattern\UnitTest10723\bin\Debug\net7.0\UnitTest10723.exe
+E:\KANINI\Lecture11-DesignPattern\UnitTest10723\bin\Debug\net7.0\UnitTest10723.deps.json
+E:\KANINI\Lecture11-DesignPattern\UnitTest10723\bin\Debug\net7.0\UnitTest10723.runtimeconfig.json
+E:\KANINI\Lecture11-DesignPattern\UnitTest10723\bin\Debug\net7.0\UnitTest10723.dll
+E:\KANINI\Lecture11-DesignPattern\UnitTest10723\bin\Debug\net7.0\UnitTest10723.pdb
+E:\KANINI\Lecture11-DesignPattern\UnitTest10723\bin\Debug\net7.0\nunit.framework.dll
+E:\KANINI\Lecture11-DesignPattern\UnitTest10723\obj\Debug\net7.0\UnitTest10723.csproj.AssemblyReference.cache
+E:\KANINI\Lecture11-DesignPattern\UnitTest10723\obj\Debug\net7.0\UnitTest10723.GeneratedMSBuildEditorConfig.editorconfig
+E:\KANINI\Lecture11-DesignPattern\UnitTest10723\obj\Debug\net7.0\UnitTest10723.AssemblyInfoInputs.cache
+E:\KANINI\Lecture11-DesignPattern\UnitTest10723\obj\Debug\net7.0\UnitTest10723.AssemblyInfo.cs
+E:\KANINI\Lecture11-DesignPattern\UnitTest10723\obj\Debug\net7.0\UnitTest10723.csproj.CoreCompileInputs.cache
+E:\KANINI\Lecture11-DesignPattern\UnitTest10723\obj\Debug\net7.0\UnitTest10723.csproj.CopyComplete
+E:\KANINI\Lecture11-DesignPattern\UnitTest10723\obj\Debug\net7.0\UnitTest10723.dll
+E:\KANINI\Lecture11-DesignPattern\UnitTest10723\obj\Debug\net7.0\refint\UnitTest10723.dll
+E:\KANINI\Lecture11-DesignPattern\UnitTest10723\obj\Debug\net7.0\UnitTest10723.pdb
+E:\KANINI\Lecture11-DesignPattern\UnitTest10723\obj\Debug\net7.0\UnitTest10723.genruntimeconfig.cache
+E:\KANINI\Lecture11-DesignPattern\UnitTest10723\obj\Debug\net7.0\ref\UnitTest10723.dll
